@@ -21,12 +21,12 @@ pluralizelisttitles = false
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = false},
     ]
 
-    # Links to your socials.  Delete any you don't need/use.
-    twitter = "https://twitter.com/danielcorin1"
-    github = "https://github.com/danielcorin"
-    keybase = "https://keybase.io/danielcorin/"
-    linkedin = "https://www.linkedin.com/in/danielcorin/"
-    stackoverflow = "https://stackoverflow.com/users/2631732/daniel-corin"
+    # Links to your socials.
+    twitter_url = "https://twitter.com/danielcorin1"
+    github_url = "https://github.com/danielcorin"
+    keybase_url = "https://keybase.io/danielcorin/"
+    linkedin_url = "https://www.linkedin.com/in/danielcorin/"
+    stackoverflow_url = "https://stackoverflow.com/users/2631732/daniel-corin"
 
     # Hex colors for your sidebar.
     sidebar_bg_color = "#202020"            # default is #202020
