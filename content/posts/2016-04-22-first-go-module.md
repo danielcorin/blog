@@ -16,29 +16,39 @@ We're going to create a CLI tool for sending a message to a channel in Slack usi
 
 Our CLI syntax will be:
 
-    $ ./slack -message 'hello world!' -channel @slackbot
+```sh
+$ ./slack -message 'hello world!' -channel @slackbot
+```
 
 First, make sure you have your `$GOPATH` set properly.
 
-    export GOPATH="/path/to/go/"
+```sh
+export GOPATH="/path/to/go/"
+```
 
 Next, set your Slack token as an environment variable:
 
-    export SLACK_TOKEN=<token>
+```sh
+export SLACK_TOKEN=<token>
+```
 
 Typically, developers will use one folder for all of their Go code, and create new folders within for each new project. My structure looks like this:
 
+```sh
     go
     ├── bin
     ├── pkg
     └── src
+```
 
 Make a folder called `slack` within `src`, then inside that folder create the following files and folders as well:
 
+```sh
     slack/
     ├── api
     │   └── slack.go
     └── main.go
+```
 
 Using the builtin Go command line parser [`flag`](https://golang.org/pkg/flag/), we will write our `main.go` file to parse the message and channel from the command line.
 
@@ -138,22 +148,30 @@ func getToken() string {
 
 With these two files written, we can go the to `slack` folder and test the program:
 
-    $ go run main.go -channel @slackbot -message 'hello!'
+```sh
+$ go run main.go -channel @slackbot -message 'hello!'
+```
 
 If all goes well, you will see the output:
 
-    Sent message!
-    @slackbot <- hello!
+```sh
+Sent message!
+@slackbot <- hello!
+```
 
 and the message will show up from you to slackbot in the Slack app.
 
 To build the program as a standalone, distributable binary run:
 
-    $ go build -o slack
+```sh
+$ go build -o slack
+```
 
 This creates a binary file called `slack` in the folder, which can be run with:
 
-    $ ./slack -message 'hello world!' -channel @slackbot
+```sh
+$ ./slack -message 'hello world!' -channel @slackbot
+```
 
 That's it!
 

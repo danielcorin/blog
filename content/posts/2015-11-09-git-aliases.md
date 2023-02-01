@@ -11,20 +11,24 @@ tags:
 
 Here's a quick post for managing your `git` shortcuts. If you use `git` regularly, you should have a `.gitconfig` file in your home directory that looks something like this:
 
-    [user]
-        email = me@me.com
-        name = Your name
+```sh
+[user]
+    email = me@me.com
+    name = Your name
+```
 
 
 You can add an `alias` section like so:
 
-    [user]
-        email = me@me.com
-        name = Your name
+```sh
+[user]
+    email = me@me.com
+    name = Your name
 
-    [alias]
-        ls = log --oneline
-        uom = push -u origin master
+[alias]
+    ls = log --oneline
+    uom = push -u origin master
+```
 
 
 These aliases can be used like so:

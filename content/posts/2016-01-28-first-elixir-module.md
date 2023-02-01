@@ -17,34 +17,40 @@ To get a better handle on Elixir, I developed a simple CLI tool for sending file
 
 To create a new project, run
 
-    $ mix new slack_bot
+```sh
+$ mix new slack_bot
+```
 
 This creates a new Elixir project which looks like this
 
-    ├── README.md
-    ├── config
-    │   └── config.exs
-    ├── lib
-    │   └── slack_bot.ex
-    ├── mix.exs
-    └── slack_bot
-        ├── slack_bot_helper.exs
-        └── slack_bot_test.exs
+```sh
+├── README.md
+├── config
+│   └── config.exs
+├── lib
+│   └── slack_bot.ex
+├── mix.exs
+└── slack_bot
+    ├── slack_bot_helper.exs
+    └── slack_bot_test.exs
+```
 
 Navigate to the `lib` folder and create a folder inside it called `slack_bot`. We will use this folder for our code (`slack_bot.exs`) will remain empty. Then, create the files `bot.ex` and `cli.ex`. `cli.ex` will be the entry point to our application. `bot.ex` will contain the code for the specific Slack functions.
 
-    ├── README.md
-    ├── config
-    │   └── config.exs
-    ├── lib
-    │   ├── slack_bot
-    │   │   ├── bot.ex
-    │   │   └── cli.ex
-    │   └── slack_bot.ex
-    ├── mix.exs
-    └── slack_bot
-        ├── slack_bot_helper.exs
-        └── slack_bot_test.exs
+```sh
+├── README.md
+├── config
+│   └── config.exs
+├── lib
+│   ├── slack_bot
+│   │   ├── bot.ex
+│   │   └── cli.ex
+│   └── slack_bot.ex
+├── mix.exs
+└── slack_bot
+    ├── slack_bot_helper.exs
+    └── slack_bot_test.exs
+```
 
 Our app is going to need to make HTTP requests and parse JSON into Elixir data structures. We can use [`HTTPoison`](https://github.com/edgurgel/httpoison) and [`Poison`](https://github.com/devinus/poison) for these functions, respectively.
 
@@ -64,7 +70,9 @@ These lines define our app dependencies and instruct our program to use them.
 
 Install the dependencies with
 
-    $ mix deps.get
+```sh
+$ mix deps.get
+```
 
 Now open the `mix.ex` file. Since we are creating a CLI, modify the `project` function to look like this:
 
@@ -153,24 +161,30 @@ end
 
 According to the Slack API documentation for [files.upload](https://api.slack.com/methods/files.upload), we pass three query parameters in our POST request to their API: a token, a file and a comma seperated value list of channels. When we call `upload_file` from our `CLI` module, we grab our Slack API token (assumed to be set as an environment variable `SLACK_TOKEN`; visit [Slack](https://api.slack.com/tokens) to get a token) and pass in our file path and channel arguments from the `CLI`. Next, we build our URL, injecting the query parameters:
 
-    https://slack.com/api/files.upload?token=<token>&file=<file>&channels=<channels>
+```sh
+https://slack.com/api/files.upload?token=<token>&file=<file>&channels=<channels>
+```
 
 Examples for parameters:
-  
-    token: xxxx-yyyyyyyyyy-zzzzzzzzzzz-aaaaaaaaaaa-xxxxxxxxxx
-    channels: @chris,#dev
-    file: ../dev/ui.pdf
+
+```sh
+token: xxxx-yyyyyyyyyy-zzzzzzzzzzz-aaaaaaaaaaa-xxxxxxxxxx
+channels: @chris,#dev
+file: ../dev/ui.pdf
+```
 
 Once we have our URL, we use `HTTPoison` to make a POST request to Slack, using an `enctype` of `multipart/form-data`. I had no idea what this meant, but got some help from this `HTTPoison` [Github issue](https://github.com/edgurgel/httpoison/issues/47).
 
 Lastly, run
 
-    $ mix escript.build
+```sh
+$ mix escript.build
+```
 
 to compile the script to binary and run it like this:
 
-    $ ./slack_bot -c @chris -f ~/Downloads/that_one.gif
+```sh
+$ ./slack_bot -c @chris -f ~/Downloads/that_one.gif
+```
 
 Hope you enjoy!
-
-

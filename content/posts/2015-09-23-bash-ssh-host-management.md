@@ -16,10 +16,12 @@ An example ssh `config` file might look like this:
 
 `~/.ssh/config`
 
-    Host myserver
-        HostName x.x.x.x
-        User ubuntu
-        IdentityFile ~/.ssh/mypem.pem
+```sh
+Host myserver
+    HostName x.x.x.x
+    User ubuntu
+    IdentityFile ~/.ssh/mypem.pem
+```
 
 We can use AWK to parse the `~/.ssh/config` file and create bash variables with the name of the `Host`s and the values of the `HostName` respectively.
 
@@ -31,19 +33,23 @@ We can use AWK to parse the `~/.ssh/config` file and create bash variables with 
 
 First, `cat ~/.ssh/config` creates a stream of our `config` file. Next, `awk '$1 ~ /Host/ { print $2 }'` finds all lines that start with "Host" and prints the value after them seperated (by default) by any type of whitespace. The last bit does most of the work:
 
-    awk 'BEGIN {
-        OFS = "" # set Output Field Separator to empty string
-    }
-    !(NR%2){ # if the line number mod two is zero (AWK is 1-indexed)
-        print p,"=\"", $0, "\"" # print the alias line
-    }
-    {
-        p=$0 # store the current line to be printed on the next iteration
-    }'
+```sh
+awk 'BEGIN {
+    OFS = "" # set Output Field Separator to empty string
+}
+!(NR%2){ # if the line number mod two is zero (AWK is 1-indexed)
+    print p,"=\"", $0, "\"" # print the alias line
+}
+{
+    p=$0 # store the current line to be printed on the next iteration
+}'
+```
 
 The output of the command is:
-    
-    myserver="x.x.x.x"
+
+```sh
+myserver="x.x.x.x"
+```
 
 for each of your `Host`s in your `config` file. *NOTE*: I recommend only using this trick for server names with exclusively alphanumeric characters. Otherwise, you may see strange errors like `-bash: <server_name>=<host_name>: command not found` when the shell initializes.
 
@@ -52,8 +58,10 @@ You can add this to your bash initialization to get access to all your `HostName
 
 `.bashrc`
 
-    cat ~/.ssh/config  | awk '$1 ~ /Host/ { print $2 }' | awk 'BEGIN {OFS = ""}!(NR%2){print "alias ", p,"=\"", $0, "\"" }{p=$0}' > ~/.servers
+```sh
+cat ~/.ssh/config  | awk '$1 ~ /Host/ { print $2 }' | awk 'BEGIN {OFS = ""}!(NR%2){print "alias ", p,"=\"", $0, "\"" }{p=$0}' > ~/.servers
 
-    source ~/.servers
+source ~/.servers
+```
 
 Cheers!
