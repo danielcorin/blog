@@ -12,11 +12,11 @@ show_word_count: true
 toc: true
 ---
 
-There's an argument that engineers should care about code quality.
-Teams and companies make specific and targeted efforts to keep the quality of their codebases high.
+I believe it is important for engineers to care about code quality.
+Some teams and companies make specific and targeted efforts to keep the quality of their codebases high.
 The existence of activities like "spring cleaning", "test Fridays", "Fixit week" and others assert the importance of code maintenance, giving engineers the breathing room to fix complex, hairy issues that take more than a day or two of time and focus to solve.
 
-Some engineers (I do) will talk about the problem of "poor quality code", "bad code", or "spaghetti code" as if the code wasn't written by engineers just like ourselves, but the bottom line is, every engineer can likely find a piece of code they wrote that they aren't proud of today.
+Some engineers (I sometimes do) will talk about the problem of "poor quality code", "bad code", or "spaghetti code" as if the code wasn't written by engineers just like ourselves, but the bottom line is, every engineer can likely find a piece of code they wrote that they aren't proud of today.
 We've since gained experience that allows us to view the contribution with deepened context and in a different light.
 As more proficient engineers, rather than just seeing a problem and pointing it out, we can do something productive to address the reason the poor code was written in the first place.
 
@@ -43,7 +43,7 @@ Do your unit tests properly mock out the external layers and packages you're not
 Figure out what your gold standard looks like and point contributors to that example of what their code should look like, while acknowledging that you're working towards a state where more things look like that gold standard.
 This is easier said than done – there is a bias to maintain the status quo, even when better alternatives are known.
 Given this bias, it's helpful to be proactive, telling new contributors something like:
-    
+
 > It would be great if you could follow the pattern we use in the `users` gateway even though it's different from most of the other ones. That is our north star for how new contributions should look.
 
 Additionally, work with your team to carve out time for code maintenance and refactoring so that in the future, less explanation is needed for new contributors.
