@@ -31,14 +31,14 @@ I quickly learned I needed to inject the current time into the prompt at runtime
 ```sh
 ❯ date
 Sun Feb 26 17:30:05 EST 2023
-❯ python parse_date_options.py thursday from 8pm-9pm, friday 2-5pm
+❯ python parse_date_options.py thursday from 8pm-9pm or friday 2-5pm
 [
-  ["2023-02-24 20:00:00-08:00", "2023-02-24 21:00:00-08:00"],
-  ["2023-02-25 14:00:00-08:00", "2023-02-25 17:00:00-08:00"]
+  ["2023-03-02 20:00:00-08:00", "2023-03-02 21:00:00-08:00"],
+  ["2023-03-03 14:00:00-08:00", "2023-03-03 17:00:00-08:00"]
 ]
 ```
 
-With some iteration on the prompt, I eventually got the outcome I was looking for. You can find the code [here](https://gist.github.com/danielcorin/c19483b9c52c1e2970db9f6f2493e7d7) if you're interested. Don't be surprised if there are some rough edges.
+With some iteration on the prompt, I eventually kinda-sorta got the outcome I was looking for. You can find the code [here](https://gist.github.com/danielcorin/c19483b9c52c1e2970db9f6f2493e7d7) if you're interested. Keep in mind, the code is often wrong and is inconsistent between runs. It was cool to see the date formatted properly though and the occasional correct answer. I'm sure a [langchain](https://github.com/hwchase17/langchain) tool would be better at this.
 
 ## Personal knowledge/second brain indexing and search
 
