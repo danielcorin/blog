@@ -4,6 +4,7 @@ theme = "poison"
 paginate = 10
 pluralizelisttitles = false
 title = "Way Enough"
+enableRobotsTXT = true
 
 [params]
     brand = "Way Enough"              # name of your site - appears in the sidebar
@@ -28,6 +29,8 @@ title = "Way Enough"
     keybase_url = "https://keybase.io/danielcorin/"
     linkedin_url = "https://www.linkedin.com/in/danielcorin/"
     stackoverflow_url = "https://stackoverflow.com/users/2631732/daniel-corin"
+
+    custom_css = ["css/custom.css"]
 
 [taxonomies]
     series = "series"

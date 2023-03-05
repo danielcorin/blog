@@ -6,6 +6,7 @@ tags:
     - language_models
     - gpt3
     - chatgpt
+    - reads
 
 hidden: false
 ---
@@ -52,9 +53,9 @@ A few more good and surprising reads I’ve come across or were recommended to m
 
 [CheatGPT](https://blog.humphd.org/cheatgpt/): While not entirely surprising that students are using ChatGPT to complete programming assigned, it hits to hear a professor to describe the quality of the code written by his students, only to realize his students hadn’t actually written the code. Hopefully, these challenges will motivate productive change in the classroom and how we educate
 
-[thesephist.com](https://thesephist.com/): I recently discovered Linus' blog and work and have enjoyed his thoughtful posts on building better tools and thinking, and I still I have a lot to read ahead. I also love his implementation of what he calls [the stream](https://stream.thesephist.com/), which a sort of social-media-decoupled personal stream-of-conscious.
+[thesephist.com](https://thesephist.com/): I recently discovered Linus' blog and work and have enjoyed his thoughtful posts on building better tools and thinking, and I still I have a lot to read ahead. I also love his implementation of what he calls [the stream](https://stream.thesephist.com/), which is a sort of social-media-decoupled personal stream-of-conscious.
 
-What’s next
+## What’s next
 
 - This week I’m doing a project at work where we’re attempting some structured data generation of arbitrarily complex objects with LMs
 - I'm going to spend some time learning more about how to deploy pre-trained models from [Hugging Face](https://huggingface.co/) and investigating different types of models
