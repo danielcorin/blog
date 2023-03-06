@@ -49,7 +49,7 @@ It’s pretty wild to see the speed of change as this tech has become more acces
 
 A few more good and surprising reads I’ve come across or were recommended to me recently:
 
-[Tutorial: How to create consistent characters in Midjourney](https://linusekenstam.substack.com/p/tutorial-how-to-create-consistent): Having played with Midjourney a fair amount myself (I illustrated a [book]([https://adventure-of-penelope.vercel.app](https://adventure-of-penelope.vercel.app/)) with it), consistency or lack thereof was a challenge area that had come up several times. To see a guide outline the approach to achieving more consistency with Midjourney further raised the potential of where I could see this tech making impact.
+[Tutorial: How to create consistent characters in Midjourney](https://linusekenstam.substack.com/p/tutorial-how-to-create-consistent): Having played with Midjourney a fair amount myself (I illustrated a [book](https://adventure-of-penelope.vercel.app) with it), consistency or lack thereof was a challenge area that had come up several times. To see a guide outline the approach to achieving more consistency with Midjourney further raised the potential of where I could see this tech making impact.
 
 [CheatGPT](https://blog.humphd.org/cheatgpt/): While not entirely surprising that students are using ChatGPT to complete programming assigned, it hits to hear a professor to describe the quality of the code written by his students, only to realize his students hadn’t actually written the code. Hopefully, these challenges will motivate productive change in the classroom and how we educate
 
