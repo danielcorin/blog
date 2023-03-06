@@ -13,7 +13,7 @@ draft: false
 
 I spent the week hacking on a languange model use case for structured data generation.
 It turns out the structured data we hoped to generate didn't have a well-defined schema.
-For the languange model to have any chance of suceess, it felt important to construct a schema definition as guide for the structure of the out.
+For the languange model to have any chance of suceess, it felt important to construct a schema definition as guide for the structure of the output.
 However, manually extracting a schema definition for a complex object can tedious.
 We were able to use the language model for this task.
 
