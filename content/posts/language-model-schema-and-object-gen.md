@@ -19,7 +19,7 @@ We were able to use the language model for this task.
 
 ## Using a language model to extract a JSON Schema by example
 
-By feeding in several (sanitized) example objects and instructure the language model to define a [JSON schema](https://json-schema.org/) for those object, we were able to get most of the way to extracting a universal schema definition for these objects using `text-davinci-003`.
+By feeding in several (PII sanitized) example objects and instructure the language model to define a [JSON schema](https://json-schema.org/) for those object, we were able to get most of the way to extracting a universal schema definition for these objects using `text-davinci-003`.
 
 Here's a simple example of how you can do this:
 
