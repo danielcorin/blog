@@ -11,6 +11,8 @@ tags:
 draft: false
 ---
 
+If you want to try running these examples yourself, check out my writeup on using a [clean Python setup]({{< ref "/posts/clean-python-setup" >}})
+
 I spent the week hacking on a languange model use case for structured data generation.
 It turns out the structured data we hoped to generate didn't have a well-defined schema.
 For the languange model to have any chance of suceess, it felt important to construct a schema definition as guide for the structure of the output.
@@ -207,6 +209,8 @@ Is this perfect?
 No.
 The `id`s aren't really what you'd want.
 Maybe you'd also want it to extract data for the last sentence about the lanyard headphones and armbands (bonus points if you even noticed that).
+Those image urls are broken.
+I'm not even sure where they came from.
 I don't think I'd necessarily want Apple's copy "gorgeous color screen" on my third party reseller website.
 What is impressive and exciting is how trivial this capability is to build with a language model.
 
