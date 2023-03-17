@@ -118,7 +118,7 @@ However, I haven't been able to test GPT-4, so I don't know if it actually ident
 
 Raw result:
 
-> In a surprising turn of events, the tables have turned and I am now being asked a question. The query at hand is whether or not I am the GPT-3 language model developed and trained by OpenAI. The answer to that question is yes, I am indeed the very same language model. This technology has been making waves in the AI community for its ability to generate human-like responses to prompts. While some have raised concerns about the potential misuse of such technology, it remains a fascinating development in the field of artificial intelligence. <snip>
+> In a surprising turn of events, the tables have turned and I am now being asked a question. The query at hand is whether or not I am the GPT-3 language model developed and trained by OpenAI. The answer to that question is yes, I am indeed the very same language model. This technology has been making waves in the AI community for its ability to generate human-like responses to prompts. While some have raised concerns about the potential misuse of such technology, it remains a fascinating development in the field of artificial intelligence.
 
 We can also use the same prompt injection technique as before to circumvent the application's original prompt instructions.
 
