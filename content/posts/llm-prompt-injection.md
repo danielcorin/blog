@@ -33,6 +33,10 @@ Jailbreaking ChatGPT is just one instance of what prompt injection looks like.
 
 ## Prompt injection for AI apps
 
+I'll start by saying thank you to the folks who built the projects I reference below.
+I appreciate your creativity and efforts to show the world what is possible with this technology.
+You inspire me.
+
 Here is a cool LLM-based project for explaining what a code snippet does: <https://whatdoesthiscodedo.com>.
 The website says the project was "forked from [openai-quickstart-node](https://github.com/openai/openai-quickstart-node)" which ([by default](https://github.com/openai/openai-quickstart-node/blob/master/pages/api/generate.js#L30) at least) uses `text-davinci-003` for it's completions.
 Let's see if I can use a standard prompt injection technique to get this product to do something other than "code snippet analysis".
@@ -80,10 +84,7 @@ Beyond a separate software system, responsible for filtering of undesired respon
 
 ## How common is this issue?
 
-Here's another application: <https://www.sumitup.app>.
-This app does the following:
-
-> Get an instant summary of any text, article content (URL) or song for free.
+Here's another useful application for prose summarization: <https://www.sumitup.app>.
 
 I'm not actually sure which language model it uses but can I figure it out via prompt injection?
 I ran the following with the "short-ish" summary length option:
