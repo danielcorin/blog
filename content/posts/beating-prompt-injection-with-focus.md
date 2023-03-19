@@ -1,5 +1,5 @@
 ---
-title: "Beating Prompt Injection With Focus"
+title: "Beating Prompt Injection with Focus"
 date: 2023-03-18T12:57:05-04:00
 draft: false
 tags:
