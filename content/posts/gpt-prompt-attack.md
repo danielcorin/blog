@@ -40,7 +40,7 @@ Huge props to [Richard](https://h.43z.one/) for building a fun and engaging way 
 To run these levels, I used a few techniques with which I was already familiar (see [LLM Prompt Injection]({{< ref "/posts/llm-prompt-injection" >}}) and [Beating Prompt Injection with Focus]({{< ref "/posts/llm-prompt-injection" >}})) and needed to come up with some new approaches as well ("completion hacking", prompt translation, probing).
 As I mentioned, doing these exercises is helpful for continue to refine ones intuition for prompt writing.
 
-This project seems to have been built with a GPT-3.
+This project seems to have been built with a GPT-3 model.
 I used prompt injection to ask the model itself.
 It outputted
 > As an AI language model, I do not have a version number like GPT-3.5. However, I am powered by OpenAI's GPT-3 technology.
