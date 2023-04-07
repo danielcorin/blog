@@ -6,6 +6,9 @@ pluralizelisttitles = false
 title = "Way Enough"
 enableRobotsTXT = true
 
+[author]
+	name = "Dan Corin"
+
 [params]
     brand = "Way Enough"              # name of your site - appears in the sidebar
     brand_image = "/images/me.jpg"    # path to the image shown in the sidebar
@@ -29,6 +32,7 @@ enableRobotsTXT = true
     keybase_url = "https://keybase.io/danielcorin/"
     linkedin_url = "https://www.linkedin.com/in/danielcorin/"
     stackoverflow_url = "https://stackoverflow.com/users/2631732/daniel-corin"
+    rss = true
 
     custom_css = ["css/custom.css"]
 
@@ -40,3 +44,6 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
