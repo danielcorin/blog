@@ -8,12 +8,13 @@ enableRobotsTXT = true
 
 [author]
 	name = "Dan Corin"
+    email = "dcorin6@gmail.com"
 
 [params]
     brand = "Way Enough"              # name of your site - appears in the sidebar
     brand_image = "/images/me.jpg"    # path to the image shown in the sidebar
     description = "Mostly software stuff"
-    dark_mode = true                    # optional - defaults to false
+    dark_mode = true
 
     # MENU PLACEHOLDER
     # Menu dict keys:
