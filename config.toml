@@ -1,4 +1,4 @@
-baseURL = "https://danielcorin.com"
+baseURL = "https://danielcorin.com/"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
