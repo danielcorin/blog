@@ -1,7 +1,7 @@
 ---
 title: "Future of Personal Knowledge"
 date: 2023-04-07T08:10:58-04:00
-draft: true
+draft: false
 tags:
 - language_models
 - second_brain
@@ -66,4 +66,4 @@ Additionally, constructing a history (like shell history) of language model resp
 Being able to ctrl-r, fuzzy search for a language model query, then have the result returned immediately from local storage seems like it could provide the best of both worlds and integrate well into a terminal-centric workflow.
 This would transition the notion of a personal knowledge base to a language model generated knowledge base, with optional, personal edits.
 If the local knowledge base doesn't have the answer, the same query can be routed to the language model.
-I may need to take a shot at building this now.
+It would be interesting to combine this shell-history-like functionality with a CLI tool that calls a language model.
