@@ -5,13 +5,14 @@ type: "page"
 layout: "about"
 ---
 
-Hi, I'm Dan Corin.
+Hi 👋
 
-Occupying my small corner of the internet. Enjoy your stay.
+I'm Dan Corin.
 
-Reader. Cyclist. Software Engineer. Rower. Physicist. Chocolate Chip Cookie Consumer.
+I'm a software engineer.
+
+Welcome to my corner of the internet. Enjoy your stay.
 
 ![Journey](/images/composite.jpg)
 
 S(F|TL|RQ)
-
