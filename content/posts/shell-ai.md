@@ -8,7 +8,7 @@ tags:
   - cli
 ---
 
-I believe that that language models are most useful when available at your fingertips in the context of what you're doing.
+I believe that language models are most useful when available at your fingertips in the context of what you're doing.
 [Github Copilot](https://github.com/features/copilot) is a well known application that applies language models in this manner.
 There is no need to pre-prompt the model.
 It knows you're writing code and that you're going to ask it to write code for you based on the contents of your comment. Github is further extending this idea with [Copilot for CLI](https://githubnext.com/projects/copilot-cli/), which looks promising but isn't generally available yet.
