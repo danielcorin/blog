@@ -141,7 +141,7 @@ You can find the code and rough installation instructions [on Github](https://gi
 
 ## Wrapping up
 
-There are so many ways once can extend this idea and I'm tempted to add more capabilities, but in the spirit of doing one thing well, I'll stop here.
+There are so many ways one can extend this idea and I'm tempted to add more capabilities, but in the spirit of doing one thing well, I'll stop here.
 I hope you find this useful and that it inspires you to write some of your own tools with language models.
 
 [^1]: The command was different on my second run of the program.
