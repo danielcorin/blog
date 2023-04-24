@@ -9,7 +9,7 @@ tags:
 
 [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT) is a popular project on Github that attempts to build an autonomous agent on top of an LLM.
 This is not my first time using Auto-GPT.
-I used it shortly after it was release, gave it a second try a week or two later, making this the third, zero-to-running effort.
+I used it shortly after it was release and gave it a second try a week or two later, which makes this my third, zero-to-running effort.
 
 I installed it
 
