@@ -7,12 +7,19 @@ tags:
 - language_models
 ---
 
-It's important to pay attention to the shape of a language model's response when incorporating it as a component in a software application.
+It's necessary to pay attention to the shape of a language model's response when incorporating it as a component in a software application.
 You can't programmatically tap into the power of a language model if you can't reliably parse its response.
-I'm familiar with some prior art in this area: [`guardrails`](https://github.com/ShreyaR/guardrails) is a project I have been following.
-`guardrails` seems to provide a language-agnostic, XML-based `.rail` file which adds "structure, type and quality guarantees to the outputs of large language models".
-In playing this project, my main quip from the experience (after an admittedly short trial run) was that the `.rail` file was unfamiliar.
-I was curious if I could use something more familiar to archive a similar purpose -- defining the structure of the output of a language model.
+I'm mostly a combination of prose and examples to define the shape of the language model response in my prompts.
+Something like:
+> Respond using JSON with the following shape:
+>
+> ```json
+> {
+>   ...
+> }
+> ```
+
+I was curious if I could use something more familiar and structured to archive a similar purpose.
 
 ## The familiar
 
