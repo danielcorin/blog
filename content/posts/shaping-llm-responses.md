@@ -9,7 +9,7 @@ tags:
 
 It's necessary to pay attention to the shape of a language model's response when incorporating it as a component in a software application.
 You can't programmatically tap into the power of a language model if you can't reliably parse its response.
-I'm mostly a combination of prose and examples to define the shape of the language model response in my prompts.
+In the past, I have mostly used a combination of prose and examples to define the shape of the language model response in my prompts.
 Something like:
 > Respond using JSON with the following shape:
 >
