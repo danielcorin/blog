@@ -4,6 +4,7 @@ date: 2023-05-07T21:25:03-04:00
 draft: false
 tags:
 - language_models
+- python
 ---
 
 The most popular language model use cases I've seen around have been
