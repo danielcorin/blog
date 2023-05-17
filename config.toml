@@ -26,7 +26,7 @@ rss_icon = true
 menu = [
     { Name = "About", URL = "/about/", HasChildren = false },
     { Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = false },
-    { Name = "Ideaspace", URL = "/ideaspace/", HasChildren = false },
+    { Name = "Logs", URL = "/logs/", HasChildren = false },
 ]
 
 # Links to your socials.

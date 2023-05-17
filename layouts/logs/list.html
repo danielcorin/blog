@@ -1,0 +1,24 @@
+{{ define "main" -}}
+<h1 class="title">{{ .Title }}</h1>
+<ul class="entries">
+    {{ range .Pages.GroupByDate "2006-01" }}
+        <h3 style="text-align: center;">{{ .Key }}</h3>
+        {{ range .Pages }}
+            <li>
+                <span class="title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </span>
+                <span class="published">
+                    <div class="tags pull-right post-list">
+                        {{ range (sort .Params.tags) }}
+                        <span class="tag-{{ . }}">
+                            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+                        </span>
+                        {{ end }}
+                    </div>
+                </span>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>
+{{ end }}
