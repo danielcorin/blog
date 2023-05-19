@@ -15,6 +15,7 @@ brand = "Way Enough"                  # name of your site - appears in the sideb
 brand_image = "/images/me.jpg"        # path to the image shown in the sidebar
 description = "Mostly software stuff"
 dark_mode = true
+rss_icon = true
 
 # MENU PLACEHOLDER
 # Menu dict keys:
@@ -25,6 +26,7 @@ dark_mode = true
 menu = [
     { Name = "About", URL = "/about/", HasChildren = false },
     { Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = false },
+    { Name = "Logs", URL = "/logs/", HasChildren = false },
 ]
 
 # Links to your socials.
@@ -33,7 +35,6 @@ github_url = "https://github.com/danielcorin"
 keybase_url = "https://keybase.io/danielcorin/"
 linkedin_url = "https://www.linkedin.com/in/danielcorin/"
 stackoverflow_url = "https://stackoverflow.com/users/2631732/daniel-corin"
-rss = true
 
 custom_css = ["css/custom.css"]
 

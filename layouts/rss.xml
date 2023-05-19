@@ -2,7 +2,8 @@
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
-{{- $pages = $pctx.RegularPages -}}
+{{- $allPages := $pctx.RegularPages -}}
+{{- $pages = where $allPages "Section" "posts" -}} {{/* This line is added to filter pages from "posts" folder only */}}
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
