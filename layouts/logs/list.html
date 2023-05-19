@@ -4,6 +4,7 @@
     {{ range .Pages.GroupByDate "2006-01" }}
         <h3 style="text-align: center;">{{ .Key }}</h3>
         {{ range .Pages }}
+        {{ if not .Draft}}
             <li>
                 <span class="title">
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -18,6 +19,7 @@
                     </div>
                 </span>
             </li>
+        {{ end }}
         {{ end }}
     {{ end }}
 </ul>
