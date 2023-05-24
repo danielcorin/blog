@@ -1,10 +1,8 @@
-{{ $pag := .Paginate (where .Pages "Type" "logs") }}
+{{ $pag := .Paginate (where .Pages "Type" "posts") }}
 {{ if gt $pag.TotalPages 1 }}
-pages
 <hr>
 <div class="footer">
 <nav id="page-nav">
-
     {{ if $pag.HasPrev }}
     <a href="{{ $pag.Prev.URL }}" rel="prev" class="extend prev">&laquo; Previous{{ T "Prev" }}</a>
     {{ end }}
