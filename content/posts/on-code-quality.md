@@ -25,7 +25,7 @@ I’ll propose a few strategies I’ve developed to try and turn an unavoidable 
 
 When you find a file or function that is the perfect combination of unreadable and poorly named, misusing design patterns and languages features, violating abstractions and code base conventions:
 
-## Identify if the pattern exists elsewhere.
+## Identify if the pattern exists elsewhere
 
 The same snippets of code get used and re-used all over the place across codebases and documentation.
 Copying code is great and fast, especially when the code is good (maybe you should have better abstractions but that is a different conversation).
@@ -34,7 +34,7 @@ If you identify the source of the bad pattern, you can correct/improve it at its
 If you don't make these fixes, the pattern becomes malignant, pervading the codebase in which it originated but also showing in other codebases as less experienced contributors continue following the norms to which they've become accustomed.
 As an experienced member of your team, you can easily scale your impact by ensuring less experienced contributors the copy patterns you _want_ to see in your codebases rather than just whatever they're used to doing.
 
-## Consider if the codebase uses patterns that encourage the contributions you want.
+## Consider if the codebase uses patterns that encourage the contributions you want
 
 Chances are, if you're not happy with the state of your codebase today, you won't be happy with how new contributes look either.
 Does the code that already exists in the codebase look like new code you'd want added?
@@ -62,6 +62,7 @@ These conversations provide an opportunity for mentorship and nuanced discourse 
 They will help level-up your less experienced contributors and make them more confident and opinionated about how they write code in the future.
 
 ## Automate
+
 Automate as much of the above as possible (not the 1 on 1 conversations).
 Add linting rules and build-time enforcements that encourage the "right" types of contributions.
 Add minimum percentage thresholds for unit test coverage so that contributors don't accidentally forget to test their code.
