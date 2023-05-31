@@ -13,15 +13,15 @@ draft: false
 
 If you want to try running these examples yourself, check out my writeup on using a [clean Python setup]({{< ref "/posts/clean-python-setup" >}})
 
-I spent the week hacking on a languange model use case for structured data generation.
+I spent the week hacking on a language model use case for structured data generation.
 It turns out the structured data we hoped to generate didn't have a well-defined schema.
-For the languange model to have any chance of suceess, it felt important to construct a schema definition as guide for the structure of the output.
+For the language model to have any chance of success, it felt important to construct a schema definition as guide for the structure of the output.
 However, manually extracting a schema definition for a complex object can tedious.
 We were able to use the language model for this task.
 
 ## Using a language model to extract a JSON Schema by example
 
-By feeding in several (PII sanitized) example objects and instructure the language model to define a [JSON schema](https://json-schema.org/) for those object, we were able to get most of the way to extracting a universal schema definition for these objects using `text-davinci-003`.
+By feeding in several (PII sanitized) example objects and instruct the language model to define a [JSON schema](https://json-schema.org/) for those object, we were able to get most of the way to extracting a universal schema definition for these objects using `text-davinci-003`.
 
 Here's a simple example of how you can do this:
 
@@ -140,7 +140,7 @@ The main limiting factor for improvements with this method is the [maximum numbe
 ## Structured data generation
 
 Returning to the original claim and promise -- let's use a language model for structured data generation.
-Say I wanted to create some items for this e-commerce website using the schema the languange model extracted.
+Say I wanted to create some items for this e-commerce website using the schema the language model extracted.
 I could write some JSON by hand.
 I could build a fancy UI form and using autocompletion to help speed up filling in all the fields.
 I could build a file uploader and design an file upload schema then transform all my product descriptions to match that, then transform the uploaded file into the JSON schema.

@@ -46,6 +46,7 @@
   font-size: 0.7em;
   background-color: var(--list-color);
   border-radius: 0.2em;
+  font-weight: bold;
 }
 
 /* style for inline tags for logs section */
