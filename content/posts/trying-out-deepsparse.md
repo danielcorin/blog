@@ -174,7 +174,7 @@ score=11.741353988647461 answer='Chris Kotowski' start=6230 end=6244
 ```
 
 Also, not the best.
-It looks like I have plently left to learn.
+It looks like I have plenty left to learn.
 
 ## What's next?
 
