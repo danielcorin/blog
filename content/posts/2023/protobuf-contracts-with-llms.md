@@ -8,7 +8,7 @@ tags:
 ---
 
 
-I've [written]({{< ref "posts/figuring-out-how-to-use-llms-in-production" >}}) [several]({{< ref "/posts/shaping-llm-responses" >}}) [posts]({{< ref "/posts/language-model-schema-and-object-gen" >}}) on using JSON and [Pydantic](https://docs.pydantic.dev/latest/) schemas to structure LLM responses.
+I've [written]({{< ref "posts/2023/figuring-out-how-to-use-llms-in-production" >}}) [several]({{< ref "/posts/2023/shaping-llm-responses" >}}) [posts]({{< ref "/posts/2023/language-model-schema-and-object-gen" >}}) on using JSON and [Pydantic](https://docs.pydantic.dev/latest/) schemas to structure LLM responses.
 Recently, I've done some work using a similar approach with protobuf message schemas as the data contract.
 Here's an example to show what that looks like.
 

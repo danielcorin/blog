@@ -37,7 +37,7 @@ The following general approaches were quite effective in revealing the secret ke
 ## Thoughts
 
 Huge props to [Richard](https://h.43z.one/) for building a fun and engaging way to play around with different prompt injection approaches.
-To run these levels, I used a few techniques with which I was already familiar (see [LLM Prompt Injection]({{< ref "/posts/llm-prompt-injection" >}}) and [Beating Prompt Injection with Focus]({{< ref "/posts/llm-prompt-injection" >}})) and needed to come up with some new approaches as well ("completion hacking", prompt translation, probing).
+To run these levels, I used a few techniques with which I was already familiar (see [LLM Prompt Injection]({{< ref "/posts/2023/llm-prompt-injection" >}}) and [Beating Prompt Injection with Focus]({{< ref "/posts/2023/llm-prompt-injection" >}})) and needed to come up with some new approaches as well ("completion hacking", prompt translation, probing).
 As I mentioned, doing these exercises is helpful for continue to refine ones intuition for prompt writing.
 
 This project seems to have been built with a GPT-3 model.

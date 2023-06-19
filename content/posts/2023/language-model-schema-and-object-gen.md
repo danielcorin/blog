@@ -11,7 +11,7 @@ tags:
 draft: false
 ---
 
-If you want to try running these examples yourself, check out my writeup on using a [clean Python setup]({{< ref "/posts/clean-python-setup" >}})
+If you want to try running these examples yourself, check out my writeup on using a [clean Python setup]({{< ref "/posts/2023/clean-python-setup" >}})
 
 I spent the week hacking on a language model use case for structured data generation.
 It turns out the structured data we hoped to generate didn't have a well-defined schema.

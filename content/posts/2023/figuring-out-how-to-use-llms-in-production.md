@@ -54,7 +54,7 @@ We no longer need to write prose alone or example responses to get the model to 
 
 ## A possible implementation
 
-Re-using some bits from a [previous post]({{< ref "/posts/shaping-llm-responses" >}}), we have the following block of text and response schema:
+Re-using some bits from a [previous post]({{< ref "/posts/2023/shaping-llm-responses" >}}), we have the following block of text and response schema:
 
 > Last weekend, I visited my friend who lives in a charming little house on Oak Avenue. The address was 3578 Oak Avenue, and it was easy to find with the help of my GPS. While typing in the address, I discovered there was more than one 3578 Oak Ave, but once I entered right zip code, 90011, I found it. The house was surrounded by trees and had a beautiful garden in the front. Inside, my friend had decorated the place with vintage furniture and colorful paintings. We spent the day catching up and enjoying a cup of coffee in the cozy living room. It was a lovely visit and my first time in Los Angeles, and I can't wait to go back and see my friend's new garden in full bloom.
 

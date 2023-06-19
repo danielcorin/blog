@@ -145,7 +145,7 @@ In order to parse out data for a `User` for an input text, you'd want to include
 
 ## JSON Schema
 
-I've [written about]({{< ref "/posts/language-model-schema-and-object-gen" >}}) experimenting with JSON Schema to construct schema-adherent responses from a language model. You can also obtain and use JSON schema from `pydantic` classes to use for parsing and schema-adherent response construction:
+I've [written about]({{< ref "/posts/2023/language-model-schema-and-object-gen" >}}) experimenting with JSON Schema to construct schema-adherent responses from a language model. You can also obtain and use JSON schema from `pydantic` classes to use for parsing and schema-adherent response construction:
 
 ```python
 Address.schema_json()

@@ -13,7 +13,7 @@ I'm not particularly well-suited to solve that problem and I imagine it will be 
 Maybe this one will be similar, but it's a new area for me.
 
 To summarize the problem, prompt injection is user-supplied text that seeks to modify the behavior of a language model or language model-based application beyond what was intended by the application developer.
-You can find a few examples of this in applications in the wild in my previous post on [LLM Prompt Injection]({{< ref "/posts/llm-prompt-injection" >}}).
+You can find a few examples of this in applications in the wild in my previous post on [LLM Prompt Injection]({{< ref "/posts/2023/llm-prompt-injection" >}}).
 
 Using the [What does this code do?](https://whatdoesthiscodedo.com/) project as inspiration, I tried to design a system architecture for the same application that was (more) resistant to prompt injection.
 I focused on preventing the application from deviating from its designed purpose: to explain source code.
