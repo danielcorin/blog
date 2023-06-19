@@ -6,6 +6,7 @@ tags:
 - language_models
 - openai
 - structured_data
+- function_calling
 ---
 
 This past week, OpenAI added [function calling](https://platform.openai.com/docs/guides/gpt/function-calling) to their SDK.
