@@ -137,9 +137,9 @@ def get_page_content():
     response = requests.get(url)
     html_content = response.text
     soup = BeautifulSoup(html_content, 'html.parser')
-    # Find all elements with the class name "content"
-    content_elements = soup.find(class_="content")
-    return content_elements.get_text(strip=True, separator=" ")
+    # Find  element with the class name "content"
+    content_element = soup.find(class_="content")
+    return content_element.get_text(strip=True, separator=" ")
 
 def main():
     content = get_page_content()
