@@ -174,7 +174,7 @@ Inspecting the JSON output of the script, we see the model isn't returning valid
 ```
 
 We see `"quantity": 3/4` isn't valid JSON.
-We can try to steer the model adding description to the `pydantic` field:
+We can try to steer the model adding a description to the `pydantic` field:
 
 ```python
 class Ingredient(BaseModel):

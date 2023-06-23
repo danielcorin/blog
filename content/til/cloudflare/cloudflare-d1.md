@@ -1,6 +1,6 @@
 ---
 date: "2023-06-18T09:59:00Z"
-title: "2023-06-18"
+title: "Cloudflare D1"
 tags:
 - sqlite
 - cloudflare

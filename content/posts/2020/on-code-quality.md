@@ -48,7 +48,7 @@ Given this bias, it's helpful to be proactive, telling new contributors somethin
 
 Additionally, work with your team to carve out time for code maintenance and refactoring so that in the future, less explanation is needed for new contributors.
 
-## Pretend that you were the one who wrote the code.
+## Pretend that you were the one who wrote the code
 
 Sometimes you don't have to pretend – you read code, think "hmm, this is not the way I'd do this", and it turns out, you `git blame` and realize you literally wrote it yourself, months or years earlier.
 Between when you wrote this code and later admonished yourself for the bad code you wrote, you've learned some things that have made you believe you could have done better.
