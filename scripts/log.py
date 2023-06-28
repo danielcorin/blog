@@ -1,9 +1,13 @@
 import datetime
 import os
 import sys
+import pytz
+from datetime import timezone
 
-# Get current date and time
-now = datetime.datetime.utcnow()
+utc_dt = datetime.datetime.now(timezone.utc)
+
+tz = pytz.timezone("US/Eastern")
+now = utc_dt.astimezone(tz)
 year = now.strftime("%Y")
 month = now.strftime("%m")
 day = now.strftime("%d")
