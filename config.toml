@@ -11,8 +11,7 @@ name = "Dan Corin"
 email = "dcorin6@gmail.com"
 
 [params]
-brand = "Way Enough"                  # name of your site - appears in the sidebar
-brand_image = "/images/me.jpg"        # path to the image shown in the sidebar
+brand = "Way Enough"                  # name of your site - appears in the sidebar     # path to the image shown in the sidebar
 description = "Mostly software stuff"
 dark_mode = true
 rss_icon = true
@@ -26,8 +25,8 @@ rss_icon = true
 menu = [
     { Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = false },
     { Name = "Logs", URL = "/logs/", HasChildren = false },
-    { Name = "About", URL = "/about/", HasChildren = false },
     { Name = "TIL", URL = "/til/", HasChildren = false },
+    { Name = "About", URL = "/about/", HasChildren = false },
 ]
 
 # Links to your socials.
