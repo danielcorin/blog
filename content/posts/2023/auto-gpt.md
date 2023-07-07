@@ -1,5 +1,6 @@
 ---
 title: "Auto-GPT"
+description: Experimenting with Auto-GPT
 date: 2023-04-23T16:37:05-04:00
 draft: false
 tags:

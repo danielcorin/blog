@@ -1,6 +1,7 @@
 ---
 title: "Beating Prompt Injection with Focus"
 date: 2023-03-18T12:57:05-04:00
+description: Attempts to thwart prompt injection
 draft: false
 tags:
   - language_models

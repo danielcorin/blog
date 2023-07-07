@@ -22,6 +22,7 @@ file_path = f"{directory}/{day}.md"
 file_content = f"""---
 date: "{formatted_date}"
 title: "{formatted_title}"
+description:
 draft: true
 tags:
 ---

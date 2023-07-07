@@ -1,6 +1,7 @@
 ---
 title: "Figuring out how to use LLMs in production"
 date: 2023-05-07T21:25:03-04:00
+description: Code needs structure output
 draft: false
 tags:
 - language_models
