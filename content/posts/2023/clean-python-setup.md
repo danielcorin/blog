@@ -1,6 +1,7 @@
 ---
 title: "Clean Python Setup"
 date: 2023-03-06T20:16:52-05:00
+description: No frills Python projects
 draft: false
 tags:
   - python

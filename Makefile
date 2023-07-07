@@ -12,3 +12,7 @@ build:
 serve run:
 	@hugo serve
 
+.PHONY: log
+log:
+	@python scripts/log.py
+
