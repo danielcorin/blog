@@ -52,15 +52,16 @@ After a couple of messages, I was shown
 Requests used: 3 / 100. 20 hours until refresh.
 ```
 
-It would be excellent if I could supply my own OpenAI token or customize this right drawn for my own uses -- maybe something to investigate to shell if other terminal emulators could do this.
+It would be excellent if I could supply my own OpenAI token or customize this right drawer for my own uses -- maybe something to investigate to shell if other terminal emulators could do this.
 
 The app indicates which pane is active using a blue triangle in the top left of the pane.
 I typically do this with text brightness, but it works.
 There also built-in support for jumping between panes via hotkey.
-These didn't just have my defaults (first time was just luck), and also behaved differently than I'm used to.
-I usually use arrows to indicate the direction of movement.
+These didn't have my defaults (first time was just luck), and also behaved differently than I'm used to.
+I use arrows to indicate the direction of movement.
 Pressing the right arrow from the bottom left pane jumps me to the top right pane.
-I'd expect it to jump me to the pane in the same row.
+I'd expect it to jump to the pane in the same row.
 
-That's my first impressions.
-Also, it doesn't quite feel like "home".
+Those are my first impressions.
+It doesn't quite feel like "home" -- I may need to look into theme customization.
+I'm planning to keep it around and experience a bit.
