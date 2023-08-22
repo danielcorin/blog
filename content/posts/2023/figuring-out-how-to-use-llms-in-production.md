@@ -18,7 +18,7 @@ These use cases are quite cool, but often stand alone, separate from existing pr
 
 ## Expanding production use cases for language models
 
-I've been thinking about what could it look like to naturally embed a call to language model in code to flexibility make use of its capabilities in a production application.
+I've been thinking about what could it look like to naturally embed a call to language model in code to flexibly make use of its capabilities in a production application.
 In this pursuit, I've been hooked by the idea that declarative, unambiguous data schema can serve as the bridge between language model capabilities and applications.
 Generally, schemas provide the contract for the data that will be sent into and expected out of a procedure.
 With this approach, we're treating the language model as a sort of magic [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) or API call.
@@ -74,8 +74,8 @@ class JournalEntry(BaseModel):
     content: str
 ```
 
-Now, let construct a generic prompt parameterized on the schemas.
-We're include the schema definition exactly as their object are defined in code.
+Now, let's construct a generic prompt parameterized on the schemas.
+We include the schema definition exactly as their objects are defined in code.
 Our data input will be a JSON object in adherence with the request schema.
 
 ```text
@@ -122,7 +122,7 @@ StructuredLLM(Address).run(JournalEntry(content="..."))
 `StructuredLLM(Address)` initializes a class with the target schema.
 `.run(JournalEntry(content="..."))` passes in an instance of the request schema.
 The prompt construction and object extraction and validation would live inside `StructuredLLM`.
-With this API, we could easily also do things like classify text sentiment or generate tags without needing to write any prompt code.
+With this API, we could also easily do things like classify text sentiment or generate tags without needing to write any prompt code.
 For example:
 
 ```python
@@ -177,5 +177,5 @@ Result:
 Note the tags do change, which is expected behavior for a language model.
 If we wanted more consistent tags, we should provide an enumeration.
 
-The above examples are relatively simple but injecting object schemas from code into prompts seems to have potential for instructing language models and integrating them with production systems.
+The above examples are relatively simple, but injecting object schemas from code into prompts seems to have potential for instructing language models and integrating them with production systems.
 I plan to continue exploring more diverse use cases and documenting my findings.

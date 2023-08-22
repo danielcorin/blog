@@ -218,11 +218,11 @@ This modifies the JSON schema in the following way:
 }
 ```
 
-Unfortunately, this doesn't address the invalid JSON issue.
+Unfortunately, this doesn't resolve the invalid JSON issue.
 However, switching from `gpt-3.5-turbo-16k` to `gpt-4-0613` (and removing the `Field` description) yields JSON that adheres to the input schema.
-Still, GPT-4 models are slower and more expensive than 3.5 models, so there is motive to try and get this working with the latter.
+Still, GPT-4 models are slower and more expensive than 3.5 models, so there is motivation to try and get this working with the latter.
 
-Taking a previous approach, it seems like we can get more reliable results with `gpt-3.5-turbo-16k`.
+Taking an approach I've tried previously, it seems like we can get more reliable results with `gpt-3.5-turbo-16k`.
 
 ```python
 import openai
@@ -294,7 +294,7 @@ if __name__ == "__main__":
 ## Takeaways
 
 On one hand, it's great to see OpenAI training models to better integrate with emerging language model use cases like function invocation and schema extraction.
-On the other, OpenAI acknowledges this approach doesn't always work in their docs:
+On the other, OpenAI acknowledges this approach doesn't always work in their documentation:
 
 > the model may generate invalid JSON or hallucinate parameters
 

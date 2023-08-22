@@ -8,7 +8,7 @@ tags:
  - q&a
 ---
 
-I've been keeping an eye out for language models that can run locally so that I use them on personal data sets for thinking like summarization and knowledge retrieval without sending all my data up to someone else's cloud.
+I've been keeping an eye out for language models that can run locally so that I can use them on personal data sets for tasks like summarization and knowledge retrieval without sending all my data up to someone else's cloud.
 [Anthony](https://github.com/aagnone3) sent me a link to a Twitter thread about product called `deepsparse` by [Neural Magic](https://neuralmagic.com/) that claims to offer
 
 > [a]n inference runtime offering GPU-class performance on CPUs and APIs to integrate ML into your application
@@ -106,9 +106,10 @@ Probably not? I don't think the article suggests this might happen at least.
 To start, the software does perform as advertised.
 It is an inference engine I can download and run it on my local CPU, and it does produce responses of reasonable accuracy.
 It's possible, having used GPT-3.5 and ChatGPT extensively, that my expectations were too high for running models on such under powered hardware.
-This model, after all, does a pretty good job with what it was trained on (the article text) and appears only to regurgitate prose of the article in response to a question -- it doesn't seem to have generative capabilities.
+This model, after all, does a pretty good job with what it was trained on (the article text) and appears to only regurgitate prose of the article in response to a question -- it doesn't seem to have generative capabilities.
 Having limited model experience before beginning to play with the OpenAI playground, I assumed models would have baked in training context, but in retrospect it appears somewhat obvious that this may not always be the case.
-Models need to be trained on your datasets to be useful for your application. If I wanted "better" answers about what recently happened to SVB, I would probably need more training context, a different model or both.
+Models need to be trained on your data sets to be useful for your application.
+If I wanted "better" answers about what recently happened to SVB, I would probably need more training context, a different model or both.
 
 This prompted me to research a bit more about other types of models and/or training approaches.
 
@@ -127,7 +128,7 @@ ChatGPT told me the following with regards to the `model_path` I pass into `deep
 That helps a bit.
 There are a lot of options that I need to understand better.
 
-Let's try the same set of questions with a different model just for fun:
+Let's try the same set of questions with a different model, just for fun:
 
 ```python
 from deepsparse import Pipeline
@@ -178,5 +179,5 @@ It looks like I have plenty left to learn.
 
 ## What's next?
 
-I'm not really getting the answers I hoped from the model and there are so many variants and options that I need to take a step back to better understand the primitives in this model ecosystem, then play around some more.
+I'm not really getting the answers I hoped for from the model, and there are so many variants and options that I need to take a step back to better understand the primitives in this model ecosystem, then play around some more.
 Nevertheless, it was interesting to go from nothing to a locally running model with some working capabilities.

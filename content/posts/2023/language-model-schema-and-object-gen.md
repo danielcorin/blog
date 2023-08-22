@@ -16,7 +16,7 @@ If you want to try running these examples yourself, check out my writeup on usin
 I spent the week hacking on a language model use case for structured data generation.
 It turns out the structured data we hoped to generate didn't have a well-defined schema.
 For the language model to have any chance of success, it felt important to construct a schema definition as guide for the structure of the output.
-However, manually extracting a schema definition for a complex object can tedious.
+However, manually extracting a schema definition for a complex object can be tedious.
 We were able to use the language model for this task.
 
 ## Using a language model to extract a JSON Schema by example
@@ -133,8 +133,8 @@ The output schema I got for my run of the language model is as follows:
 ```
 
 You may argue this schema isn't perfect structurally or that there are better ways to define schemas for JSON objects, but I think that is besides the point for the moment.
-This schema an extremely helpful starting point and I separately validated that all the objects I passed into the prompt adhere to this schema.
-In my experience, the more variety in the examples provide in the prompt, the better the result from the language model.
+This schema is an extremely helpful starting point and I separately validated that all the objects I passed into the prompt adhere to this schema.
+In my experience, the more variety in the examples you provide in the prompt, the better the result from the language model.
 The main limiting factor for improvements with this method is the [maximum number of request tokens](https://platform.openai.com/docs/models/gpt-3-5) allowable by the model.
 
 ## Structured data generation
@@ -144,8 +144,8 @@ Say I wanted to create some items for this e-commerce website using the schema t
 I could write some JSON by hand.
 I could build a fancy UI form and using autocompletion to help speed up filling in all the fields.
 I could build a file uploader and design an file upload schema then transform all my product descriptions to match that, then transform the uploaded file into the JSON schema.
-All of the above are time consuming and often error prone, yet I've seen production systems that have made use of all of these approaches.
-I know in the end I need objects with my schema described above, so let's see if we can go straight from product description to valid JSON objects.
+All of the above are time-consuming and often error prone, yet I've seen production systems that have made use of all of these approaches.
+I know in the end I need objects with my schema described above, so let's see if we can go straight from product descriptions to valid JSON objects.
 
 Take [this product](https://www.apple.com/newsroom/2005/09/07Apple-Introduces-iPod-nano/) announcement from Apple for the iPod Nano.
 Let's write a prompt for the language model to extract the product data:

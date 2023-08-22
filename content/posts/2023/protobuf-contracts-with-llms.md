@@ -52,7 +52,7 @@ Let's say a new employee, Alice, sent the following response to our question ema
 >
 > Answer: I'm a big fan of fantasy and adventure. One of my favorite book series is "The Name of the Wind" by Patrick Rothfuss. For movies, I highly recommend "Crouching Tiger, Hidden Dragon" and "Indiana Jones and the Last Crusade."
 
-Let's extract the questions we asked Alice and her responses using a schema that will make it easy to generate some trivia about her later from an "employee fun fact database" later.
+Let's extract the questions we asked Alice and her responses using a schema that will make it easy to generate some trivia about her later from an "employee fun fact database".
 
 This code will do the job pretty well:
 
@@ -181,7 +181,7 @@ message TriviaQuestion {
   string question = 2;
   string answer = 3;
   // using the question and answer, write a trivia question about the employee but do not include the employee's name. for example, if the question is "What is your favorite baseball team" and the answer is "The New York Yankees" then the trivia question could be "Whose favorite baseball team is the New York Yankees?"
-  string trivia_question = 1;
+  string trivia_question = 4;
 }
 ```
 
@@ -220,4 +220,4 @@ Running the code again, the JSON output includes trivia questions that we could 
 }
 ```
 
-The final result is structure that can be used by a production system combined with generative capabilities and natural language understanding.
+The final result is a structure that can be used by a production system combined with generative capabilities and natural language understanding.

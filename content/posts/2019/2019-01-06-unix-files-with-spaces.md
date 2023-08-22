@@ -1,7 +1,7 @@
 ---
 categories: code
 date: "2019-01-06T00:00:00Z"
-title: Go and Unix files
+title: Go and UNIX files
 aliases:
     - /code/2019/01/06/unix-files-with-spaces.html
 tags:
@@ -10,11 +10,11 @@ tags:
     - go
 ---
 
-I ran into an odd Unix filename issue while writing Go code the other day.
+I ran into an odd UNIX filename issue while writing Go code the other day.
 
 Here's a simplified example:
 
-Let's read a json file and unmarshall its contents into a struct in go. First, let's set an environment variable with our file name to avoid hardcoded constants in our program.
+Let's read a JSON file and unmarshal its contents into a `struct` in go. First, let's set an environment variable with our file name to avoid hardcoded constants in our program.
 
 ```sh
 export MY_FILE="/Users/dancorin/Desktop/test.json "
@@ -89,7 +89,7 @@ I can see the file contents too.
 {"test": "stuff"}
 ```
 
-And I am using the proper path. Let's check that Go is trying to read the correct file path.
+I am using the proper path. Let's check that Go is trying to read the correct file path.
 
 {{< highlight go >}}
 package main
@@ -101,7 +101,7 @@ import (
     "os"
 )
 
-// Stuff struct holds the json contents
+// Stuff struct holds the JSON contents
 type Stuff struct {
     Test string `json:"test"`
 }
@@ -132,9 +132,9 @@ main.main()
 exit status 2
 ```
 
-The value of the environment variable appears to be correct.
+The value of the environment variable seems to be correct.
 
-Let see if we can find any weird characters hiding in the string:
+Let's see if we can find any weird characters hiding in the string:
 
 {{< highlight go >}}
 package main
@@ -146,7 +146,7 @@ import (
     "os"
 )
 
-// Stuff struct holds the json contents
+// Stuff struct holds the JSON contents
 type Stuff struct {
     Test string `json:"test"`
 }
@@ -175,27 +175,27 @@ main.main()
 exit status 2
 ```
 
-Looks like there is an expected space showing up in ` >/Users/dancorin/Desktop/test.json <`. Where is it coming from?
+It looks like there is an unexpected space showing up in ` >/Users/dancorin/Desktop/test.json <`. Where is this coming from?
 
-Back when we set our environment variable it looks like we accidentally added a trailing space.
+When we set our environment variable, it seems like we accidentally added a trailing space.
 
 ```sh
 export MY_FILE="/Users/dancorin/Desktop/test.json "
 ```
 
-Go tries to tell us this:
+Go is trying to tell us this:
 
 ```sh
 panic: open /Users/dancorin/Desktop/test.json : no such file or directory
 ```
 
-It's just not _that_ obvious that there is a space in there. Something like the follow could have helped:
+It's just not _that_ obvious that there is a space in there. Something like the following could have helped:
 
 ```sh
 panic: open "/Users/dancorin/Desktop/test.json ": no such file or directory
 ```
 
-Unix makes this issue a little nastier because it has no problem allowing you to create file names with trailing spaces. We can fix our issue by running:
+UNIX makes this issue a little more confusing because it has no problem allowing you to create filenames with trailing spaces. We can resolve our issue by running
 
 ```sh
 ❯ cp test.json "test.json "
@@ -205,10 +205,10 @@ Unix makes this issue a little nastier because it has no problem allowing you to
 {Test:stuff}
 ```
 
-Or, more correctly, by fixing our `export` command"
+Or, better yet, we can fix our `export` command:
 
 ```sh
 export MY_FILE="/Users/dancorin/Desktop/test.json"
 ```
 
-Hope you never run into this one!
+I hope you never run into this one!

@@ -129,9 +129,9 @@ The result:
 ```
 
 The code is clean and the result is good quality.
-The abstraction allows me to avoid dealing with code that calls the language model almost entirely.
+The abstraction allows me to almost entirely avoid dealing with code that calls the language model.
 I get to think in data structures and code and the language model's response is woven into the software using the primitives I define.
-The response isn't exactly how I want it though.
+However, the response isn't exactly how I want it.
 I don't like that additional suffixes are being included in some of the `unit`.
 For example, `"unit": "cup unsalted"`.
 The following modification to the `Ingredient` class helps improve this
@@ -285,6 +285,6 @@ class Ingredient(BaseModel):
     )
 ```
 
-While slower and more expensive, `gpt-4` still _does not_ do what I want.
-This small issue isn't difficult to correct in code, but it provides a bit of signal into how go the model is at following instructions with this approach to prompting, which is a function of both the model and the prompt itself.
+`Gpt-4` is slower and more expensive and still does not do what I want.
+This small issue isn't difficult to correct in code, but it provides a bit of signal into how well the model follows instructions with this approach to prompting, which is a function of both the model and the prompt itself.
 

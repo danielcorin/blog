@@ -10,7 +10,7 @@ tags:
 
 [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT) is a popular project on Github that attempts to build an autonomous agent on top of an LLM.
 This is not my first time using Auto-GPT.
-I used it shortly after it was release and gave it a second try a week or two later, which makes this my third, zero-to-running effort.
+I used it shortly after it was released and gave it a second try a week or two later, which makes this my third, zero-to-running effort.
 
 I installed it
 
@@ -56,13 +56,13 @@ The first loop of the agent yielded the following:
 >
 > NEXT ACTION:  COMMAND = google ARGUMENTS = {'input': 'current state of the financial market'}
 
-I let the agent do it's thing and next it wanted to analyze of the information in the results.
+I let the agent do its thing and next it wanted to analyze of the information in the results.
 It next wanted to search for "best performing stocks and ETFs in the current market".
 Once it did that, it downloaded the results of a Forbes article.
-Unfortunately, that pretty much the end of this test as it continuously tried to download the same Forbes article, even when I prompted after several failed attempts to "find some mutual funds that might be worth purchasing".
+Unfortunately, that was pretty much the end of this test as it continuously tried to download the same Forbes article, even when I prompted after several failed attempts to "find some mutual funds that might be worth purchasing".
 
 So, I started over, this time with the intent of being much more specific and intervening when things weren't going well.
-If felt like I wasn't making much progress on the previous run.
+It felt like I wasn't making much progress on the previous run.
 I ran the script again with the same goals.
 This time it struggled to make a decision on what to do next.
 
@@ -119,7 +119,7 @@ Let's give it another shot with a completely different type of task.
 >
 > Goal 2: Decide on 2 main courses
 >
-> Goal 3: Decide of 2 desserts
+> Goal 3: Decide on 2 desserts
 >
 > Goal 4: Make a grocery list with all needed ingredients
 >
@@ -164,7 +164,7 @@ I'm not sure if the Food Network reorganized their site or if the model hallucin
 
 ## Takeaways
 
-Right now, Auto-GPT is a cool toy and gives glimpses of what agents might look like when have improved models or design them with different architectures.
+Right now, Auto-GPT is a cool toy and gives glimpses of what agents might look like when we have improved models or design them with different architectures.
 However, it's difficult to operate and at present, I'm not aware of strategies that can be used to debug it beyond trying new prompts and providing additional feedback.
 Maybe I've missed important steps, but this experience has been similar to my previous two in that that agent can do a lot of activities but presently, it seems it can't really accomplish much.
 I will be sticking with using LMs as a tool in my own workflows rather than become a tool in it's for now.

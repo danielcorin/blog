@@ -42,7 +42,7 @@ import sys
 
 PROMPT = """
 You are a unix terminal assistant.
-The user will prompt you will something they need to do in the terminal on macOS.
+The user will prompt you with something they need to do in the terminal on macOS.
 You will respond with ONLY a command to accomplish the stated goal.
 
 What I need to do: {command}
@@ -72,9 +72,9 @@ This approach serves most of my use cases.
 A more generic tool like [`chatblade`](https://github.com/npiv/chatblade) or [`llm`](https://github.com/simonw/llm) may better serve a research use case, or provide a description of what the command will do.
 In this context, I'm not really interested in that.
 I just need to do the **thing** and often the **thing** is similar to something I've done before, but can't quite conjure from my own memory.
-This approach prompts the language model to conjure it for me.
+This approach prompts the language model to conjure the command for me.
 
-To really integrate the use case into my workflow, I just need a way to quickly execute the command if it looks good. We can do this by prompting the user to enter `y` if they want to proceed and prompt and capture that with `input` in the code.
+To really integrate the use case into my workflow, I just need a way to quickly execute the command if it looks acceptable. We can do this by prompting the user to enter `y` if they want to proceed and prompt and capture that with `input` in the code.
 
 ```python
 import openai
@@ -142,8 +142,7 @@ You can find the code and rough installation instructions [on Github](https://gi
 ## Wrapping up
 
 There are so many ways one can extend this idea and I'm tempted to add more capabilities, but in the spirit of doing one thing well, I'll stop here.
-I hope you find this useful and that it inspires you to write some of your own tools with language models.
 
 [^1]: The command was different on my second run of the program.
-These minor variations happen all the time with language models.
+These minor variations frequently occur with language models.
 You can reduce the [`temperature`](https://platform.openai.com/docs/api-reference/chat/create#chat/create-temperature) to get less variance in the results.
