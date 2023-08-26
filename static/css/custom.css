@@ -53,10 +53,12 @@
 .tags {
   padding-left: 0em;
 }
+
 .tags span {
   display: inline;
   text-decoration: none;
 }
+
 .tags span a {
   color: var(--tag-text-color);
   display: inline-block;
