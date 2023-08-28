@@ -9,7 +9,7 @@ tags:
 - macos
 ---
 
-I want to stop the Obsidian editor cursor from blinking.
+I wanted to stop the Obsidian editor cursor from blinking.
 Something like VS Code's
 
 ```json 
