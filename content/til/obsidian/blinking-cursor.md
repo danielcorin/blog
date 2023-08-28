@@ -18,8 +18,8 @@ Something like VS Code's
 }
 ```
 
-Some searching turned up [an option](https://forum.obsidian.md/t/allow-stopping-the-cursor-from-blinking/39819) for solve this problem in Vim mode using CSS, but in insert mode, the cursor still blinks.
-Eventually, I came across a macOS based approach to solve this issue on [StackExchange](https://superuser.com/a/1444563), included here for convenience
+Some searching turned up [an option](https://forum.obsidian.md/t/allow-stopping-the-cursor-from-blinking/39819) to solve this problem in Vim mode using CSS, but in insert mode, the cursor still blinks.
+Eventually, I came across a macOS-based approach to solve this issue on [StackExchange](https://superuser.com/a/1444563), included here for convenience
 
 ```text
 defaults write -g NSTextInsertionPointBlinkPeriod -float 10000
