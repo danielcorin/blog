@@ -1,9 +1,8 @@
 ---
 date: "2023-06-02T18:45:00Z"
-title: "2023-06-02"
+title: "Trying out Jsonformer"
 tags:
 - jsonformer
-- til
 - language_models
 - structured_data
 ---

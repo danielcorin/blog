@@ -4,7 +4,6 @@ date: "2023-08-26T19:23:00Z"
 description: "A post about disabling the blinking cursor in Obsidian"
 draft: false
 tags:
-- til
 - obsidian
 - macos
 ---
