@@ -57,5 +57,5 @@ I tried a few different variants of waiting for the page to load, but eventually
 })();
 ```
 
-It's a while since I've written JavaScript that needs to be supported by the browser natively without a transpiler, so this doesn't look so fun, but it gets the job done.
+It's been a while since I've written JavaScript that needs to be supported by the browser natively without a transpiler, so this doesn't look so fun, but it gets the job done.
 I had to play with increasing the `setTimeout` delay, since the target site was doing some kind of bizarre redirect (or maybe was just loading that slowly).
