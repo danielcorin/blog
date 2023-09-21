@@ -1,13 +1,14 @@
 ---
-categories: code
-date: "2016-07-16T17:28:00Z"
-title: Custom Markdown rendering
 aliases:
-    - /code/2016/07/16/custom-marked.html
+- /code/2016/07/16/custom-marked.html
+- /posts/2016-07-16-custom-marked
+categories: code
+date: '2016-07-16T17:28:00Z'
 tags:
-    - code
-    - javascript
-    - markdown
+- code
+- javascript
+- markdown
+title: Custom Markdown rendering
 ---
 
 Markdown is useful tool -- these blog posts are written in it. I like Markdown because once you learn it, it feels invisible. It is minimal and intuitive. However, sometimes you need it to do things a little differently.
@@ -43,4 +44,3 @@ var htmlContent = marked(myContent, {
 {{< / highlight >}}
 
 This solutions fits my needs. I can use the modified renderer on the pieces of content that need the additional attribute without breaking any of my other markdown. Best of all, I don't need any clever hacking to add the attribute to the links.
-

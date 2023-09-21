@@ -53,3 +53,5 @@ Temporary Items
 
 .hugo_build.lock
 .vscode
+
+env

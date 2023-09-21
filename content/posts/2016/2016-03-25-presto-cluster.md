@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2016-03-25T17:19:00Z"
-title: Creating a Presto Cluster
 aliases:
-    - /code/2016/03/25/presto-cluster.html
+- /code/2016/03/25/presto-cluster.html
+- /posts/2016-03-25-presto-cluster
+categories: code
+date: '2016-03-25T17:19:00Z'
 tags:
-    - code
-    - presto
+- code
+- presto
+title: Creating a Presto Cluster
 ---
 
 Creating a Presto Cluster

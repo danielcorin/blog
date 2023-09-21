@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2015-09-06T19:08:00Z"
-title: Elixir binary search
 aliases:
-    - /code/2015/09/06/elixir-binary-search.html
+- /code/2015/09/06/elixir-binary-search.html
+- /posts/2015-09-06-elixir-binary-search
+categories: code
+date: '2015-09-06T19:08:00Z'
 tags:
-    - code
-    - elixir
+- code
+- elixir
+title: Elixir binary search
 ---
 
 A few days ago, I saw a Guess my word game on the front page of Hacker News. Before spoiling the fun for myself by checking out the comments, I decided to try my hand at writing a solution in Elixir. Afterwards, I generalized the code to choose its own word from the UNIX dictionary and then "guess" it, applying a binary search based on the feedback of whether each guess was alphabetically greater or less than the word itself.
@@ -60,5 +61,3 @@ the fact the our algorithm took 14 steps to "guess" the word is plausible given
 O(log₂(235886)) ≈ O(17.85)
 
 which is the number of steps we would expect it to take to guess our word.
-
-

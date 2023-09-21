@@ -1,13 +1,14 @@
 ---
-categories: code
-date: "2016-04-11T17:19:00Z"
-title: Querying S3 with Presto
 aliases:
-    - /code/2016/04/11/querying-s3-with-presto.html
+- /code/2016/04/11/querying-s3-with-presto.html
+- /posts/2016-04-11-querying-s3-with-presto
+categories: code
+date: '2016-04-11T17:19:00Z'
 tags:
-    - code
-    - presto
-    - s3
+- code
+- presto
+- s3
+title: Querying S3 with Presto
 ---
 
 Querying S3 with Presto

@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2015-10-13T07:26:00Z"
-title: Python Fabric
 aliases:
-    - /code/2015/10/13/python-fabric.html
+- /code/2015/10/13/python-fabric.html
+- /posts/2015-10-13-python-fabric
+categories: code
+date: '2015-10-13T07:26:00Z'
 tags:
-    - code
-    - python
+- code
+- python
+title: Python Fabric
 ---
 
 To help facilitate my blogging workflow, I wanted to go from written to published post quickly. My general workflow for writing a post for [this blog][MyBlog] looks like this:

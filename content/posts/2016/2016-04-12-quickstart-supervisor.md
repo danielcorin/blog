@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2016-04-12T12:15:00Z"
-title: Quickstart `supervisor` guide
 aliases:
-    - /code/2016/04/14/quickstart-supervisor.html
+- /code/2016/04/14/quickstart-supervisor.html
+- /posts/2016-04-12-quickstart-supervisor
+categories: code
+date: '2016-04-12T12:15:00Z'
 tags:
-    - code
-    - supervisor
+- code
+- supervisor
+title: Quickstart `supervisor` guide
 ---
 
 Quickstart `supervisor` guide

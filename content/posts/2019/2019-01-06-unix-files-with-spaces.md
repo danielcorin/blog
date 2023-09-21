@@ -1,13 +1,14 @@
 ---
-categories: code
-date: "2019-01-06T00:00:00Z"
-title: Go and UNIX files
 aliases:
-    - /code/2019/01/06/unix-files-with-spaces.html
+- /code/2019/01/06/unix-files-with-spaces.html
+- /posts/2019-01-06-unix-files-with-spaces
+categories: code
+date: '2019-01-06T00:00:00Z'
 tags:
-    - code
-    - unix
-    - go
+- code
+- unix
+- go
+title: Go and UNIX files
 ---
 
 I ran into an odd UNIX filename issue while writing Go code the other day.

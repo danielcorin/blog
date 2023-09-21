@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2015-11-09T17:31:00Z"
-title: Git aliases
 aliases:
-    - /code/2015/11/09/git-aliases.html
+- /code/2015/11/09/git-aliases.html
+- /posts/2015-11-09-git-aliases
+categories: code
+date: '2015-11-09T17:31:00Z'
 tags:
-    - code
-    - git
+- code
+- git
+title: Git aliases
 ---
 
 Here's a quick post for managing your `git` shortcuts. If you use `git` regularly, you should have a `.gitconfig` file in your home directory that looks something like this:

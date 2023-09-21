@@ -1,13 +1,14 @@
 ---
-categories: code
-date: "2018-07-23T20:10:00Z"
-title: Debugging go code with delve
 aliases:
-    - /code/2018/07/23/go-debugging-with-delve.html
+- /code/2018/07/23/go-debugging-with-delve.html
+- /posts/2018-07-23-go-debugging-with-delve
+categories: code
+date: '2018-07-23T20:10:00Z'
 tags:
-    - code
-    - go
-    - delve
+- code
+- go
+- delve
+title: Debugging go code with delve
 ---
 
 > [Delve](https://github.com/derekparker/delve) is a debugger for the Go programming language. The goal of the project is to provide a simple, full featured debugging tool for Go.

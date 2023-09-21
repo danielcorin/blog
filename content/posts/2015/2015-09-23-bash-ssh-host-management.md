@@ -1,13 +1,14 @@
 ---
-categories: code
-date: "2015-09-23T18:03:00Z"
-title: Bash SSH host management
 aliases:
-    - /code/2015/09/23/bash-ssh-host-management.html
+- /code/2015/09/23/bash-ssh-host-management.html
+- /posts/2015-09-23-bash-ssh-host-management
+categories: code
+date: '2015-09-23T18:03:00Z'
 tags:
-    - code
-    - ssh
-    - awk
+- code
+- ssh
+- awk
+title: Bash SSH host management
 ---
 
 If you have a lot of servers to which you frequently connect, keeping track of IP addresses, pem files, and credentials can be tedious. SSH `config` files are great for this problem, but they don't play well with bash. I wanted to store all of my hosts' info in a `config` file but still have access to the `HostName`s since sometimes I just need the IP address of a server to use elsewhere.

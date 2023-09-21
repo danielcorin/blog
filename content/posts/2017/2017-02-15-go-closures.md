@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2017-02-15T21:00:00Z"
-title: Go closures
 aliases:
-    - /code/2016/07/16/custom-marked.html
+- /code/2016/07/16/custom-marked.html
+- /posts/2017-02-15-go-closures
+categories: code
+date: '2017-02-15T21:00:00Z'
 tags:
-    - code
-    - go
+- code
+- go
+title: Go closures
 ---
 
 Say we need a map to store various versions of a configuration in Go. Here is a simple example of the structure:
@@ -133,4 +134,3 @@ Output:
 ```
 
 Using the closure allows us to bind the loop variable to the function that we assign to the `functions` map, and we get our desired result.
-

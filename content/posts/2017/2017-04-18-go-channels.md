@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2017-04-18T21:30:00Z"
-title: Go channels
 aliases:
-    - /code/2017/04/18/go-channels.html
+- /code/2017/04/18/go-channels.html
+- /posts/2017-04-18-go-channels
+categories: code
+date: '2017-04-18T21:30:00Z'
 tags:
-    - code
-    - go
+- code
+- go
+title: Go channels
 ---
 
 Go uses goroutines to execute multiple bits of code at the same time. Channels allow for the aggregation of the results of these concurrent calls after they have finished.

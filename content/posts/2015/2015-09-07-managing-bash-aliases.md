@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2015-09-07T21:05:00Z"
-title: Managing bash aliases
 aliases:
-    - /code/2015/09/07/managing-bash-aliases.html
+- /code/2015/09/07/managing-bash-aliases.html
+- /posts/2015-09-07-managing-bash-aliases
+categories: code
+date: '2015-09-07T21:05:00Z'
 tags:
-    - code
-    - bash
+- code
+- bash
+title: Managing bash aliases
 ---
 
 Bash aliases are great. Whether you use them to quickly connect to servers or just soup up the standard bash commands, they are a useful tool for eliminating repetitive tasks. I'm always adding new ones to optimize my workflow which, of course, lead to me create aliases to optimize _that_ workflow. While there are more complete CLI alternatives for alias management like [aka][AKA], I prefer two simple commands for managing my aliases, which I keep in `~/.bash_aliases`.

@@ -1,14 +1,14 @@
 ---
-categories: code
-date: "2016-01-28T07:23:00Z"
-title: Creating an Elixir module
 aliases:
-    - /code/2016/01/28/first-elixir-module.html
+- /code/2016/01/28/first-elixir-module.html
+- /posts/2016-01-28-first-elixir-module
+categories: code
+date: '2016-01-28T07:23:00Z'
 tags:
-    - code
-    - elixir
+- code
+- elixir
+title: Creating an Elixir module
 ---
-
 
 Creating an Elixir module
 =========================

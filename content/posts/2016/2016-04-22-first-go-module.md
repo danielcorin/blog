@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2016-04-22T09:40:00Z"
-title: Creating a Go module
 aliases:
-    - /code/2016/04/22/first-go-module.html
+- /code/2016/04/22/first-go-module.html
+- /posts/2016-04-22-first-go-module
+categories: code
+date: '2016-04-22T09:40:00Z'
 tags:
-    - code
-    - go
+- code
+- go
+title: Creating a Go module
 ---
 
 Creating a Go module
@@ -176,4 +177,3 @@ $ ./slack -message 'hello world!' -channel @slackbot
 That's it!
 
 Thanks to [Hans Li](https://www.linkedin.com/in/haanns) for the help with testing!
-

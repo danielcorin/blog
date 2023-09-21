@@ -1,12 +1,13 @@
 ---
-categories: code
-date: "2018-04-06T21:00:00Z"
-title: Tracking a call stack in Go with context
 aliases:
-    - /code/2018/04/06/go-context.html
+- /code/2018/04/06/go-context.html
+- /posts/2018-04-06-go-context
+categories: code
+date: '2018-04-06T21:00:00Z'
 tags:
-    - code
-    - go
+- code
+- go
+title: Tracking a call stack in Go with context
 ---
 
 The use of `context` in Go can help you pass metadata through your program with helpful, related information about a call.
