@@ -23,7 +23,7 @@ file_content = f"""---
 date: "{formatted_date}"
 title: "{formatted_title}"
 description:
-draft: true
+draft: false
 tags:
 ---
 
