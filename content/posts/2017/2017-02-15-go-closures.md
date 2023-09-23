@@ -1,6 +1,6 @@
 ---
 aliases:
-- /code/2016/07/16/custom-marked.html
+- /code/2017/02/15/go-closures.html
 - /posts/2017-02-15-go-closures
 categories: code
 date: '2017-02-15T21:00:00Z'

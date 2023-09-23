@@ -12,7 +12,67 @@ title: Elixir binary search
 
 A few days ago, I saw a Guess my word game on the front page of Hacker News. Before spoiling the fun for myself by checking out the comments, I decided to try my hand at writing a solution in Elixir. Afterwards, I generalized the code to choose its own word from the UNIX dictionary and then "guess" it, applying a binary search based on the feedback of whether each guess was alphabetically greater or less than the word itself.
 
-{{< gist danielcorin ab458ec544178fb86076 >}}
+```elixir
+defmodule Words do
+  @doc """
+  Module for read a list of words from a text file.
+  Contains functions for `split`ting the list and `find`ing a word
+  """
+  def read(filename) do
+    filename
+    |> File.read!()
+    |> String.split()
+  end
+
+  def split(list) do
+    mid = div(length(list), 2)
+    Enum.split(list, mid)
+  end
+
+  def find(word, words) do
+    {first_half, second_half} = split(words)
+    
+    guess = (List.last(first_half) || List.first(second_half))
+    |> String.downcase
+
+    cond do
+      word < guess ->
+        IO.puts("Less than: #{guess}")
+        find(word, first_half)
+      word > guess ->
+        IO.puts("Greater than: #{guess}")
+        find(word, second_half)
+      :else ->
+        IO.puts("Found word: #{guess}")
+        word
+    end
+  end
+end
+
+defmodule Random do
+  @doc """
+  Module for choosing a psudo-random element from a list
+  """
+  def init do
+    :random.seed(:os.timestamp)
+  end 
+  def random_element(list) do
+    Enum.at(list, :random.uniform(length(list)) - 1)
+  end
+end
+
+# Entry point
+
+# Set the random seed
+Random.init
+# Choose a random word
+word = Random.random_element(words)
+# Read the UNIX words dictionary
+words = Words.read("/usr/share/dict/words")
+IO.puts("Word is: #{word}")
+# Perform the binary search to "guess" the word
+Words.find(word, words)
+```
 
 Example output:
 

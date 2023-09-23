@@ -10,9 +10,6 @@ tags:
 title: Quickstart `supervisor` guide
 ---
 
-Quickstart `supervisor` guide
-=============================
-
 `supervisor` is a UNIX utility to managing and respawning long running Python processes to ensure they are always running. Or according to its website:
 
 > Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems.
