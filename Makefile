@@ -16,3 +16,7 @@ serve run:
 log:
 	@python scripts/log.py
 
+.PHONY: til
+til:
+	@python scripts/til.py $(MAKECMDGOALS)
+
