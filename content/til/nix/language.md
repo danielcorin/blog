@@ -35,7 +35,7 @@ The `with` statement introduces values the scope of the expression so, you don't
 
 ```nix
 let
-  set = { a = 4; b = b; };
+  set = { a = 4; b = 10; };
 in
   with set; "The values are ${toString a} and ${toString b}"
 ```
