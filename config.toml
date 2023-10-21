@@ -30,6 +30,7 @@ menu = [
 ]
 
 # Links to your socials.
+email_url = "mailto://dcorin6@gmail.com"
 twitter_url = "https://twitter.com/danielcorin1"
 github_url = "https://github.com/danielcorin"
 keybase_url = "https://keybase.io/danielcorin/"

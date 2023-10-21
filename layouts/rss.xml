@@ -19,7 +19,7 @@
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
     <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}
-    <managingEditor>{{ with $.Site.Author.name }}{{.}}{{end}}</managingEditor>{{ with .Site.Author.email }}
+    <managingEditor>{{ with $.Site.Author.name }}{{.}}{{end}}</managingEditor>{{ with .Site.Author.name }}
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" -}}
