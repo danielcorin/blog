@@ -1,14 +1,34 @@
-<script defer language="javascript" type="text/javascript" src="{{ "js/light_dark.js" | absURL }}"></script>
-<script defer language="javascript" type="text/javascript" src="{{ "js/tabs.js" | absURL }}"></script>
+{{/* Personal/custom script for light/dark mode and tabs */}}
+{{ $js := slice
+      (resources.Get "js/light_dark.js")
+      (resources.Get "js/tabs.js") }}
 
-<!-- The loading of KaTeX is deferred to speed up page rendering -->
-<script defer language="javascript" type="text/javascript" src="{{ "js/katex.min.js" | absURL }}"></script>
+{{/* Locally hosted code for KaTeX */}}
+{{ $js = $js | append
+      (resources.Get "js/lib/katex.js")
+      (resources.Get "js/lib/auto-render.js") }}
 
-<!-- To automatically render math in text elements, include the auto-render extension: -->
-<script defer language="javascript" type="text/javascript" src="{{ "js/auto-render.min.js" | absURL }}"></script>
+{{/* Personal/custom scripts for KaTeX */}}
+{{ $js = $js | append (resources.Get "js/katex.js") }}
 
-<!-- Personal/custom script to use KaTeX -->
-<script defer language="javascript" type="text/javascript" src="{{ "js/katex.js" | absURL }}"></script>
-<script defer language="javascript" type="text/javascript" src="{{ "js/toc.js" | absURL }}"></script>
+{{/* Personal/custom scripts for table of contents */}}
+{{ if not .Site.Params.hideToc }}
+    {{ $js = $js | append (resources.Get "js/toc.js") }}
+{{ end }}
 
+{{/* Personal/custom scripts for codeblocks */}}
+{{ $js = $js | append (resources.Get "js/codeblock.js") }}
+
+{{ $js_bundle := $js | resources.Concat "js/bundle.js" | minify | fingerprint }}
+
+<script defer language="javascript" type="text/javascript" src="{{ $js_bundle.RelPermalink }}"></script>
+
+
+{{ if .Site.Params.plausible }}
+<script defer data-domain="{{ .Site.Params.plausible_domain }}" src="{{ .Site.Params.plausible_script }}"></script>
+{{ end }}
+
+{{ if hugo.IsProduction -}}
+  {{ template "_internal/google_analytics.html" . -}}
+{{ end -}}
 <script defer language="javascript" type="text/javascript" src="{{ "js/posthog.js" | absURL }}"></script>
