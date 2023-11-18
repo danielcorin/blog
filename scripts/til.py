@@ -22,7 +22,6 @@ file_content = generate(formatted_title)
 
 if os.path.isfile(file_path):
     print(f"File already exists at {file_path}")
-    subprocess.call(['open', file_path])
     sys.exit(1)
 
 # Create the file
@@ -30,4 +29,3 @@ with open(file_path, "w") as file:
     file.write(file_content)
 
 print(f"File created successfully at {file_path}")
-subprocess.call(['open', file_path])

@@ -18,5 +18,5 @@ log:
 
 .PHONY: til
 til:
-	@python scripts/til.py $(MAKECMDGOALS)
+	@python scripts/til.py $(p)
 
