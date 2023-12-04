@@ -20,3 +20,6 @@ log:
 til:
 	@python scripts/til.py $(p)
 
+.PHONY: sync
+sync:
+	@unison content "/Users/danielcorin/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian/personal/writing/blog" -batch -auto -prefer newer
