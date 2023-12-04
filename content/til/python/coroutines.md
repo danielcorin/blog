@@ -166,7 +166,6 @@ if __name__ == "__main__":
 
 This outputs something like
 
-
 ```text
 start completion
 start completion
