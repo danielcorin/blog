@@ -23,7 +23,7 @@ export MY_FILE="/Users/dancorin/Desktop/test.json "
 
 Now, let's read the file into our struct:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -48,7 +48,7 @@ func main() {
     json.Unmarshal(data, &stuff)
     fmt.Printf("%+v\n", stuff)
 }
-{{< / highlight >}}
+```
 
 ```sh
 ❯ go run program.go
@@ -92,7 +92,7 @@ I can see the file contents too.
 
 I am using the proper path. Let's check that Go is trying to read the correct file path.
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -118,7 +118,7 @@ func main() {
     json.Unmarshal(data, &stuff)
     fmt.Printf("%+v\n", stuff)
 }
-{{< / highlight >}}
+```
 
 Running the code:
 
@@ -137,7 +137,7 @@ The value of the environment variable seems to be correct.
 
 Let's see if we can find any weird characters hiding in the string:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -163,7 +163,7 @@ func main() {
     json.Unmarshal(data, &stuff)
     fmt.Printf("%+v\n", stuff)
 }
-{{< / highlight >}}
+```
 
 ```sh
 ❯ go run program.go

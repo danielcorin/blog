@@ -17,15 +17,15 @@ If we run our go service using a `Makefile`, with a command like `make run`, it 
 
 Now, in one window run:
 
-{{< highlight sh >}}
+```sh
 make run
-{{< / highlight >}}
+```
 
 In another, run:
 
-{{< highlight sh >}}
+```sh
 dlv attach $(ps aux | grep mygoproj | grep -v "grep" | awk '{ print $2 }')
-{{< / highlight >}}
+```
 
 `mygoproj` is the name of our service. The above command grabs our process id and hooks the delve debugger up to it.
 
@@ -33,24 +33,24 @@ Now that we're in the debugger, type `c` for `continue`. If your breakpoint is i
 
 Consider the following code:
 
-{{< highlight go >}}
+```go
 func (h *handler) Hello(ctx context.Context, request *mygoprojgen.HelloRequest) (*mygoprojgen.HelloResponse, error) {
     requestEnt := mappergen.HelloRequestFromThrift(*request)
     message := fmt.Sprintf("Hello, %v!", requestEnt.Name)
     runtime.Breakpoint()
     return &mygoprojgen.HelloResponse{Message: &message}, nil
 }
-{{< / highlight >}}
+```
 
 We trigger the codepath with [yab](https://github.com/yarpc/yab):
 
-{{< highlight sh >}}
+```sh
 yab -y idl/mygoproj/yabs/Debug--hello.yab
-{{< / highlight >}}
+```
 
 Delve drops us into the code at the breakpoint:
 
-{{< highlight sh >}}
+```sh
 (dlv) c
 > mygoproj/handler/debug.(*handler).Hello() ./.tmp/.goroot/src/mygoproj/handler/debug/debug.go:44 (PC: 0x20518f0)
 Warning: debugging optimized function
@@ -66,11 +66,11 @@ Warning: debugging optimized function
     48:     secret, err := h.secretClient.Read(ctx, "/mygoproj/test_secret")
     49:     if err == nil {
 (dlv)
-{{< / highlight >}}
+```
 
 We can now explore what's going on in the program. Typing `help` will show everything delve can do. I use `args` and `locals` to see the variables that exist within the function containing the breakpoint:
 
-{{< highlight sh >}}
+```sh
 (dlv) args
 ctx = context.Context(*context.valueCtx) 0xc420b8cc18
 h = (*mygoproj/handler/debug.handler)(0xc4206ebbf0)
@@ -81,29 +81,29 @@ request = (*mygoproj/.gen/go/growth/mygoproj/mygoproj.HelloRequest)(0xc4204bc0c8
 message = "Hello, John Doe!"
 requestEnt = mygoproj/entity.HelloRequest {Name: "John Doe"}
 (dlv)
-{{< / highlight >}}
+```
 
 If we want to see the value of a variable we can `print` it (`p` for short):
 
-{{< highlight sh >}}
+```sh
 (dlv) p requestEnt
 mygoproj/entity.HelloRequest {
     Name: "John Doe",}
-{{< / highlight >}}
+```
 
 We can also drill down into structs using dotted paths:
 
-{{< highlight sh >}}
+```sh
 (dlv) p requestEnt.Name
 "John Doe"
-{{< / highlight >}}
+```
 
 We can even cast values:
 
-{{< highlight sh >}}
+```sh
 (dlv) p []byte(requestEnt.Name)
 []uint8 len: 8, cap: 8, [74,111,104,110,32,68,111,101]
-{{< / highlight >}}
+```
 
 To allow the program to continue, type  `c` or `continue` again. To exit the debugger, type `exit` or `Ctrl-d`.
 

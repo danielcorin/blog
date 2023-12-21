@@ -14,7 +14,7 @@ The use of `context` in Go can help you pass metadata through your program with 
 Let's build an example where we set a context key, "stack", which keeps a history of the function names called over the lifetime of the context.
 As we pass the context object through a few layers of functions, we'll append the name of the function to the value of the context key `"stack"`.
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -57,16 +57,16 @@ func buildStackContext(ctx context.Context, name string) context.Context {
     )
 }
 
-{{< / highlight >}}
+```
 <https://play.golang.org/p/Q-2AmWQ-bf6>
 
 In the code above, we initialize an empty context in our `main` function, then pass it down into some methods: `Handler`, `Service` and `Gateway` respectively.
 In `Gateway`, we print the final value of the `"stack"` key on the context object, which is `Handler:Service:Gateway`.
 You'll notice we've had to hardcode the names of the functions ourselves which are appended to the `"stack"` context variable when we explicitly pass them into `buildStackContext`.
 However, we can improve this.
-By inspecting the Go runtime, we can programmatically look up the name of the function that calls `buildStackContext` and append that to the `"stack"` variable in the context: 
+By inspecting the Go runtime, we can programmatically look up the name of the function that calls `buildStackContext` and append that to the `"stack"` variable in the context:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -111,7 +111,7 @@ func buildStackContext(ctx context.Context) context.Context {
         split := strings.Split(name, ".")
         name = split[len(split)-1]
     }
-    
+
     // check if "stack" is initialized on the context
     value, ok := ctx.Value("stack").(string)
     if !ok {
@@ -125,13 +125,13 @@ func buildStackContext(ctx context.Context) context.Context {
     )
 }
 
-{{< / highlight >}}
+```
 <https://play.golang.org/p/AXOPYBr5SKF>
 
 
 The above code yields the same output, `Handler:Service:Gateway`, but it allows us to arbitrarily add more function calls or change function names and still get the expected stack of function calls:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -194,7 +194,7 @@ func buildStackContext(ctx context.Context) context.Context {
     )
 }
 
-{{< / highlight >}}
+```
 <https://play.golang.org/p/Eb8eZ5AfWke>
 
 The above prints: `Consumer:Service:Gateway:Client`.

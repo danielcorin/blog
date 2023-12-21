@@ -34,7 +34,7 @@ You can add an `alias` section like so:
 
 These aliases can be used like so:
 
-{{< highlight sh >}}
+```sh
 
 $ git ls
 60f0afb working end to end with the creation of a new shard including shard splitting
@@ -46,6 +46,6 @@ $ git uom
 Branch master set up to track remote branch master from origin.
 Everything up-to-date
 
-{{< / highlight >}}
+```
 
 Until next time.

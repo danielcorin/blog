@@ -55,7 +55,7 @@ Using the builtin Go command line parser [`flag`](https://golang.org/pkg/flag/),
 
 `slack/main.go`
 
-{{< highlight go >}}
+```go
 
 package main
 
@@ -71,7 +71,7 @@ func main() {
     api.SendMsg(*msg, *channel)
 }
 
-{{< / highlight >}}
+```
 
 This sets us up with a CLI parser which will take our provided arguments and pass them to the `SendMsg` function, which we will define now.
 
@@ -79,7 +79,7 @@ Make sure you have set the environment variable `SLACK_TOKEN` with your token.
 
 `slack/api/slack.go`
 
-{{< highlight go >}}
+```go
 
 package api
 
@@ -145,7 +145,7 @@ func getToken() string {
     return token
 }
 
-{{< / highlight >}}
+```
 
 With these two files written, we can go the to `slack` folder and test the program:
 

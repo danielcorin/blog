@@ -31,7 +31,7 @@ defmodule Words do
 
   def find(word, words) do
     {first_half, second_half} = split(words)
-    
+
     guess = (List.last(first_half) || List.first(second_half))
     |> String.downcase
 
@@ -55,7 +55,7 @@ defmodule Random do
   """
   def init do
     :random.seed(:os.timestamp)
-  end 
+  end
   def random_element(list) do
     Enum.at(list, :random.uniform(length(list)) - 1)
   end
@@ -76,9 +76,9 @@ Words.find(word, words)
 
 Example output:
 
-{{< highlight sh >}}
+```sh
 
-$ iex words.exs 
+$ iex words.exs
 
 Word is: barruly
 Less than: modificatory
@@ -96,25 +96,25 @@ Less than: bartholomew
 Greater than: barrio
 Found word: barruly
 
-{{< / highlight >}}
+```
 
 Something I encountered worth mentioning is how Elixir compares strings that have different capitalization. Capital letters are "less than" their lower case versions:
 
-{{< highlight elixir >}}
+```elixir
 
 iex> "B" < "b"
 true
 
-{{< / highlight >}}
+```
 
 Knowing this, we use `String.downcase` in our implementation to avoid comparison issues in the binary search. Binary search has a time complexity of log₂(N).
 
 Given that the UNIX dictionary has 235,886 words
 
-{{< highlight sh >}}
+```sh
 $ cat /usr/share/dict/words | wc -l
 235886
-{{< / highlight >}}
+```
 
 the fact the our algorithm took 14 steps to "guess" the word is plausible given
 

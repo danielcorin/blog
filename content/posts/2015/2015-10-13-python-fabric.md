@@ -22,7 +22,7 @@ Here is the repo
 
 A nice part about Fabric is it requires relatively little code to accomplish a lot. It also integrates with the system ssh `config` so you don't need to supply server credentials in yet another place, you can just configure the Fabric env `hosts`.
 
-{{< highlight python "linenos=table" >}}
+```python
 
 from __future__ import with_statement
 from fabric.api import local, run, cd, env, abort
@@ -79,7 +79,7 @@ def sync():
     deploy()
 
 
-{{< / highlight >}}
+```
 
 [MyBlog]: https://github.com/danielcorin/my-blog
 [Fabric]: http://www.fabfile.org/

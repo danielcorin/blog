@@ -26,11 +26,11 @@ Host myserver
 
 We can use AWK to parse the `~/.ssh/config` file and create bash variables with the name of the `Host`s and the values of the `HostName` respectively.
 
-{{< highlight sh >}}
+```sh
 
     $ cat ~/.ssh/config  | awk '$1 ~ /Host/ { print $2 }' | awk 'BEGIN {OFS = ""}!(NR%2){print p,"=\"", $0, "\"" }{p=$0}'
 
-{{< / highlight >}}
+```
 
 First, `cat ~/.ssh/config` creates a stream of our `config` file. Next, `awk '$1 ~ /Host/ { print $2 }'` finds all lines that start with "Host" and prints the value after them seperated (by default) by any type of whitespace. The last bit does most of the work:
 

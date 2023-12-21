@@ -16,7 +16,7 @@ Consider a case where we want to make several `GET` requests to a server. The se
 
 <figure>
 <figcaption>client.py</figcaption>
-{{< highlight python >}}
+```python
 import requests
 import time
 
@@ -25,7 +25,7 @@ for _ in range(10):
     r = requests.get('http://localhost:8080/inc')
     print r.content
 print('Time elapsed: %.2f seconds' % (time.time() - start))
-{{< / highlight >}}
+```
 </figure>
 
 If the server takes an average of 100ms to respond, it will take us about one second to do ten requests in native Python.
@@ -34,7 +34,7 @@ Let's run the above Python code against the following Go HTTP server. The server
 
 <figure>
 <figcaption>server.go</figcaption>
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -60,7 +60,7 @@ func main() {
 
     log.Fatal(http.ListenAndServe(":8080", nil))
 }
-{{< / highlight >}}
+```
 </figure>
 
 We run the server to accept incoming requests:
@@ -120,7 +120,7 @@ The total elapsed time is about what we would expect. Ten requests at approximat
 
 <figure>
 <figcaption>client.go</figcaption>
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -158,7 +158,7 @@ func request(channel chan<- string) {
     channel <- fmt.Sprintf(string(body))
 }
 
-{{< / highlight >}}
+```
 </figure>
 
 When we run this code against the same (restarted) server, we get the following output:

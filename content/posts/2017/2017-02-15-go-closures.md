@@ -12,16 +12,16 @@ title: Go closures
 
 Say we need a map to store various versions of a configuration in Go. Here is a simple example of the structure:
 
-{{< highlight go >}}
+```go
 envs := map[string]string{
     "dev":  "1",
     "prod": "2",
 }
-{{< / highlight >}}
+```
 
 Given this config map, we need to create an additional map that uses the same strings as the keys, but has functions for values. The catch is that the body of each function needs to make use of the value from its corresponding key. For example, `functions["prod"]` should have a value of type `func() string` and the body of that function should make use of the value, `envs["prod"]`. Here's a concrete example:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -43,7 +43,7 @@ func main() {
         fmt.Printf("%s\n", function())
     }
 }
-{{< / highlight >}}
+```
 
 Playground code [here](https://play.golang.org/p/HovGDCz2pm).
 
@@ -56,7 +56,7 @@ The intent of the above is to create a `map[string]func()` where `functions["dev
 
 It turns out, the variable `value` isn't bound to the function until after exiting the loop. Because of this, all `func`s in `functions` return the value that `value` has during the last iteration of the loop. You can add a print statement to show that this is the case. Interestingly, adding a print statement also changes the order over which the map is iterated:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -79,7 +79,7 @@ func main() {
         fmt.Printf("%s\n", function())
     }
 }
-{{< / highlight >}}
+```
 
 Output:
 
@@ -95,7 +95,7 @@ We confirm that both functions return the value that `value` has during the last
 
 We can use a closure to get the behavior we want. That is, that each function returns the correct value from the initial map:
 
-{{< highlight go >}}
+```go
 package main
 
 import (
@@ -122,7 +122,7 @@ func main() {
         fmt.Printf("%s\n", function())
     }
 }
-{{< / highlight >}}
+```
 
 Playground code [here](https://play.golang.org/p/fZFCsux7ci).
 
