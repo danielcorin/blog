@@ -146,7 +146,7 @@ We can do a small refactor to make this work in production as well.
 
 Create an `.env.local` file in the project root:
 
-```env
+```text
 VERCEL_URL="localhost:3000"
 ```
 

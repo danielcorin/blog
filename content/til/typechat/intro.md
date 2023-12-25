@@ -68,7 +68,7 @@ I also inlined the schema rather than reading it from another file in the filesy
 This was causing issues after compiling the project.
 I also created a `.env` file containing
 
-```env
+```text
 OPENAI_MODEL=gpt-3.5-turbo-16k
 ```
 
