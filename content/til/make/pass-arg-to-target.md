@@ -1,7 +1,6 @@
 ---
 date: "2023-10-14T08:32:03Z"
 title: "Passing an arg to a make target"
-description:
 draft: false
 tags:
 - make
@@ -40,4 +39,3 @@ It's also possible to prepend the variable
 ```sh
 p=make/pass-arg-to-target make til
 ```
-

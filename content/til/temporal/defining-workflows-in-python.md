@@ -1,7 +1,6 @@
 ---
 date: "2023-08-27T09:58:08Z"
 title: "Importing Activities for a Temporal Workflow in Python"
-description:
 draft: false
 tags:
 - temporal

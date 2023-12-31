@@ -1,7 +1,6 @@
 ---
 date: "2023-09-16T17:03:25Z"
 title: "Using open-interpreter to create a DIY audiobook with say"
-description:
 draft: false
 tags:
 - open_interpreter
@@ -35,7 +34,7 @@ from ebooklib import epub
 
 def read_epub(file):
     book = epub.read_epub(file)
-    content = []    
+    content = []
     for item in book.get_items():
         if item.get_type() == ebooklib.ITEM_DOCUMENT:
             content.append(item.get_content())

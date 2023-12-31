@@ -1,7 +1,6 @@
 ---
 date: "2023-11-11T11:38:52Z"
 title: "Kubernetes Liveness Check"
-description:
 draft: false
 tags:
 - kubernetes

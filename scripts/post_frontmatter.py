@@ -17,7 +17,6 @@ def generate(title, tags=[]):
     return f"""---
 date: "{formatted_date}"
 title: "{title}"
-description:
 draft: false
 tags: {tags_str}
 ---

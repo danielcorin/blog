@@ -1,9 +1,8 @@
 ---
 date: "2023-11-11T11:50:58Z"
 title: "Javascript Promises"
-description:
 draft: false
-tags: 
+tags:
 - javascript
 - promises
 - callbacks

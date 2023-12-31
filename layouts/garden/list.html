@@ -1,0 +1,54 @@
+{{ define "main" -}}
+<div class="posts">
+    {{ $section := .CurrentSection }}
+    {{ with $section }}
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol>
+            {{ range .Ancestors.Reverse }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
+            {{ end }}
+            <li class="active">
+                <a aria-current="page" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
+        </ol>
+    </nav>
+    <h1>{{ .Title }}</h1>
+    {{ range .Pages }}
+    {{ if not .Draft }}
+    <article>
+        <div class="info">
+            <div>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
+            {{ if .Params.tags }}
+            <ul class="tags">
+                {{ range .Params.tags }}
+                <li class="tag-{{ . }}">
+                    <a href="{{ " tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+
+            {{ $Site := .Site }}
+        </div>
+        {{ if .IsNode }}
+        <div class="children">
+            <ul>
+                {{ range .Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </article>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</div>
+{{ partial "pagination.html" . }}
+{{- end }}
