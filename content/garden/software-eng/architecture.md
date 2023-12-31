@@ -25,5 +25,5 @@ In the internals of your app, map to a different type.
 
 Expect things to break when you design them and decide how your system will behave *when* they do. Use queues and retries to avoid involving your oncall for as long as tolerable by the business.
 When broken systems are restored, all the system to proceed without requiring oncall intervention.
-If oncall *must* get involved, proactive write admin tools to assist with mitigation.
+If oncall *must* get involved, proactively write admin tools to assist with mitigation.
 If you find you're missing tools that would have helped after an incident, build them for next time.
