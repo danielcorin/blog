@@ -1,7 +1,6 @@
 ---
 date: "2023-12-01T18:04:04Z"
 title: "Render Python Encodings Error"
-description:
 draft: false
 tags:
 - render

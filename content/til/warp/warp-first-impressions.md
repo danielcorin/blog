@@ -1,7 +1,6 @@
 ---
 date: "2023-07-30T20:14:17Z"
 title: "Warp: first impressions"
-description:
 draft: false
 tags:
 - warp

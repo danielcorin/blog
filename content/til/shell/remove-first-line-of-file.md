@@ -1,7 +1,6 @@
 ---
 date: "2023-09-04T12:39:00Z"
 title: "Removing the First Line of a File"
-description:
 draft: false
 tags:
 - tail

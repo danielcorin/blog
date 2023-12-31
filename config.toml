@@ -1,20 +1,21 @@
 baseURL = "https://danielcorin.com/"
 languageCode = "en-us"
 theme = "poison"
-paginate = 10
 pluralizelisttitles = false
 title = "Way Enough"
 enableRobotsTXT = true
 
-[author]
+[params.author]
 name = "Dan Corin"
 email = "dcorin6@gmail.com"
 
 [params]
-brand = "Way Enough"                  # name of your site - appears in the sidebar     # path to the image shown in the sidebar
+brand = "Way Enough" # appears in the sidebar
 description = "Mostly software stuff"
 dark_mode = true
 rss_icon = true
+paginate = 10
+front_page_content = ["posts", "til"]
 
 # MENU PLACEHOLDER
 # Menu dict keys:
@@ -23,10 +24,12 @@ rss_icon = true
 # HasChildren:  If the directory's files should be listed.  Default is true.
 # Limit:        If the files should be listed, how many should be shown.
 menu = [
-    { Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = false },
-    { Name = "Logs", URL = "/logs/", HasChildren = false },
-    { Name = "TIL", URL = "/til/", HasChildren = false },
-    { Name = "About", URL = "/about/", HasChildren = false },
+    { Name = "📖 Posts", URL = "/posts/", Pre = "Recent", HasChildren = false },
+    { Name = "📝 Today I Learned", URL = "/til/", HasChildren = false },
+    { Name = "✏️ Logs", URL = "/logs/", HasChildren = false },
+    { Name = "🌱 Garden", URL = "/garden/", HasChildren = false },
+    { Name = "👋 About", URL = "/about/", HasChildren = false },
+    { Name = "🏗️ Projects", URL = "/projects/" },
 ]
 
 # Links to your socials.
