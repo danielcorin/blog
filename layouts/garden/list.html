@@ -15,6 +15,7 @@
         </ol>
     </nav>
     <h1>{{ .Title }}</h1>
+    {{ .Content }}
     {{ range .Pages }}
     {{ if not .Draft }}
     <article>
