@@ -9,7 +9,7 @@ tags:
 - vercel
 ---
 
-I've found language models can be helpful thought partners to assist you in deepening your ideas by generating questions that make you think and reflect.
+I've found language models can be effective thought partners to help you deepen your ideas by generating questions that make you think and reflect.
 While I'd seen many projects attempt to use language models to remove the human from the loop in content generation, in this [project](https://write-partner.vercel.app/) I'm using a language model to prompt the user to communicate the content in a conversational way.
 You chat with a language model and present your ideas.
 The language model asks follow-up questions with the aim of deepening your idea.
