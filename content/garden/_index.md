@@ -1,4 +1,4 @@
 ---
 title: "Garden"
+draft: false
 ---
-A digital garden

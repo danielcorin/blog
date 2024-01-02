@@ -1,5 +1,5 @@
 ---
-title: AItinerary (unpublished, 2023)
+title: AItinerary (2023, unpublished)
 date: 2023-10-15
 draft: false
 tags:

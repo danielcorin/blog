@@ -1,0 +1,25 @@
+{{ define "main" -}}
+{{ if .Site.Params.light_dark }}
+    {{ partial "light_dark.html" . }}
+{{ end }}
+<h1 class="title">{{ .Title }}</h1>
+<div class="posts">
+    {{ range where .Site.RegularPages "Section" "eq" "projects" }}
+        <div class="project">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <p>
+                {{ if .Params.featuredImage }}
+                    <img src="{{ .Params.featuredImage }}"><br>
+                {{ end }}
+                {{ .Summary }}
+                <br />
+                <span>
+                {{ if .Truncated }}
+                <a href="{{ .RelPermalink }}">Read More…</a>
+                {{ end }}
+                </span>
+            </p>
+        </div>
+    {{ end }}
+</div>
+{{ end }}

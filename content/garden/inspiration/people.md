@@ -1,5 +1,5 @@
 ---
-title: "List"
+title: "People"
 draft: false
 ---
 
@@ -7,9 +7,10 @@ draft: false
 - https://thesephist.com/
 - https://xeiaso.net/
 - https://nikiv.dev/
-- https://stephango.com/
+- https://maggieappleton.com
 - https://www.harrymackofficial.com/about
 - https://sindresorhus.com/
+- https://stephango.com/
 - https://twitter.com/justjake
 - https://m15y.com/
 - https://www.desmondrduggan.com/

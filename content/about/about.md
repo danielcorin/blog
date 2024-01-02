@@ -5,12 +5,8 @@ type: "page"
 layout: "about"
 ---
 
-Hi 👋
+![me](/images/me.jpeg)
 
-I'm Dan Corin. I'm a software engineer.
+Hi 👋 I'm Dan Corin. I'm a software engineer. This site is a sprawl of my work, thoughts, readings and learnings. Feel free to reach out!
 
-This site is a journal of my work, thoughts, readings and learnings.
-
-Lately, I'm spending a lot of time experimenting with language models and ways in which they can be applied in production systems today.
-
-Feel free to reach out if you are interested in connecting or find an error on the site.
+[Resume](/files/resume.pdf)
