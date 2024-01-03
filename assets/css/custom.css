@@ -1,3 +1,16 @@
+html {
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 400;
+}
+
+.sidebar-about h1 {
+  color: var(--sidebar-h1-color);
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 1.5em;
+  font-family: "Abril Fatface", serif;
+}
+
 /*
 * Spoilers
 * h/t: http://oostens.me/posts/hugo-inline-spoiler-shortcode/
@@ -39,7 +52,7 @@
   font-size: 0.7em;
   background-color: var(--list-color);
   border-radius: 0.2em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* style for inline tags for logs section */
@@ -81,7 +94,7 @@ kbd {
 }
 
 .breadcrumb li:not(:last-child)::after {
-  content: "»";
+  content: "» ";
 }
 
 .children ul {
