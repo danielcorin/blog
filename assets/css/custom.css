@@ -94,7 +94,7 @@ kbd {
 }
 
 .breadcrumb li:not(:last-child)::after {
-  content: "» ";
+  content: " » ";
 }
 
 .children ul {
