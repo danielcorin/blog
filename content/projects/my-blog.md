@@ -22,4 +22,4 @@ These were inspired by “remind me in”-style replies on a few social sites.
 I write TIL posts to summarize something new I learned and the process by which I got to that point of understanding.
 These help reinforce learnings and serve as documentation for future me.
 
-tech: [Hugo](https://gohugo.io/), Python, Make, Vercel
+Tech: [Hugo](https://gohugo.io/), Python, Make, Vercel

@@ -16,6 +16,6 @@ I also built some vanity charts to look at stats about what we’ve read over th
 It’s backed by a Notion database so it’s easy for me to update quickly.
 This was one of the first sites I build using React and Next.js, so it's quite basic and I relied a lot of frameworks and prebuilt components.
 
-tech: React, Next.js, [Chart.js](https://www.chartjs.org/), Notion, Vercel
+Tech: React, Next.js, [Chart.js](https://www.chartjs.org/), Notion, Vercel
 
 ![screenshot](/images/projects/book-club.png)

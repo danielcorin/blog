@@ -15,6 +15,6 @@ Using a language model and text to speech model, I built a Telegram bot that wou
 I generated the script with a language model, then created the audio track with a Python app and text to speech API to return the full meditation as an audio track in a response message from the bot.
 I learned a lot about using the Python event loop doing this project.
 
-tech: Python, [Telegram](https://telegram.org/), OpenAI, [Render](https://render.com/)
+Tech: Python, [Telegram](https://telegram.org/), OpenAI, [Render](https://render.com/)
 
 ![screenshot](/images/projects/personalized-guided-meditation.png)

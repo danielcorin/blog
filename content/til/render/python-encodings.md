@@ -19,7 +19,7 @@ ModuleNotFoundError: No module named 'encodings'
 ```
 
 You don't have to search for too long to find out this isn't good.
-I tried changing the `PYTHON_VERSION` and `POETRY_VERSION` to not avail.
+I tried changing the `PYTHON_VERSION` and `POETRY_VERSION` to no avail.
 I also read a few threads on [community.render.com](https://community.render.com).
 With nothing much else I could think of trying, I happened to find the `Clear build cache & deploy` sub-option under `Manual Deploy`.
 Fortunately for me, running that fixed my issue.

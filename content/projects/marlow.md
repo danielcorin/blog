@@ -16,6 +16,6 @@ I experimented with several different prompt engineering approaches to increase 
 Because I was relying on a language model, there was a cutoff date in my knowledge of books.
 I learned a lot about prompt engineering from this project and a good bit more about React as well.
 
-tech: React, Next.js, Vercel
+Tech: React, Next.js, Vercel
 
 ![screenshot](/images/projects/marlow.png)

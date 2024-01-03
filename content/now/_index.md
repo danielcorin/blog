@@ -9,4 +9,4 @@ I've written several [posts](/posts) about this and have worked on a few [projec
 I recently augmented this site quite a bit, making the design more my own and adding a [garden](/garden).
 I plan to port over some of my unpublished writing to here.
 
-I am also watching the lectures and working through the notebooks of the [FastAI course](https://course.fast.ai/) on practical deep learning.
+I am also watching the lessons and working through the notebooks of the [FastAI course](https://course.fast.ai/) on practical deep learning.

@@ -9,6 +9,7 @@ draft: false
 - https://nikiv.dev/
 - https://maggieappleton.com
 - https://www.harrymackofficial.com/about
+- https://paulgraham.com/
 - https://sindresorhus.com/
 - https://stephango.com/
 - https://twitter.com/justjake

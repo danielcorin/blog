@@ -55,4 +55,4 @@ I've been more focused on building technical skills lately.
 Learning to juggle was a validating experience.
 It's motivating to see yourself improve at a new skill.
 
-Overall, I enjoyed setting and working towards these goals and intend to set new ones in 2024.
+I enjoyed setting and working towards these goals and intend to set new ones in 2024.
