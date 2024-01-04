@@ -14,3 +14,5 @@ I built a [site](https://adventure-of-penelope.vercel.app/) to host a language m
 It prompted some interesting conversations about the role of storytelling and art in culture on the [orange website](https://news.ycombinator.com/item?id=34514480).
 
 Tech: React, Next.js, OpenAI, Midjourney, Vercel
+
+[Source code](https://github.com/danielcorin/adventure-of-penelope/)

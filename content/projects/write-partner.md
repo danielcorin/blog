@@ -23,4 +23,6 @@ I've written React for several projects before this one but this project has hel
 
 Tech: React, Next.js, OpenAI, Vercel
 
+[Source Code](https://github.com/danielcorin/write-partner/)
+
 ![screenshot](/images/projects/write-partner.png)

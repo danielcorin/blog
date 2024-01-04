@@ -19,3 +19,5 @@ I learned a lot about prompt engineering from this project and a good bit more a
 Tech: React, Next.js, Vercel
 
 ![screenshot](/images/projects/marlow.png)
+
+[Source code](https://github.com/danielcorin/marlow-ai/)

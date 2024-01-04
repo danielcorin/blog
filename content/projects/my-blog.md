@@ -23,3 +23,5 @@ I write TIL posts to summarize something new I learned and the process by which 
 These help reinforce learnings and serve as documentation for future me.
 
 Tech: [Hugo](https://gohugo.io/), Python, Make, Vercel
+
+[Source code](https://github.com/danielcorin/blog/)

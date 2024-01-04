@@ -10,3 +10,5 @@ I wrote an [implementation](https://github.com/danielcorin/Hearts) of the Hearts
 This repo unexpectedly got a bit of traction several years later and has been used as the base project to train and implement an AI player, something I aspired to do when creating the project but never did.
 
 Tech: Python
+
+[Source code](https://github.com/danielcorin/Hearts/)
