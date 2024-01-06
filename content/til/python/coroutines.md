@@ -9,7 +9,7 @@ tags:
 ---
 
 Python coroutines allow for asynchronous programming in a language that earlier in its history, has only supported synchronous execution.
-I've previous [compared]({{< ref "posts/2017/2017-04-18-go-channels.md" >}}) taking a synchronous approach in Python to a parallel approach in Go using channels.
+I've previously [compared]({{< ref "posts/2017/2017-04-18-go-channels.md" >}}) taking a synchronous approach in Python to a parallel approach in Go using channels.
 If you're familiar with async/await in JavaScript, Python's syntax will look familiar.
 Python's [event loop](https://docs.python.org/3/library/asyncio-eventloop.html#event-loop) allows coroutines to yield control back to the loop, awaiting their turn to resume execution, which can lead to more efficient use of resources.
 Using coroutines in Python is different from JavaScript because they can easily or even accidentally be intermingled with synchronously executing functions.

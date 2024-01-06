@@ -1,6 +1,6 @@
 <nav>
     <ul class="sidebar-nav">
-
+        {{ $currentSection := .Section }}
         {{ $sections := .Site.Sections.ByTitle }}
         {{ $taxonomies := .Site.Taxonomies }}
         {{ range .Site.Params.menu }}
@@ -16,9 +16,15 @@
             {{ range $sections }}
                 {{ $trimmedURL := (lower (strings.TrimSuffix "/" (strings.TrimPrefix "/" $menu_item.URL))) }}
                 {{ if eq (lower .Title) (replace $trimmedURL "-" " ") }}
-                    <li class="heading">
-                        <a href="{{ $menu_item.URL }}">{{ $menu_item.Name }}</a>
-                    </li>
+                    {{ if eq (lower .Title) $currentSection }}
+                        <li class="heading active">
+                            <a href="{{ $menu_item.URL }}">{{ $menu_item.Name }}</a>
+                        </li>
+                    {{ else }}
+                        <li class="heading">
+                            <a href="{{ $menu_item.URL }}">{{ $menu_item.Name }}</a>
+                        </li>
+                    {{ end }}
                     {{ if $menu_item.HasChildren }}
                         <li class="sub-heading">
                             {{ $menu_item.Pre }}
