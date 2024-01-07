@@ -25,4 +25,4 @@ Tech: React, Next.js, OpenAI, Vercel
 
 [Source Code](https://github.com/danielcorin/write-partner/)
 
-![screenshot](/images/projects/write-partner.png)
+![screenshot](/img/projects/write-partner.png)

@@ -18,6 +18,6 @@ This was one of the first sites I build using React and Next.js, so it's quite b
 
 Tech: React, Next.js, [Chart.js](https://www.chartjs.org/), Notion, Vercel
 
-![screenshot](/images/projects/book-club.png)
+![screenshot](/img/projects/book-club.png)
 
 [Source code](https://github.com/danielcorin/book_club/)

@@ -442,13 +442,13 @@ The output when run:
     "gorgeous color screen",
     "Click Wheel"
   ],
-  "image": "https://www.apple.com/v/ipod-nano/a/images/overview/ipod_nano_large.jpg",
+  "image": "https://www.apple.com/v/ipod-nano/a/img/overview/ipod_nano_large.jpg",
   "variants": [
     {
       "id": 1,
       "name": "4GB",
       "price": 249,
-      "image": "https://www.apple.com/v/ipod-nano/a/images/overview/ipod_nano_large.jpg",
+      "image": "https://www.apple.com/v/ipod-nano/a/img/overview/ipod_nano_large.jpg",
       "options": [
         {
           "name": "Color",
@@ -463,7 +463,7 @@ The output when run:
       "id": 2,
       "name": "2GB",
       "price": 199,
-      "image": "https://www.apple.com/v/ipod-nano/a/images/overview/ipod_nano_large.jpg",
+      "image": "https://www.apple.com/v/ipod-nano/a/img/overview/ipod_nano_large.jpg",
       "options": [
         {
           "name": "Color",

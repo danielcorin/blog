@@ -17,4 +17,4 @@ I learned a lot about using the Python event loop doing this project.
 
 Tech: Python, [Telegram](https://telegram.org/), OpenAI, [Render](https://render.com/)
 
-![screenshot](/images/projects/personalized-guided-meditation.png)
+![screenshot](/img/projects/personalized-guided-meditation.png)

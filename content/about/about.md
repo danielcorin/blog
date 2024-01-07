@@ -5,7 +5,7 @@ type: "page"
 layout: "about"
 ---
 
-![me](/images/me.jpeg)
+![me](/img/me.jpeg)
 
 Hi 👋 I'm Dan Corin. I currently work as a software engineer. This site is a sprawl of my work, thoughts, readings and learnings. Feel free to reach out!
 
