@@ -5,8 +5,8 @@ draft: false
 tags:
 - karabiner
 - goku
-- hotkeys
 - system_automation
+- hotkeys
 - hammerspoon
 ---
 
