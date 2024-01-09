@@ -1,6 +1,6 @@
 ---
 date: "2024-01-06T20:52:47Z"
-title: "Karabiner Caps Lock To Hyper with Goku"
+title: "Mapping Caps Lock to a Hyper Key with Karabiner and Goku"
 draft: false
 tags:
 - karabiner

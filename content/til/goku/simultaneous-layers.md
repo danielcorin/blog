@@ -1,6 +1,6 @@
 ---
 date: "2024-01-08T18:40:52Z"
-title: "Goku Simultaneous Layers (simlayer)"
+title: "Using My Full Keyboard as an App Launcher with Goku Simultaneous Layers (Simlayer)"
 draft: false
 tags:
 - goku
