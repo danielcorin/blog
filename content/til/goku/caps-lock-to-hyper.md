@@ -23,7 +23,7 @@ My initial aim was to reimplement my existing Karabiner rule, described above.
 After installing `goku`, I created a configuration file at `~/.config/karabiner.edn`.
 Inside it, I added
 
-```edn
+```clojure
 {:main [{:des "caps lock" :rules [[:##caps_lock :!QWEright_shift nil {:alone :escape}]]}]}
 ```
 
@@ -50,13 +50,13 @@ As a bonus, right below the hyper key definition, that same `karabiner.edn` file
 The caps lock light turns on with this key combination and pressing it again, turns it off.
 The rule looks like this
 
-```edn
+```clojure
 [:!QWER#Pescape :caps_lock]
 ```
 
 My final `karabiner.edn` looks like this
 
-```edn
+```clojure
 {:main [{:des "caps lock" :rules [[:##caps_lock :!QWEright_shift nil {:alone :escape}]
                                   [:!QWER#Pescape :caps_lock]]}]}
 
