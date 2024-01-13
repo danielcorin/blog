@@ -150,7 +150,7 @@ According to the fine-tune metrics, 3 epochs (given my estimated cost of \\$0.37
 ## Testing the fine-tune
 
 With the fine-tuning done, I went to the [playground](https://platform.openai.com/playground?mode=chat&model=ft%253Agpt-3.5-turbo-1106) to try it out.
-I fetched the words for the next day's puzzle, which had mercifully come out already for the East side of the world.
+I fetched the words for the next day's puzzle, which was mercifully already available.
 I forgot to make a validation set.
 Shame on me.
 It would have take a bit longer to fine-tune again, and I had a lot of anticipation to see the results, it being my first fine-tune and not really understanding the loss graph or knowing if it worked.
