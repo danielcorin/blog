@@ -522,3 +522,17 @@ Other than consistent formatting, it's not clear the model got all that much bet
 
 This experience was an interesting introduction to model fine-tuning.
 The results weren't that amazing, but I learned a lot about easy pitfalls and mistakes one can make and had some fun.
+
+
+## Future work
+
+To see if there might be more to explore for this project, I ran the validation set through `gpt-4` with the following results
+
+```text
+Correct: 9.52%
+Incorrect: 90.48%
+Total Categories Correct: 39.29%
+```
+
+This improvement is notable over gpt-3.5's ~20-25%.
+I requested access to fine-tune `gpt-4`, so we'll see if that comes through.
