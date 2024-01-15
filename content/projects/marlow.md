@@ -6,6 +6,8 @@ tags:
 - react
 - nextjs
 - vercel
+project_url: https://marlow-ai.vercel.app/
+github_url: https://github.com/danielcorin/marlow-ai/
 ---
 
 I built a [site](https://marlow-ai.vercel.app/) that you can use to manage a list of books you’ve read and your ratings for them.

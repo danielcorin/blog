@@ -7,6 +7,8 @@ tags:
 - python
 - make
 - vercel
+project_url: https://blog.danielcorin.com
+github_url: https://github.com/danielcorin/blog/
 ---
 
 [My blog](https://blog.danielcorin.com) is (presently) a Hugo generated static site.

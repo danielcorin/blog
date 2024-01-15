@@ -7,6 +7,8 @@ tags:
 - nextjs
 - openai
 - vercel
+github_url: https://github.com/danielcorin/write-partner/
+project_url: https://write-partner.vercel.app/
 ---
 
 I've found language models can be effective thought partners to help you deepen your ideas by generating questions that make you think and reflect.

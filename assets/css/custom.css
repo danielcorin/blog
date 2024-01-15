@@ -122,3 +122,19 @@ kbd {
     margin: 0;
   }
 }
+
+.project-link {
+  text-decoration: none !important;
+  color: var(--sidebar-socials-color) !important;
+}
+
+.social {
+  margin-right: 0.5em;
+  text-decoration: none !important;
+  color: var(--sidebar-socials-color) !important;
+}
+
+.project-link:hover,
+.social:hover {
+  opacity: 0.7;
+}

@@ -8,9 +8,10 @@ tags:
 - chartjs
 - notion
 - vercel
+project_url: https://our-book-club.vercel.app/
+github_url: https://github.com/danielcorin/book_club/
 ---
 
-[Book club](https://our-book-club.vercel.app/) (2020-2023)
 I built a [site](https://our-book-club.vercel.app/) to track the books we read in our book club and remind folks what we’re reading for the next week.
 I also built some vanity charts to look at stats about what we’ve read over the years.
 It’s backed by a Notion database so it’s easy for me to update quickly.

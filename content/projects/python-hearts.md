@@ -4,6 +4,7 @@ date: 2014-06-10
 draft: false
 tags:
 - python
+github_url: https://github.com/danielcorin/Hearts/
 ---
 
 I wrote an [implementation](https://github.com/danielcorin/Hearts) of the Hearts card game towards the end of college to practice Python.

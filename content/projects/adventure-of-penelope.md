@@ -8,6 +8,8 @@ tags:
 - openai
 - midjourney
 - vercel
+github_url: https://github.com/danielcorin/adventure-of-penelope/
+project_url: https://adventure-of-penelope.vercel.app/
 ---
 
 I built a [site](https://adventure-of-penelope.vercel.app/) to host a language model generated kid’s book I built using ChatGPT and Midjourney. The plot was sourced from my book club to see how a language model would perform writing a story with an unusual plot.
