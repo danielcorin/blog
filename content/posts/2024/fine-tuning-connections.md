@@ -15,7 +15,7 @@ I decided this was as good a time as any to try and fine tune a model to do a th
 
 ## Getting the dataset
 
-I remembered seeing at some point that Wordle had an API to return the days' word and it does at `https://www.nytimes.com/svc/wordle/v2/yyyy-mm-d.json`.
+I remembered seeing at some point that Wordle had an API to return the day's word and it does at `https://www.nytimes.com/svc/wordle/v2/yyyy-mm-dd.json`.
 I figured Connections might have a similar JSON API and it does.
 I wrote a script to get all the solutions to past game and put the in the `connections_data` folder with the naming convention `yyyy-mm-dd.json`.
 
@@ -523,7 +523,6 @@ Other than consistent formatting, it's not clear the model got all that much bet
 This experience was an interesting introduction to model fine-tuning.
 The results weren't that amazing, but I learned a lot about easy pitfalls and mistakes one can make and had some fun.
 
-
 ## Future work
 
 To see if there might be more to explore for this project, I ran the validation set through `gpt-4` with the following results
@@ -535,4 +534,4 @@ Total Categories Correct: 39.29%
 ```
 
 This improvement is notable over gpt-3.5's ~20-25%.
-I requested access to fine-tune `gpt-4`, so we'll see if that comes through.
+I requested access to fine-tune `gpt-4`, so we'll see if that comes through and I can try it out.
