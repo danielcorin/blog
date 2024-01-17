@@ -1,14 +1,19 @@
 ---
 title: "Fine-tuning gpt-3.5-turbo to learn to play \"Connections\""
 date: 2024-01-12T21:58:01-05:00
+tags:
+- language_models
+- fine_tuning
+- connections
 draft: false
 toc: true
+hn_url: https://news.ycombinator.com/item?id=39003066
 ---
 
 I started playing the NYTimes word game "[Connections](https://www.nytimes.com/games/connections)" recently, by the recommendation of a few friends.
 It has the type of freshness that [Wordle](https://www.nytimes.com/games/wordle/index.html) lost for me a long time ago.
 After playing Connections for a few days, I wondered if an OpenAI language model could solve the game (the objective is to group the 16 words into 4 categories of 4 words).
-I tried with `gpt-4k-32k` and `gpt-4-1106-preview`, tweaking prompts for a few hours and wasn't able to make much progress.
+I tried with `gpt-4-32k` and `gpt-4-1106-preview`, tweaking prompts for a few hours and wasn't able to make much progress.
 It's certainly possible prompt engineering alone could solve this problem, but it wasn't easy for me for find a path forward.
 I imagine it will involve a bit of creativity.
 I decided this was as good a time as any to try and fine tune a model to do a thing I couldn't easily get it to do with prompts.
@@ -415,7 +420,7 @@ To figure out if this fine-tune was worthwhile, I needed benchmark against the p
 
 I wrote some quick and dirty code to read the `validation.jsonl`, make an OpenAI call, parse the response and compare it to the known, correct answer.
 I decided to measure percentage of puzzles correct (all four categories) and percentage of categories correct (4 words correctly grouped).
-I also augmented the user prompt a bit to get the un-fine-tuned model to output it's response the same way the fine-tuned model would for consistent parsing.
+I also augmented the user prompt a bit to get the un-fine-tuned model to output its response the same way the fine-tuned model would for consistent parsing.
 
 ```python
 import json

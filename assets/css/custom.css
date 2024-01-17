@@ -124,6 +124,7 @@ kbd {
 }
 
 .project-link {
+  margin-right: 0.125em;
   text-decoration: none !important;
   color: var(--sidebar-socials-color) !important;
 }
