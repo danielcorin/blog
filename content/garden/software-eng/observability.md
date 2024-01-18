@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Observability
 toc: true
 ---
@@ -35,6 +35,7 @@ logger.warn(f"login failed for user: {id}")
 ```
 
 Do this:
+
 ```python
 logger.warn("login failed", extra={"user_id": id})
 ```
