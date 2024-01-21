@@ -11,6 +11,8 @@ tags:
 - docker
 ---
 
+Disclaimer: I am not a security expert or a security professional.
+
 I've tried out many new AI/LLM libraries in the past year.
 Many of these are written in Python.
 While trying out new and exciting software is a lot of fun, it's also important to be mindful about what code you allow to run on your system.
