@@ -3,6 +3,9 @@ date: "2024-01-17T21:40:12Z"
 title: "Using Vercel's AI SDK to stream responses from different language models"
 draft: false
 tags:
+- vercel
+- ai
+- language_models
 ---
 
 Vercel has a library called [`ai`](https://github.com/vercel/ai), that is useful for building language model chat applications.
@@ -29,12 +32,61 @@ When designing Write Partner, I started the chat session with the following mess
 ]
 ```
 
-This approach worked fine for OpenAI models.
+If you want to follow along, you can create a new Next.js project (`npx create-next-app`) and use this simple `page.tsx` file:
+
+
+```tsx
+"use client";
+
+import { useChat } from "ai/react";
+
+export default function Home() {
+  const { messages, input, handleInputChange, handleSubmit } = useChat({
+    initialMessages: [
+      {
+        id: "0",
+        role: "system",
+        content: "You are a thoughtful assistant that asks the user followup questions about their idea to help them deepen their thought process."
+      },
+      {
+        id: "1",
+        role: "assistant",
+        content: "What would you like to write about?",
+      },
+    ]
+  });
+
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <div>
+          {messages.map((m) => (
+            <div key={m.id}>
+              {m.role}: {m.content}
+            </div>
+          ))}
+
+          <form onSubmit={handleSubmit}>
+            <input
+              className="text-black"
+              value={input}
+              placeholder="Say something..."
+              onChange={handleInputChange}
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+  );
+}
+```
+
+This approach worked fine for OpenAI chat models.
 After some experimentation, with these models, I decided to investigate how the UX would change with some open source models, as the [docs](https://sdk.vercel.ai/docs) describe.
 
 Switching to another model only requires a change to the backend API.
 I decided to try out some models hosted by [Fireworks](https://www.fireworks.ai/).
-To make this change, where I previously had
+To make this change, where I previously had a `src/app/api/chat/route.ts` file
 
 ```typescript
 import OpenAI from 'openai';
