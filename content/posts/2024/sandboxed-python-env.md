@@ -9,6 +9,7 @@ tags:
 - security
 - nix
 - docker
+github_url: https://github.com/danielcorin/toys/tree/main/sandboxed_python
 ---
 
 Disclaimer: I am not a security expert or a security professional.
@@ -182,3 +183,5 @@ With this setup, I added my environment variables to `.env`, my dependencies to 
 It's not the easiest or the cleanest approach for ongoing development of a project, but it provides a reasonable way to sandbox and isolate new code you want to try out that your don't necessarily trust.
 I did several hours of research to find an approach I was satisfied with but I suspect there are other good options out there.
 I would love to hear from you if you have an approach you like.
+
+You can find the code from this post [here](https://github.com/danielcorin/toys/tree/main/sandboxed_python).
