@@ -4,6 +4,10 @@ title: "Language Model Streaming With SSE"
 draft: false
 tags:
 - sse
+- vercel
+- language_models
+- python
+- fastapi
 github_url: https://github.com/danielcorin/toys/tree/main/lm_streaming_with_sse
 ---
 
