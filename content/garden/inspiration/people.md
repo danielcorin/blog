@@ -16,3 +16,5 @@ draft: false
 - https://m15y.com/
 - https://www.desmondrduggan.com/
 - https://blog.mollywhite.net/
+- https://cassidoo.co/
+- https://neal.fun/

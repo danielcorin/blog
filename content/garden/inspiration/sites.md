@@ -4,4 +4,4 @@ draft: false
 ---
 
 - https://news.ycombinator.com/
-- https://www.curated.design/
+- https://fs.blog/
