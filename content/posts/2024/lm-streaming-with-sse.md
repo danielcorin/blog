@@ -12,7 +12,7 @@ github_url: https://github.com/danielcorin/toys/tree/main/lm_streaming_with_sse
 ---
 
 OpenAI popularized a pattern of streaming results from a backend API in realtime with ChatGPT.
-This approach is useful because the time a language models takes to run inference is often longer than what you want for an API call to feel snappy and fast.
+This approach is useful because the time a language model takes to run inference is often longer than what you want for an API call to feel snappy and fast.
 By streaming the results as they're produced, the user can start reading them and the product experience doesn't feel slow as a result.
 
 OpenAI has a [nice example](https://cookbook.openai.com/examples/how_to_stream_completions) of how to use their client to stream results.
