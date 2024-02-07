@@ -14,6 +14,14 @@ hugo --gc --minify --ignoreCache --verbose
 
 ## Dev
 
+After fresh git clone
+
+```sh
+git submodule update --init --recursive
+```
+
+To run
+
 ```sh
 make serve
 ```
@@ -35,7 +43,3 @@ make log
 ```sh
 make til p={category}/{title}
 ```
-
-## Background wallpaper
-
-Generated with https://lexica.art
