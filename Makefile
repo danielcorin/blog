@@ -8,8 +8,8 @@ build:
 	@hugo
 
 # Run the local development server
-.PHONY: serve run
-serve run:
+.PHONY: serve run dev
+serve run dev:
 	@hugo serve
 
 .PHONY: log

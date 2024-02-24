@@ -146,6 +146,3 @@ direnv: export +AR +AS +CC +CONFIG_SHELL +CXX +HOST_PATH +IN_NIX_SHELL +LD +LD_D
 
 It was nice to get this working end to end and get a perspective on what developer experience could look like with nix, but still somewhat unsatisfying to not have a consistent starting point for creating a flake for a project.
 I plan to continue researching `flake-parts`, `flake-utils` and flake templates to get a sense of best practices in this area.
-
-Eventually, I repeated this process with `flake-parts` for this blog.
-The results are [here](https://github.com/danielcorin/blog/blob/main/flake.nix).
