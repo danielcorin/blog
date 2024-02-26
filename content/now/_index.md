@@ -1,12 +1,20 @@
 ---
 title: "Now"
-date: 2024-01-01
+date: 2024-02-25
 ---
 
-Lately, I've been spending a lot of time experimenting with language models and ways in which they can be applied in production systems today.
-I've written several [posts](/posts) about this and have worked on a few [projects](/projects) exploring some ideas.
+I'm continuing to learn explore broadly rather than with significant depth in an area.
+I'm remaining open minded to pivot to depth when the time is right, but nothing has quite captured my imagination in an enduring way.
 
-I recently augmented this site quite a bit, making the design more my own and adding a [garden](/garden).
-I plan to port over some of my unpublished writing to here.
+Current areas of exploration and focus:
 
-I am also watching the lessons and working through the notebooks of the [FastAI course](https://course.fast.ai/) on practical deep learning.
+- [Temporal](https://temporal.io/)
+- [Deno](https://deno.com/)
+- [Fast.ai Course](https://course.fast.ai/)
+- Bidirectional, voice-first LLM chatbots
+- Dependency management with [Nix](https://nixos.org/)
+
+Future plans:
+
+- Running larger models locally now that I have the hardware to do it (probably with [`ollama`](https://ollama.com/))
+- Building a few models using learnings from course.fast.ai (likely some random forests, need to find interesting data sets)
