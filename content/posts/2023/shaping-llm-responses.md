@@ -2,6 +2,8 @@
 title: "Shaping LLM Responses"
 date: 2023-04-30T18:29:34-04:00
 draft: false
+aliases:
+- /posts/shaping-llm-responses/
 tags:
 - python
 - language_models

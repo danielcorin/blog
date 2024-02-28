@@ -2,6 +2,8 @@
 title: "Nix and direnv"
 date: 2023-04-02T19:36:15-04:00
 draft: false
+aliases:
+- /posts/nix-and-direnv/
 tags:
 - partly_ai_authored
 - gpt4

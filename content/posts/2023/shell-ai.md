@@ -2,6 +2,8 @@
 title: "Using GPT-3.5 to Quickly Generate and Run Shell Commands"
 date: 2023-04-16T10:10:26-04:00
 draft: false
+aliases:
+- /posts/shell-ai/
 tags:
   - language_models
   - python

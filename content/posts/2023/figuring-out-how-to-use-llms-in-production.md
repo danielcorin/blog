@@ -2,6 +2,8 @@
 title: "Figuring out how to use LLMs in production"
 date: 2023-05-07T21:25:03-04:00
 description: Code needs structure output
+aliases:
+- /posts/figuring-out-how-to-use-llms-in-production/
 draft: false
 tags:
 - language_models
