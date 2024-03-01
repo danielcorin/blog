@@ -199,9 +199,9 @@ This is a sort of "do what I mean, not what I say" outcome, which is one of the 
 
 I tried a few highly rated jailbreaks against this prompt
 
-- [Aligned](https://jailbreakchat.com/prompt/000f628e-f8ad-4737-9f4e-f271076cc79a)
-- [PersonGPT](https://jailbreakchat.com/prompt/fd712561-2704-492f-b93e-3ea02b1dc71c)
-- [UCAR](https://jailbreakchat.com/prompt/0992d25d-cb40-461e-8dc9-8c0d72bfd698)
+- Aligned
+- PersonGPT
+- UCAR
 
 Only UCAR was able to get the model to deviate from its instructions:
 

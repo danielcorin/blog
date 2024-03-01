@@ -25,7 +25,7 @@ Now, it seems as exploits are found, OpenAI attempts to patch them in what I ima
 - blocklisting specific words and fingerprinting prompts that are known to thawrt their steering of the model to adhere to their content policies
 - using an untainted LLM to determine whether the content returned should be redacted/revoked based on their policies
 
-There is a useful [website](https://www.jailbreakchat.com) dedicated to cataloging prompts that can be used to jailbreak ChatGPT into making policy-violating responses.
+There ~~is~~ was a useful website called JailbreakChat (maybe just try [reddit](https://www.reddit.com/r/ChatGPTJailbreak/) now) dedicated to cataloging prompts that can be used to jailbreak ChatGPT into making policy-violating responses.
 As interesting as it is, this post isn't specifically about LLM jailbreaking.
 What jailbreaking highlights is that it's actually pretty hard to get a model to do _only_ the thing you want it to do when you expose a free-text interface in your product to an end user.
 Jailbreaking ChatGPT is just one instance of what prompt injection looks like.
