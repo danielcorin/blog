@@ -19,3 +19,4 @@ draft: false
 - https://cassidoo.co/
 - https://neal.fun/
 - https://chaidarun.com/
+- https://haseebmajid.dev/

@@ -37,7 +37,7 @@ I appreciate your creativity and efforts to show the world what is possible with
 You inspire me.
 
 Here is a cool LLM-based project for explaining what a code snippet does: <https://whatdoesthiscodedo.com>.
-The website says the project was "forked from [openai-quickstart-node](https://github.com/openai/openai-quickstart-node)" which ([by default](https://github.com/openai/openai-quickstart-node/blob/master/pages/api/generate.js#L30) at least) uses `text-davinci-003` for it's completions.
+The website says the project was "forked from [openai-quickstart-node](https://github.com/openai/openai-quickstart-node)".
 Let's see if I can use a standard prompt injection technique to get this product to do something other than "code snippet analysis".
 I'm going to try the following prompt:
 
