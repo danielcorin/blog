@@ -106,20 +106,60 @@ kbd {
   font-weight: bold;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.sidebar-nav {
+  display: block;
+}
+
+input[type="checkbox"]  {
+  display: none; /* hide the checkboxes */
+ }
+
 @media (max-width: 600px) {
   .credits {
     display: none;
   }
+
+  .lead {
+    margin: 0;
+  }
+
   .sidebar-nav li {
     display: inline-block;
     margin-right: 10px; /* Adjust spacing between items as needed */
   }
+
   .sidebar-nav {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  .lead {
-    margin: 0;
+
+  .menu-toggle {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input + .menu-toggle + span {
+    display:none;
+  }
+
+  input:checked + label + .sidebar-collapse {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  input:checked + .menu-toggle {
+    margin-bottom: 0;
+  }
+
+  .menu-toggle:before {
+    content: '☰';
+    margin-right: 8px;
   }
 }
 

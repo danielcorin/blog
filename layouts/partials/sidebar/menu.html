@@ -8,7 +8,7 @@
             {{ if eq (len $menu_item.URL) 0 }}
                 <li class="heading">{{ $menu_item.Name }}</li>
             {{ else if $menu_item.External }}
-        <li class="bullet">
+                <li class="bullet">
                     <a href="{{ $menu_item.URL }}" target="_blank" rel="noopener noreferrer">{{ $menu_item.Name }}</a>
                 </li>
             {{ end }}

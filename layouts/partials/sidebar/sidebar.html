@@ -2,7 +2,11 @@
     <div class="container sidebar-sticky">
         {{ partial "light_dark.html" . }}
         {{ partial "sidebar/title.html" . }}
-        {{ partial "sidebar/menu.html" . }}
+        <input id="menu-toggle-check" type="checkbox">
+        <label class="menu-toggle" for="menu-toggle-check">Menu</label>
+        <span class="sidebar-collapse">
+            {{ partial "sidebar/menu.html" . }}
+        </span>
         <span class="socials">
         {{ partial "sidebar/socials.html" . }}
         </span>
