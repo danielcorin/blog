@@ -11,4 +11,6 @@ Hi 👋 I'm Dan Corin. I currently work as a software engineer. This site is a s
 
 What I am doing [now](/now).
 
+Software (and other things) I [use](/uses).
+
 [Resume](/files/resume.pdf)

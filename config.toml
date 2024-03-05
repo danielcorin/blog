@@ -28,11 +28,11 @@ menu = [
     { Name = "📖 Posts", URL = "/posts/", Pre = "Recent", HasChildren = false },
     { Name = "📝 Today I Learned", URL = "/til/", HasChildren = false },
     { Name = "✏️ Logs", URL = "/logs/", HasChildren = false },
-    { Name = "🌱 Garden", URL = "/garden/", HasChildren = false },
-    { Name = "📍 Now", URL = "/now/", HasChildren = false },
-    { Name = "💻 Uses", URL = "/uses/", HasChildren = false },
-    { Name = "🏗️ Projects", URL = "/projects/" },
     { Name = "👋 About", URL = "/about/", HasChildren = false },
+    { Name = "🏗️ Projects", URL = "/projects/" },
+    { Name = "🌱 Garden", URL = "/garden/", HasChildren = false },
+    { Name = "💻 Uses", URL = "/uses/", HasChildren = false },
+    { Name = "📍 Now", URL = "/now/", HasChildren = false },
 ]
 
 # Links to your socials.
