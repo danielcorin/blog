@@ -18,6 +18,6 @@ def generate(title, tags=[]):
 date: "{formatted_date}"
 title: "{title}"
 draft: false
-tags: {tags_str}
+tags:{tags_str}
 ---
 """
