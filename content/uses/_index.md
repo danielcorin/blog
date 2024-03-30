@@ -2,7 +2,7 @@
 title: "Uses"
 ---
 
-## macOS
+## 💻 macOS apps
 
 ### Currently
 
@@ -11,7 +11,6 @@ title: "Uses"
 - [Cursor](https://cursor.sh/)
 - [Dozer](https://github.com/Mortennn/Dozer)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- [f.lux](https://justgetflux.com/)
 - [iTerm2](https://iterm2.com/)
 - [itsycal](https://www.mowglii.com/itsycal/)
 - [Karabiner](https://karabiner-elements.pqrs.org/)
@@ -23,27 +22,45 @@ title: "Uses"
 - [Hammerspoon](https://www.hammerspoon.org/)
 - [xbar](https://xbarapp.com/)
 
-## Unix
+## 🧰 CLI tools
 
 ### Currently
 
 - [bat](https://github.com/sharkdp/bat)
-- [git](https://git-scm.com/download/linux)
+- [brew](https://brew.sh/) (nix managed)
+- [difftastic](https://github.com/Wilfred/difftastic)
+- [eza](https://github.com/eza-community/eza)
+- [fzf](https://github.com/junegunn/fzf)
+- [goku](https://github.com/yqrashawn/GokuRakuJoudo)
+- [llm](https://github.com/simonw/llm)
+- [ollama](https://github.com/ollama/ollama)
 - [nix](https://nixos.org/) ([config](https://github.com/danielcorin/nix-config/))
 - [hugo](https://gohugo.io/)
+- [skhd](https://github.com/koekeishiya/skhd)
+- [yabai](https://github.com/koekeishiya/yabai)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
+
+### Experimenting
+
+- [open-interpreter](https://github.com/OpenInterpreter/open-interpreter)
+- [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
 ### Used to
 
 - [asdf](https://github.com/asdf-vm/asdf)
 - [fasd](https://github.com/clvv/fasd)
-- [brew](https://brew.sh/)
 
-## iOS
+## 📱 iOS apps
 
 ### Currently
 
 - [Day One](https://dayoneapp.com/download/)
 - [Obsidian](https://obsidian.md/mobile)
 - [Paku](https://paku.app/)
-- [Spotify](https://www.spotify.com/us/download/ios/)💲
+- [Spotify](https://www.spotify.com/us/download/ios/)
+
+## ✨ Models
+
+- [claude-3-opus](https://www.anthropic.com/claude)
+- [gpt-4](https://openai.com/gpt-4)
+- [gpt-4-vision-preview](https://platform.openai.com/docs/guides/vision)

@@ -13,7 +13,7 @@ I use Simon's [`llm`](https://github.com/simonw/) to quickly run LLM prompts.
 This package is easily installed with `brew` or `pip`, so if you want to use it, I recommend those approaches.
 The following approach is not for the faint of heart and assumes a bit of familiarity with Nix and home-manager.
 We are going to install the `llm` including the [`llm-mistral`](https://github.com/simonw/llm-mistral) plugin using Nix.
-It's not particularly straightforward, but if you want to manager this tool with Nix, it appears to be _possible_.
+It's not particularly straightforward, but if you want to manage this tool with Nix, it appears to be _possible_.
 
 Using my [nix-config repo](https://github.com/danielcorin/nix-config/blob/d23d1452c0dbf133f4177b7beea2806a8cc71ea5/home.nix#L25) as a jumping off point, we can easily install `llm` using `home-manager`.
 This works because `llm` is available from [nixpkgs](https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/python-modules/llm/default.nix).
