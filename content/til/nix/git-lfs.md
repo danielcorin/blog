@@ -36,4 +36,4 @@ git lfs install
 git lfs pull
 ```
 
-to populate the jsonl files in the repo and run the examples.
+to populate the `jsonl` files in the repo and run the examples.
