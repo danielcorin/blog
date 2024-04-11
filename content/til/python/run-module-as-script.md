@@ -1,6 +1,6 @@
 ---
 date: "2024-04-10T20:06:42Z"
-title: "Run a Pyhthon Module as a Script"
+title: "Run a Python Module as a Script"
 draft: false
 tags:
 ---
