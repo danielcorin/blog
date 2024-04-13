@@ -21,3 +21,4 @@ draft: false
 - https://chaidarun.com/
 - https://haseebmajid.dev/
 - https://martinheinz.dev/
+- https://jxnl.github.io
