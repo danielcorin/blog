@@ -18,8 +18,9 @@ One annoyance about having installed `ollama` using Nix via nix-darwin, is that 
 Error: could not connect to ollama app, is it running?
 ```
 
-After a bit of code searching, I found a way to create a Launch Agent plist for my user using `nix-darwin` to automatically run `ollama serve` in the background for my user.
-It looks like this:
+After some [code searching](https://github.com/search?type=code), I discovered a method to create a Launch Agent plist for my user using `nix-darwin`.
+This allows `ollama serve` to run automatically in the background for my user.
+Here's what it looks like:
 
 ```nix
 {
@@ -59,7 +60,7 @@ let
 }
 ```
 
-This create a plist file at `/Users/danielcorin/Library/LaunchAgents` that looks like this
+This configuration creates a plist file at `/Users/danielcorin/Library/LaunchAgents` that looks like this:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,6 +87,6 @@ This create a plist file at `/Users/danielcorin/Library/LaunchAgents` that looks
 </plist>
 ```
 
-Now, when I create a new shell session and run `ollama list` it just works.
+Now, when I create a new shell session and run `ollama list`, it just works.
 [Here](https://github.com/danielcorin/nix-config/commit/4727a12fcc3fb80f7d2f9be6ae2f9f852c84e060) is the code diff where I added this in my nix config.
 
