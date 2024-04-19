@@ -59,8 +59,13 @@ title: "Uses"
 - [Paku](https://paku.app/)
 - [Spotify](https://www.spotify.com/us/download/ios/)
 
-## ✨ Models
+## 🔗 Web
 
-- [claude-3-opus](https://www.anthropic.com/claude)
-- [gpt-4](https://openai.com/gpt-4)
-- [gpt-4-vision-preview](https://platform.openai.com/docs/guides/vision)
+### Currently
+
+- [GoatCounter](https://goatcounter.com): easy web analytics
+
+## ✨🤖 Models
+
+- [claude-3](https://www.anthropic.com/claude)
+- [gpt-4/gpt-4-turbo](https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4)

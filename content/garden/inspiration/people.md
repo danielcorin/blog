@@ -22,3 +22,4 @@ draft: false
 - https://haseebmajid.dev/
 - https://martinheinz.dev/
 - https://jxnl.github.io
+- https://davi.sh/
