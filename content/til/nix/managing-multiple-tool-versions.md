@@ -11,7 +11,7 @@ tags:
 ---
 
 This post is extremely similar to [nix flakes and direnv]({{< ref "til/nix/nix-and-direnv-with-flakes.md" >}}).
-I repeated my process there, but with a little more thought and a little less language model magic.
+Here, I repeated my process, but with a little more thought and a little less language model magic.
 
 I setup my new computer to use nix, switching away from Homebrew, which I've used to manage and install dependencies on my system for about a decade.
 My goal was to unify my configuration management with my package management.
