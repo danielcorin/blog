@@ -1,5 +1,5 @@
 ---
-title: "Write Partner (2023-present)"
+title: "Write Partner (2023)"
 date: 2023-12-09
 draft: false
 tags:

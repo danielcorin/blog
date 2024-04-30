@@ -1,6 +1,6 @@
 ---
 date: "2024-04-30T07:18:53Z"
-title: "Unmask a Model Prompt"
+title: "Unmasking a Model Prompt"
 draft: false
 tags:
 - language_models
@@ -38,4 +38,4 @@ Output of Coral/Command R+
 ```
 
 This prompt, when passed to a "raw" model without additional prompt instructions, doesn't output anything consistently.
-It appears to effectively target hidden instructions in the same prompt/message list but not added by the user.
+It appears to effectively target instructions added to the same prompt/message list but hidden from the user by the application.
