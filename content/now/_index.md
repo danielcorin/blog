@@ -1,20 +1,19 @@
 ---
 title: "Now"
-date: 2024-02-25
+date: 2024-05-03
 ---
 
-I'm continuing to learn explore broadly rather than with significant depth in an area.
-I'm remaining open minded to pivot to depth when the time is right, but nothing has quite captured my imagination in an enduring way.
+*What is a [now page](https://nownownow.com/about)?*
 
-Current areas of exploration and focus:
+I moved to New York City at the beginning of 2023.
 
+I am currently exploring, focusing on and learning about:
+
+- Multi-modal LLMs
 - [Temporal](https://temporal.io/)
-- [Deno](https://deno.com/)
-- [Fast.ai Course](https://course.fast.ai/)
-- Bidirectional, voice-first LLM chatbots
-- Dependency management with [Nix](https://nixos.org/)
+- [Modal](https://modal.com/)
+- System Dependency management with [Nix](https://nixos.org/)
 
-Future plans:
+I have specific plans to
 
-- Running larger models locally now that I have the hardware to do it (probably with [`ollama`](https://ollama.com/))
-- Building a few models using learnings from course.fast.ai (likely some random forests, need to find interesting data sets)
+- Build a few ML models using learnings from course.fast.ai (likely some random forests, need to find interesting data sets)
