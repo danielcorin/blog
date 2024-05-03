@@ -142,4 +142,4 @@ If we did it right, when we run a workflow, we can see each task queue show up s
 
 ![Temporal UI showing different task queue names](/img/til/temporal/queue-ui.png)
 
-Note, the Temporal [`samples-python`](https://github.com/temporalio/samples-python) has a [multi-language example](https://github.com/temporalio/samples-python/tree/main/activity_worker) of this pattern using Python and Go.
+Note: the Temporal [`samples-python`](https://github.com/temporalio/samples-python) has a [multi-language example](https://github.com/temporalio/samples-python/tree/main/activity_worker) of this pattern using Python and Go.

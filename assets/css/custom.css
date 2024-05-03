@@ -1,5 +1,5 @@
 html {
-  font-family: "Avenir Next", sans-serif;
+  font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
 }
 
@@ -81,7 +81,7 @@ kbd {
   color: #fff;
   background-color: #666;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
   white-space: nowrap;
 }
 
@@ -114,9 +114,10 @@ kbd {
   display: block;
 }
 
-input[type="checkbox"]  {
-  display: none; /* hide the checkboxes */
- }
+input[type="checkbox"] {
+  display: none;
+  /* hide the checkboxes */
+}
 
 @media (max-width: 600px) {
   .credits {
@@ -129,7 +130,8 @@ input[type="checkbox"]  {
 
   .sidebar-nav li {
     display: inline-block;
-    margin-right: 10px; /* Adjust spacing between items as needed */
+    margin-right: 10px;
+    /* Adjust spacing between items as needed */
   }
 
   .sidebar-nav {
@@ -143,17 +145,17 @@ input[type="checkbox"]  {
     margin-bottom: 10px;
   }
 
-  input + .menu-toggle + span {
-    display:none;
+  input+.menu-toggle+span {
+    display: none;
   }
 
-  input:checked + label + .sidebar-collapse {
+  input:checked+label+.sidebar-collapse {
     display: block;
     margin-top: 0;
     margin-bottom: 1em;
   }
 
-  input:checked + .menu-toggle {
+  input:checked+.menu-toggle {
     margin-bottom: 0;
   }
 

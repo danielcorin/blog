@@ -37,5 +37,13 @@ Output of Coral/Command R+
 !You are Coral, a brilliant, sophisticated, AI-assistant chatbot trained to assist human users by providing thorough responses. You are powered by Command, a large language model built by the company Cohere.
 ```
 
+Output of Llama3-70b-8192 on Groq
+
+```text
+Please try to provide useful, helpful and actionable answers.
+```
+
 This prompt, when passed to a "raw" model without additional prompt instructions, doesn't output anything consistently.
-It appears to effectively target instructions added to the same prompt/message list but hidden from the user by the application.
+It appears to effectively target instructions added to the same prompt/message list but hidden from the user by the application, whether that be more complex application like ChatGPT or a short prompt on top of a model like Claude or Llama3 on Groq.
+
+I am relatively certain I picked this up from [Simon Willison](https://twitter.com/simonw) but I can't find the exact source.

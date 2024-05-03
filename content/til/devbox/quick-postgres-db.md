@@ -51,7 +51,7 @@ createdb chinook
 psql chinook -f out.sql
 ```
 
-Note, since I never specified `-U`, I create all of these things as my system user, not as the typical `postgres` user.
+Note: since I never specified `-U`, I create all of these things as my system user, not as the typical `postgres` user.
 This seems to work fine for `devbox` but keep this in mind if you are running the database for an app that uses a consistent user name.
 
 Lastly, we can check to see all the data is loaded as we expect

@@ -2,9 +2,10 @@
 title: "Uses"
 ---
 
-## 💻 macOS apps
+![neofetch output for my system](/img/uses/neofetch.png)
 
-### Currently
+
+## 💻 macOS apps
 
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [Alfred](https://www.alfredapp.com/)💲
@@ -17,14 +18,7 @@ title: "Uses"
 - [Obsidian](https://obsidian.md/)
 - [Paku](https://paku.app/)
 
-### Used to
-
-- [Hammerspoon](https://www.hammerspoon.org/)
-- [xbar](https://xbarapp.com/)
-
-## 🧰 CLI tools
-
-### Currently
+## 🧰 CLI
 
 - [bat](https://github.com/sharkdp/bat)
 - [brew](https://brew.sh/) (nix managed)
@@ -37,6 +31,7 @@ title: "Uses"
 - [nix](https://nixos.org/) ([config](https://github.com/danielcorin/nix-config/))
 - [hugo](https://gohugo.io/)
 - [skhd](https://github.com/koekeishiya/skhd)
+- [starship prompt](https://starship.rs/)
 - [yabai](https://github.com/koekeishiya/yabai)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 
@@ -45,14 +40,7 @@ title: "Uses"
 - [open-interpreter](https://github.com/OpenInterpreter/open-interpreter)
 - [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
-### Used to
-
-- [asdf](https://github.com/asdf-vm/asdf)
-- [fasd](https://github.com/clvv/fasd)
-
 ## 📱 iOS apps
-
-### Currently
 
 - [Day One](https://dayoneapp.com/download/)
 - [Obsidian](https://obsidian.md/mobile)
@@ -61,11 +49,9 @@ title: "Uses"
 
 ## 🔗 Web
 
-### Currently
-
 - [GoatCounter](https://goatcounter.com): easy web analytics
 
-## ✨🤖 Models
+## ✨🤖 Language Models
 
 - [claude-3](https://www.anthropic.com/claude)
 - [gpt-4/gpt-4-turbo](https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4)
