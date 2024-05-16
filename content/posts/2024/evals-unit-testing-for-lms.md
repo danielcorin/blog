@@ -15,11 +15,11 @@ something you can confidently ship to users until you test what you've built.
 
 Evals are like the unit tests for LLMs. Similar to unit tests, evals can take on
 many different forms -- they are just code you run to generate a model
-completion the check the contents of that completion. A more challenging part
+completion then check the contents of that completion. A more challenging part
 about LLMs relative to "average code" is their outputs aren't really
-deterministic. Let's think non-deterministic (less-deterministic?) code for a
-second. If you were testing a random number generator you might write code like
-this:
+deterministic. Let's think about non-deterministic (less-deterministic?) code
+for a second. If you were testing a random number generator you might write code
+like this:
 
 ```python
 from random import random
@@ -41,7 +41,7 @@ different seeds, etc.</aside>
 
 In the case of LLMs, I've observed several different approaches to determine
 whether the model is behaving as expected. If the LLM output is highly
-constrained (e.g. if it's being used as a classifier), simple assertions could
+constrained (e.g., if it's being used as a classifier), simple assertions could
 be sufficient to validate the LLM is performing its function as intended.
 
 Note: I'm using a
@@ -106,8 +106,8 @@ the basic structure and expectations for the LLM outputs of an application.
 
 ## Using a model to evaluate a model response?
 
-Some folks are going further, using the model to validate it's own outputs in
-the same completion (by prompt the model to explain itself or refine an initial
+Some folks are going further, using the model to validate its own outputs in the
+same completion (by prompting the model to explain itself or refine an initial
 response) or separate calls where the model takes a previous model output in as
 part of its prompt then generates a new completion. A couple of places I've
 noticed this approach being used are to try and detect hallucinations or
@@ -140,11 +140,11 @@ Our "test" now has two non-deterministic components
 - the model-generated birthday card
 - the model-generated evaluation of the birthday card's contents
 
-I think you can derive directional signal from this approach. Say we called
+I think you can derive a directional signal from this approach. Say we called
 `generate_birthday_card` in production and then `contains_toxic_language` on its
-output. We could report stats on approximate % of toxic responses. We could try
-and tweak our prompt in `generate_birthday_card` to reduce this percentage or
-block the response to the user if `contains_toxic_language == True`. It seems
+output. We could report stats on the approximate % of toxic responses. We could
+try and tweak our prompt in `generate_birthday_card` to reduce this percentage
+or block the response to the user if `contains_toxic_language == True`. It seems
 like the library (or OpenAI API itself) may even help with this.
 
 At scale with this approach, there will still probably be both false positives
@@ -152,15 +152,14 @@ and false negatives. Sometimes the model will detect toxicity when we wouldn't
 expect it to and sometimes the model will fail to detect toxicity when it is
 present in the contents of the birthday card. To distill these model-based
 measurements down to "% of toxic responses" is a bit misleading. There can be
-errors at either step, which can compound error in the reporting of "% of toxic
-responses", which is decided entirely by the model.
-
-Lastly, it's likely possible to do prompt injection in a way that produces toxic
-output when calling `generate_birthday_card` and "fools" the model when it runs
-the `contains_toxic_language` check into reporting the content is not toxic.
-This thwarts your ability to measure the "% of toxic responses" because the
-model you're attempting to use to measure toxicity has been undermined and does
-not report correctly. This means a aggregate measurement of 2% toxicity in the
+errors at either step, which can compound errors in the reporting of "% of toxic
+responses", which is decided entirely by the model. Lastly, it's likely possible
+to do prompt injection in a way that produces toxic output when calling
+`generate_birthday_card` and "fools" the model when it runs the
+`contains_toxic_language` check into reporting the content is not toxic. This
+thwarts your ability to measure the "% of toxic responses" because the model
+you're attempting to use to measure toxicity has been undermined and does not
+report correctly. This means a aggregate measurement of 2% toxicity in the
 responses of your birthday card-generating LLM app may not reflect reality at
 all.
 
@@ -175,14 +174,14 @@ from receipts and trying to do accounting for your business with the output
 data. The former has a wide range of possible, useful modes of operation. The
 latter generally has only one correct answer. If you're relying on a model to
 report on whether your model generations are correct, healthy, or fitting a
-certain criteria, you need to anticipate ways in which the reporting model might
-perform its job incorrectly and add other guardrails and measurements that can
-give you more signal about the health of your model responses.
+certain criterion, you need to anticipate ways in which the reporting model
+might perform its job incorrectly and add other guardrails and measurements that
+can give you more signal about the health of your model responses.
 
 ## Why models are still worth it
 
 Models don't have to be perfect to be useful. Even in the accounting example,
-where require our numbers to be correct, we can add deterministic checks and
+where we require our numbers to be correct, we can add deterministic checks and
 safeguards to our system (do line items add up correctly, do the sum of all
 receipts match the system's total?) that can flag potentially incorrect
 calculations for a second look. Even deterministic software breaks all the time.
