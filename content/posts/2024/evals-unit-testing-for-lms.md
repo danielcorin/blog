@@ -144,15 +144,16 @@ I think you can derive directional signal from this approach. Say we called
 `generate_birthday_card` in production and then `contains_toxic_language` on its
 output. We could report stats on approximate % of toxic responses. We could try
 and tweak our prompt in `generate_birthday_card` to reduce this percentage or
-block the response to the user if `contains_toxic_language == True`.
+block the response to the user if `contains_toxic_language == True`. It seems
+like the library (or OpenAI API itself) may even help with this.
 
-At scale with this approach, there will be both false positives and negatives.
-Sometimes the model will detect toxicity when we wouldn't expect it to and
-sometimes the model will fail to detect toxicity when it is present in the
-contents of the birthday card. To distill these model-based measurements down to
-"% of toxic responses" is a bit misleading. There can be errors at either step,
-which can compound error in the reporting of "% of toxic responses", which is
-decided entirely by the model.
+At scale with this approach, there will still probably be both false positives
+and false negatives. Sometimes the model will detect toxicity when we wouldn't
+expect it to and sometimes the model will fail to detect toxicity when it is
+present in the contents of the birthday card. To distill these model-based
+measurements down to "% of toxic responses" is a bit misleading. There can be
+errors at either step, which can compound error in the reporting of "% of toxic
+responses", which is decided entirely by the model.
 
 Lastly, it's likely possible to do prompt injection in a way that produces toxic
 output when calling `generate_birthday_card` and "fools" the model when it runs
@@ -163,20 +164,20 @@ not report correctly. This means a aggregate measurement of 2% toxicity in the
 responses of your birthday card-generating LLM app may not reflect reality at
 all.
 
-## Why is this bad
+## Why is this bad?
 
 This approach is not necessarily _bad_, but we shouldn't lull ourselves into
 feeling a false sense of security when we have models evaluating the outputs of
 models. To start, it's important to consider your use case. If you're building a
 chatbot for your e-commerce store visitors, the potential downsides of an
 imperfect model response are likely less impactful than if you are reading data
-from receipts and trying to to do accounting for your business with the output
+from receipts and trying to do accounting for your business with the output
 data. The former has a wide range of possible, useful modes of operation. The
-latter generally has only one correct answer. If you relying on a model to
-report on whether your model generations are correct, healthy or fitting a
-certain criteria, you need to anticipate ways in which the reporting model will
-do it's job incorrectly and add other guardrails and measurements that can give
-you more signal about the health of your model responses.
+latter generally has only one correct answer. If you're relying on a model to
+report on whether your model generations are correct, healthy, or fitting a
+certain criteria, you need to anticipate ways in which the reporting model might
+perform its job incorrectly and add other guardrails and measurements that can
+give you more signal about the health of your model responses.
 
 ## Why models are still worth it
 
