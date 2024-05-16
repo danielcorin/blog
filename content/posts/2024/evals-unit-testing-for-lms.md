@@ -1,6 +1,6 @@
 ---
 date: "2024-05-15T18:42:38Z"
-title: "Evals: unit testing for language model"
+title: "Evals: unit testing for language models"
 draft: false
 tags:
 - evals
