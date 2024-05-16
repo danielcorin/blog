@@ -1,6 +1,6 @@
 ---
 date: "2024-05-11T13:59:05Z"
-title: "Extract Youtube Video Transcript"
+title: "Summarizing Youtube video transcripts with language models"
 draft: false
 tags:
 - yt-dlp
@@ -37,4 +37,10 @@ fi
 yt-dlp --write-auto-sub --skip-download --sub-format vtt --output transcript "$1" >/dev/null 2>&1
 cat transcript.en.vtt | grep : -v | awk '!seen[$0]++' | llm "write a short summary of the contents of this youtube video transcript"
 rm transcript.en.vtt
+```
+
+Run it like this
+
+```sh
+./summarize.sh <youtube_url>
 ```
