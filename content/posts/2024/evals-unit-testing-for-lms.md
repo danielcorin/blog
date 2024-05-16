@@ -193,3 +193,5 @@ part of your design. I'd love to hear what works for you.
 
 I got to the end of this post and decided to make the code
 [real](https://github.com/danielcorin/toys/blob/main/marvin-llm-evals/test.py).
+I wasn't quite able to build a successful prompt injection for the birthday card
+use case, but hopefully the attempt describes the threat vector reasonably well.
