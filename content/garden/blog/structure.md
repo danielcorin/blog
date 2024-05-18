@@ -10,7 +10,7 @@ My blog has the following sections:
 I view these as complete or polished pieces. They are of varied quality, but
 most have been edited by me several times over and occasionally by a few others.
 
-## [TILs](/til) (short for Today I Learned)
+## [TILs](/til) (short for "Today I Learned")
 
 I've seen several other folks write these types of posts. I sort of view them as
 notebooks. I write ideas and things I learn in them, but they're only a medium
