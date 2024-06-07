@@ -1,9 +1,9 @@
 ---
 title: "Now"
-date: 2024-05-03
+date: 2024-06-04
 ---
 
-*What is a [now page](https://nownownow.com/about)?*
+_What is a [now page](https://nownownow.com/about)?_
 
 I moved to New York City at the beginning of 2023.
 
@@ -14,6 +14,8 @@ I am currently exploring, focusing on and learning about:
 - [Modal](https://modal.com/)
 - System Dependency management with [Nix](https://nixos.org/)
 
+I have ~50% complete with Barbara Oakley's ["Learning How to Learn"](https://www.coursera.org/learn/learning-how-to-learn/) course.
+
 I have specific plans to
 
-- Build a few ML models using learnings from course.fast.ai (likely some random forests, need to find interesting data sets)
+- Build a few ML models using learnings from course.fast.ai. These will likely be some random forests. I need to find interesting data sets.

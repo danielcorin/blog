@@ -21,6 +21,11 @@ At some point, I will push the code for that (`TODO`).
 I use [Modal](https://modal.com/) to run a daily cron where I have a few models play the daily Connections puzzle and write their results to a Github repo, which is a Hugo website, built on Vercel.
 You can find the live site here: https://bots-doing-things.vercel.app.
 
+_Update 06-06-2024_
+
+I stopped running the crons after several weeks.
+With my current approach, the LLMs aren't very good at the game.
+
 Tech: [Hugo](https://gohugo.io/), Vercel, OpenAI, Anthropic, [Modal](https://modal.com/)
 
 ![screenshot](/img/projects/bots-doing-things.png)
