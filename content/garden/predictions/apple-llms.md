@@ -1,5 +1,5 @@
 ---
-title: "❓ Apple LLMs"
+title: "✅ Apple LLMs"
 draft: false
 ---
 
@@ -14,4 +14,9 @@ Falsifiable prediction: Apple releases a personalized, multimodal model on iPhon
 
 ## Outcome
 
-TBD
+2024-06-10
+
+These features have been announced for release in the fall: https://www.apple.com/apple-intelligence/.
+One thing I was wrong about: Apple will not run all inference on devices.
+They are building a [private cloud](https://security.apple.com/blog/private-cloud-compute/) to which devices can offload some model inference.
+There are still unanswered questions about how all this will work and when it will occur.

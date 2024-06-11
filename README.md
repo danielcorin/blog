@@ -38,7 +38,7 @@ open http://localhost:1313
 make log
 ```
 
-## TIL
+### TIL
 
 ```sh
 make til p={category}/{title}
