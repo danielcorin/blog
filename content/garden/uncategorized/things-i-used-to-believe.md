@@ -49,8 +49,8 @@ I still am a proponent of 100% test coverage, but only to highlight unintentiona
 I support the use `nocover` to make this approach more realistic along with comments as to why the test wasn't worth writing, especially if you went down a rabbit hole trying.
 This practice helps future you and future contributors.
 
-## Dynamically typed languages are better than static typed language
-The first language I wrote code in was Java.
+## Dynamically typed languages are better than statically typed languages
+The first language I wrote code in was Java in college.
 Several months later, I learned Python, and it was like a breath of fresh air.
 Writing code was all of a sudden far easier.
 I could mostly focus on logic without getting bogged down in types.

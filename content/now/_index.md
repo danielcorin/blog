@@ -11,10 +11,7 @@ I am currently exploring, focusing on and learning about:
 
 - Multi-modal LLMs
 - [Temporal](https://temporal.io/)
-- [Modal](https://modal.com/)
 - System Dependency management with [Nix](https://nixos.org/)
-
-I have ~50% complete with Barbara Oakley's ["Learning How to Learn"](https://www.coursera.org/learn/learning-how-to-learn/) course.
 
 I have specific plans to
 
