@@ -7,16 +7,16 @@ title: "Uses"
 
 ## 💻 macOS apps
 
-- [Alacritty](https://github.com/alacritty/alacritty)
-- [Alfred](https://www.alfredapp.com/)💲
-- [Cursor](https://cursor.sh/)
-- [Dozer](https://github.com/Mortennn/Dozer)
-- [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- [iTerm2](https://iterm2.com/)
-- [itsycal](https://www.mowglii.com/itsycal/)
-- [Karabiner](https://karabiner-elements.pqrs.org/)
-- [Obsidian](https://obsidian.md/)
-- [Paku](https://paku.app/)
+- [Alacritty](https://github.com/alacritty/alacritty): my secondary terminal emulator -- I primarily use iTerm2
+- [Alfred](https://www.alfredapp.com/): app launcher, multi-clipboard
+- [Cursor](https://cursor.sh/): an editor with great LLM-completion tooling
+- [Dozer](https://github.com/Mortennn/Dozer): hides menu bar items
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/): support the open web
+- [iTerm2](https://iterm2.com/): my primary terminal emulator
+- [itsycal](https://www.mowglii.com/itsycal/): a drop in replacement for the macOS datetime menubar item with a pop-open calendar view
+- [Karabiner](https://karabiner-elements.pqrs.org/): to turn caps lock into a hyper key
+- [Obsidian](https://obsidian.md/): notes as plaintext files (markdown)
+- [Paku](https://paku.app/): monitors air quality
 
 ## 🧰 CLI
 
