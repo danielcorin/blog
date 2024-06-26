@@ -10,6 +10,7 @@ github_url: https://github.com/danielcorin/tactic
 
 One of my favorite things to do with language models is to use them to write code.
 I've been wanting to build a variation on tic-tac-toe involving a bit of game theory.
+I called it "Tactic".
 I wasn't even really sure if the game would be any more interesting than tic-tac-toe itself, which reliably ends in draws for any players who understand the basics of the game.
 Rather than explain too much, I'll show the prompt I wrote for `claude-3.5-opus` using [Workbench](https://console.anthropic.com/workbench).
 Try it yourself!
