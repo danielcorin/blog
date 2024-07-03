@@ -24,3 +24,4 @@ draft: false
 - https://jxnl.github.io
 - https://davi.sh/
 - https://eugeneyan.com/
+- https://www.simplermachines.com

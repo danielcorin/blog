@@ -181,3 +181,43 @@ input[type="checkbox"] {
 .social:hover {
   opacity: 0.7;
 }
+
+.sidenote-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.sidenote-anchor {
+  color: var(--link-color);
+  cursor: pointer;
+  border-bottom: 1px dotted var(--link-color);
+}
+
+.sidenote {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 250px;
+  font-size: 0.8em;
+  line-height: 1.3;
+  background: var(--bkg-color);
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidenote-wrapper:hover .sidenote,
+.sidenote-wrapper:focus-within .sidenote {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sidenote {
+    width: calc(100vw - 40px);
+    max-width: 300px;
+  }
+}
