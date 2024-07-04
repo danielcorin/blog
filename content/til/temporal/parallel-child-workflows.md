@@ -156,4 +156,4 @@ In this specific example, we collect all the results of the child workflows afte
 Keep in mind this could lead to a large workflow history if run on a very large list of `inputs` with big payloads.
 A possible workaround if you encounter an issue with large workflow history using this approach is to write the results from each workflow to blob store and don't return them from the workflows themselves, which avoids putting them into the workflow history.
 
-You can find working code for this toy example [here]().
+You can find working code for this toy example [here](https://github.com/danielcorin/toys/tree/main/temporal_parallel_child_workflows).
