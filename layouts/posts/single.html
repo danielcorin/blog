@@ -4,6 +4,7 @@
   <div class="content">
     {{ .Content | replaceRE "(<h[2-6] id=\"([^\"]+)\">)(.+)(</h[2-6]>)" `${1}${3}<a href="#${2}"
       class="heading-link">#</a>${4}` | safeHTML }}
+    {{ partial "post/edit-link.html" . }}
   </div>
   {{ if .Params.hn_url }}
   <a href="{{ .Params.hn_url }}" target="_blank" rel="noopener noreferrer">Discussion on Hacker News</a>
