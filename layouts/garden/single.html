@@ -51,7 +51,7 @@
     {{ if (.Site.Params.listmonk) }}
     {{ partial "post/listmonk_email_newsletters.html" . }}
     {{ end }}
-    {{ if or (.Site.Params.remark42) (.Site.DisqusShortname) }}
+    {{ if or (.Site.Params.remark42) (.Site.Config.Services.Disqus.Shortname) }}
     {{ partial "post/comments.html" . }}
     {{ end }}
 </div>
