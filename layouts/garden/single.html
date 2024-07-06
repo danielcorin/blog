@@ -48,6 +48,7 @@
     </div>
 
     {{ .Content }}
+    {{ partial "post/edit-link.html" . }}
     {{ if (.Site.Params.listmonk) }}
     {{ partial "post/listmonk_email_newsletters.html" . }}
     {{ end }}

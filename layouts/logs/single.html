@@ -1,38 +1,39 @@
 {{ define "main" -}}
 <div class="post">
-  <div class="info">
-    <h1 class="post-title">
-        <a href="{{ .Permalink }}">
-            {{ .Date.Format "January 2, 2006" }}
-        </a>
-    </h1>
-    <time class="post-date">
-        {{ .Section | humanize }}
-    </time>
-    {{ if .Params.tags }}
-    <ul class="tags">
-        {{ range .Params.tags }}
-        <li class="tag-{{ . }}">
-            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
-        </li>
+    <div class="info">
+        <h1 class="post-title">
+            <a href="{{ .Permalink }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </a>
+        </h1>
+        <time class="post-date">
+            {{ .Section | humanize }}
+        </time>
+        {{ if .Params.tags }}
+        <ul class="tags">
+            {{ range .Params.tags }}
+            <li class="tag-{{ . }}">
+                <a href="{{ " tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+            </li>
+            {{ end }}
+        </ul>
         {{ end }}
-    </ul>
-    {{ end }}
 
-    {{ $Site := .Site }}
-    {{ if .Params.series }}
+        {{ $Site := .Site }}
+        {{ if .Params.series }}
         <p class="seriesname">
             Series: <a href="{{ $Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
         </p>
-    {{ end }}
+        {{ end }}
 
-    {{ if .Params.featuredImage }}
-    <p>
-        <img src="{{.Params.featuredImage}}"><br>
-    </p>
-    {{ end }}
-  </div>
+        {{ if .Params.featuredImage }}
+        <p>
+            <img src="{{.Params.featuredImage}}"><br>
+        </p>
+        {{ end }}
+    </div>
 
-  {{ .Content }}
+    {{ .Content }}
+    {{ partial "post/edit-link.html" . }}
 </div>
 {{- end }}
