@@ -271,3 +271,7 @@ input[type="checkbox"] {
 .edit-link a:hover {
   text-decoration: underline;
 }
+
+div.search-result-date {
+  color: var(--date-color);
+}
