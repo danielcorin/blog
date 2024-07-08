@@ -1,0 +1,18 @@
+<script>
+    window.store = {
+        {{ $pageCount := 0 }}
+        {{ $contentTypes := slice "pages" "til" "garden" "logs"}}
+        {{ range where .Site.Pages "Type" "in" $contentTypes }}
+            {{ $pageCount = add $pageCount 1 }}
+            "{{ .Permalink }}": {
+                "title": "{{ .Title }}",
+                "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
+                "content": {{ .Content | plainify }},
+                "url": "{{ .Permalink }}"
+            },
+        {{ end }}
+        "_debug": {
+            "pageCount": {{ $pageCount }}
+        }
+    }
+</script>
