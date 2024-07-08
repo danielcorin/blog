@@ -1,11 +1,12 @@
 <script>
     window.store = {
         {{ $pageCount := 0 }}
-        {{ $contentTypes := slice "pages" "til" "garden" "logs"}}
+        {{ $contentTypes := slice "posts" "til" "garden" "logs" "projects" }}
         {{ range where .Site.Pages "Type" "in" $contentTypes }}
             {{ $pageCount = add $pageCount 1 }}
             "{{ .Permalink }}": {
-                "title": "{{ .Title }}",
+                "title": "[{{ .Type }}] {{ .Title }}",
+                {{ if .Date }}"date": "{{ .Date.Format "2006-01-02" }}",{{ end }}
                 "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
                 "content": {{ .Content | plainify }},
                 "url": "{{ .Permalink }}"
