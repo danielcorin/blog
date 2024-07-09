@@ -23,3 +23,7 @@ til:
 .PHONY: sync
 sync:
 	@unison content "/Users/danielcorin/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian/30 Resources/blog" -batch -auto -prefer newer
+
+.PHONY: post
+post:
+	@hugo new "posts/$(shell date +%Y)/$(p).md"

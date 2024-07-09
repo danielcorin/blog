@@ -32,6 +32,12 @@ open http://localhost:1313
 
 ## Content scaffolds
 
+### Post
+
+```sh
+make post p={name}
+```
+
 ### Log
 
 ```sh
