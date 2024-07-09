@@ -7,7 +7,7 @@ tags:
 - aggregators
 ---
 
-## Self-generated model-based aggregators
+## Model-based aggregators
 
 I watched Simon's [Language models on the command-line](https://www.youtube.com/watch?v=QUXQNi6jQ30) presentation.
 I am a big fan of his Unix-approach to LLMs.

@@ -25,3 +25,5 @@ draft: false
 - https://davi.sh/
 - https://eugeneyan.com/
 - https://www.simplermachines.com
+- https://victoria.dev
+- https://www.henrikkarlsson.xyz/
