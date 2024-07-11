@@ -1,9 +1,9 @@
 {{ define "main" }}
 <h1>Search</h1>
-<p>Enter a keyword to search this site.</p>
+<p>Enter a query to search this site.</p>
 {{ partial "search-form.html" . }}
-<ul id="results">
+<div id="search-results" class="posts">
 
-</ul>
+</div>
 {{ partial "search-index.html" . }}
 {{ end }}
