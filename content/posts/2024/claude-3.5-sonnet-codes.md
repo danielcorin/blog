@@ -80,7 +80,7 @@ When the code isn't correct, you can often use Claude to find and correct the is
 We've seen LLMs writing code for a while now, with varied levels of competence.
 I haven't played much with models that are fine-tuned to write code, so it's possible I am late to the party here, but this version of Sonnet is _so good_.
 I think it's the best model I've used to write code.
-I've seen many folks building cool stuff with "[Artifacts](https://www.youtube.com/watch?v=rHqk0ZGb6qo)" which I haven't even had a chance to touch yet, but seeing Claude create a working, non-trivial, multi-file project in a single prompt impressed me.
+I've seen many folks building cool stuff with "[Artifacts](https://www.youtube.com/watch?v=rHqk0ZGb6qo)" which I haven't even had a chance to touch yet (edit: [I tried it out]({{< ref "posts/2024/claude-artifacts.md">}})), but seeing Claude create a working, non-trivial, multi-file project in a single prompt impressed me.
 It was a joy to use in Cursor to refine and improve the idea further.
 
 ## To the skeptics
