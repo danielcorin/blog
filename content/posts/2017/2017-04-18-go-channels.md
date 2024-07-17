@@ -16,6 +16,7 @@ Consider a case where we want to make several `GET` requests to a server. The se
 
 <figure>
 <figcaption>client.py</figcaption>
+
 ```python
 import requests
 import time
@@ -26,6 +27,7 @@ for _ in range(10):
     print r.content
 print('Time elapsed: %.2f seconds' % (time.time() - start))
 ```
+
 </figure>
 
 If the server takes an average of 100ms to respond, it will take us about one second to do ten requests in native Python.
@@ -34,6 +36,7 @@ Let's run the above Python code against the following Go HTTP server. The server
 
 <figure>
 <figcaption>server.go</figcaption>
+
 ```go
 package main
 
@@ -120,6 +123,7 @@ The total elapsed time is about what we would expect. Ten requests at approximat
 
 <figure>
 <figcaption>client.go</figcaption>
+
 ```go
 package main
 
@@ -203,7 +207,7 @@ The count is: 9
 The count is: 10
 ```
 
-This time on the server side, all the sleep durations are printed first, then the counter is incremented afterwards. So what happens is the server accepts all ten requests then all threads start sleeping. As each of the threads wakes up, they start incrementing the counter respectively and returning to the client callers. The responses on the client side look about the same as they did when we made the requests in series, but this time the total time elapsed was only 0.19 seconds. This corresponds to the longest sleep time printed by the server: 188ms. So, by using goroutines, we have reduced the runtime of our program from the sum of the time of all requests to the time of the just longest request. Not bad.
+This time on the server side, all the sleep durations are printed first, then the counter is incremented afterwards. So what happens is the server accepts all ten requests then all threads start sleeping. As each of the threads wakes up, they start incrementing the counter respectively and returning to the client callers. The responses on the client side look about the same as they did when we made the requests in series, but this time the total time elapsed was only 0.19 seconds. This corresponds to the longest sleep time printed by the server: 188ms. So, by using goroutines, we have reduced the runtime of our program from the sum of the time of all requests to the time of just the longest request. Not bad.
 
 Another cool part about using goroutines in this scenario is that we can scale the number of threads to accomplish even more in the same amount of time. Keep in mind, even though creating goroutines is cheap, creating too many of them to make a large number of requests against an HTTP server all at once may cause the server to run out of resources or limit the number of connections it will accept. On my machine, scaling up `routineCount` to 300 is no problem for the server. However, at around 400, some of the requests start getting lost and at 800 I start seeing the following error:
 

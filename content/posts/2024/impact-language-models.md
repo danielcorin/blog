@@ -3,6 +3,9 @@ title: "Challenges and Opportunities of the Impact of Language Models on Softwar
 date: 2024-07-12T15:00:00-04:00
 draft: false
 toc: true
+tags:
+- language_models
+- thoughts
 ---
 
 I'm trying something a bit new, writing some of my thoughts about how the future might look based on patterns I've been observing lately.
