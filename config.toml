@@ -9,9 +9,11 @@ staticDir = ['static', '_static']
 [params.author]
 name = "Dan Corin"
 email = "dcorin6@gmail.com"
+url = "https://danielcorin.com/about"
+avatar = "https://danielcorin.com/img/me.jpeg"
 
 [params]
-brand = "Way Enough" # appears in the sidebar
+brand = "Way Enough"                  # appears in the sidebar
 description = "Mostly software stuff"
 dark_mode = true
 rss_icon = true
@@ -53,4 +55,8 @@ tags = "tags"
 unsafe = true
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "JSON"]
+
+[services]
+[services.rss]
+limit = 50

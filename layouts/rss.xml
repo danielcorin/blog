@@ -3,7 +3,7 @@
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
 {{- $allPages := $pctx.RegularPages -}}
-{{- $pages = where $allPages "Section" "posts" -}} {{/* This line is added to filter pages from "posts" folder only */}}
+{{- $pages = where $allPages "Section" "in" (slice "posts" "til") -}} {{/* This line is added to filter pages from "posts" folder only */}}
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
