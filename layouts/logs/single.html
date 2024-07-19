@@ -3,7 +3,7 @@
     <div class="info">
         <h1 class="post-title">
             <a href="{{ .Permalink }}">
-                {{ .Date.Format "January 2, 2006" }}
+                {{ .Date.Format "2006-01-02" }}
             </a>
         </h1>
         <time class="post-date">
@@ -34,6 +34,6 @@
     </div>
 
     {{ .Content }}
-    {{ partial "post/edit-link.html" . }}
+    {{ partial "post/post-post.html" . }}
 </div>
 {{- end }}
