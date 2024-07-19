@@ -26,7 +26,12 @@
 {{ $js = $js | append (resources.Get "js/lunr.min.js") }}
 {{ $js = $js | append (resources.Get "js/search.js") }}
 
-{{ $js_bundle := $js | resources.Concat "js/bundle.js" | minify | fingerprint }}
+{{ $js_bundle := $js | resources.Concat "js/bundle.js" }}
+{{/* Don't minify in dev for easier debugging */}}
+{{ if hugo.IsProduction }}
+{{ $js_bundle = $js_bundle | minify }}
+{{ end }}
+{{ $js_bundle = $js_bundle | fingerprint }}
 
 <script defer language="javascript" type="text/javascript" src="{{ $js_bundle.RelPermalink }}"></script>
 <script data-goatcounter="https://danielcorin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

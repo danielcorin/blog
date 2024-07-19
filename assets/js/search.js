@@ -12,8 +12,7 @@ function displayResults(results, store) {
     const item = store[result.ref];
     const highlightedTitle = highlightText(item.title, query);
     const contentSnippet = getContentSnippet(item.content, query);
-    const highlightedContent = highlightText(contentSnippet, query);
-    return `
+    const highlightedContent = highlightText(contentSnippet, query); return `
       <article class="post search-result">
         <div><a href="${item.url}">${highlightedTitle}</a></div>
         ${item.date ? `<div class="search-result-date">${item.date}</div>` : ''}
@@ -27,25 +26,40 @@ function displayResults(results, store) {
 }
 
 function getContentSnippet(content, query) {
-  if (content.length <= 150) {
-    return content;
-  }
-
+  const maxSnippetLength = 150;
   const words = query.split(/\s+/).filter(word => word.length > 0);
   const regex = new RegExp(words.join('|'), 'gi');
   const match = content.match(regex);
 
   if (match) {
-    const matchIndex = content.indexOf(match[0]);
-    const startIndex = Math.max(0, content.lastIndexOf(' ', matchIndex - 75));
-    const endIndex = Math.min(content.length, content.indexOf(' ', matchIndex + 75));
+    const firstMatchIndex = content.indexOf(match[0]);
+    const startIndex = Math.max(0, content.lastIndexOf(' ', firstMatchIndex - 75));
+    const endIndex = Math.min(
+      content.length,
+      content.indexOf(' ', firstMatchIndex + 75) !== -1 ?
+        content.indexOf(' ', firstMatchIndex + 75) : content.length);
     let snippet = content.substring(startIndex, endIndex);
 
-    if (startIndex > 0) snippet = '...' + snippet.trimStart();
-    if (endIndex < content.length) snippet = snippet.trimEnd() + '...';
+    // Trim the snippet and add ellipsis if necessary
+    if (startIndex > 0) {
+      snippet = '...' + snippet.trimStart();
+    }
+    if (endIndex < content.length) {
+      snippet = snippet.trimEnd() + '...';
+    }
 
     return snippet;
   }
+
+  // At this point, we didn't find anything to highlight
+
+  // If content is 150 characters or less, return it as is
+  if (content.length <= maxSnippetLength) {
+    return content;
+  }
+
+  // Otherwise, return the first 150 characters
+  return content.substring(0, maxSnippetLength);
 }
 
 function highlightText(text, query) {
@@ -76,7 +90,6 @@ const query = params.get('query')
 if (query) {
   // Retain the search input in the form when displaying results
   document.getElementById('search-input').setAttribute('value', query)
-
   const idx = lunr(function () {
     this.ref('id')
     this.field('title', {
