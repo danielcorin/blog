@@ -1,7 +1,7 @@
 ---
 title: "Making Your Vision Real"
 date: 2024-07-21T12:31:12-04:00
-draft: true
+draft: false
 tags:
 - language_models
 - vision
