@@ -1,5 +1,6 @@
 ---
 date: "2024-01-17T21:40:12Z"
+updated_at: 2024-07-21T09:32:28-04:00
 title: "Using Vercel's AI SDK to stream responses from different language models"
 draft: false
 tags:
@@ -7,6 +8,9 @@ tags:
 - ai
 - language_models
 ---
+
+*Edit (2024-07-21): Vercel has updated the [`ai` package](https://github.com/vercel/ai) to use different abstractions than the examples below.
+Consider reading [their docs](https://sdk.vercel.ai/docs/introduction) first before using the example below, which is out of date.*
 
 Vercel has a library called [`ai`](https://github.com/vercel/ai), that is useful for building language model chat applications.
 I used it to help build [Write Partner]({{< ref "projects/write-partner.md" >}})
