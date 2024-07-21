@@ -1,5 +1,16 @@
 // modeled off of https://victoria.dev/blog/add-search-to-hugo-static-sites-with-lunr/
 
+// Focus on the search input and move cursor to the end when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    searchInput.focus();
+    // Move cursor to the end of the input field
+    const inputLength = searchInput.value.length;
+    searchInput.setSelectionRange(inputLength, inputLength);
+  }
+});
+
 function displayResults(results, store) {
   const searchResults = document.getElementById('search-results');
 
