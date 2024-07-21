@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function displayResults(results, store) {
   const searchResults = document.getElementById('search-results');
-
   if (results.length === 0) {
     searchResults.innerHTML = 'No results found.';
     return;

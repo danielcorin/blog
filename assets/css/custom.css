@@ -43,6 +43,10 @@ html {
   transition-delay: 0.3s;
 }
 
+.heading {
+  margin-top: 0.75em;
+}
+
 .heading-link {
   text-decoration: none;
   margin-left: 0.3em;
