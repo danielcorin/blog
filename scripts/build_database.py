@@ -9,7 +9,7 @@ import subprocess
 from collections import namedtuple
 from sqlite_utils import Database
 
-DB_NAME =  "site.db"
+DB_NAME = "site.db"
 
 
 def list_hugo_content():
@@ -21,6 +21,7 @@ def list_hugo_content():
 
 
 SiteEntry = namedtuple("SiteEntry", ["entry", "tags", "announcements", "aliases"])
+
 
 def prepare_entry(entry):
     """Return a SiteEntry with details about a single content entry"""
@@ -43,15 +44,20 @@ def prepare_entry(entry):
     for field in simple_fields:
         entry[field] = frontmatter.get(field)
 
-    tags = [{"entry_path": entry_path, "tag": tag} for tag in (frontmatter.get("tags") or [])]
+    tags = [
+        {"entry_path": entry_path, "tag": tag}
+        for tag in (frontmatter.get("tags") or [])
+    ]
     announcements = [
         {"entry_path": entry_path, "service": service, "url": url}
         for service, url in frontmatter.get("announcements", {}).items()
     ]
     aliases = [
-        {"entry_path": entry_path, "url": alias} for alias in frontmatter.get("aliases", [])
+        {"entry_path": entry_path, "url": alias}
+        for alias in frontmatter.get("aliases", [])
     ]
     return SiteEntry(entry, tags, announcements, aliases)
+
 
 def build_db():
     """Build the database"""
@@ -80,6 +86,7 @@ def build_db():
     site["aliases"].insert_all(
         aliases, pk="url", foreign_keys=[("entry_path", "entries")]
     )
+
 
 if __name__ == "__main__":
     build_db()

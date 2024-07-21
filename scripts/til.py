@@ -1,18 +1,19 @@
 import os
 import sys
-import subprocess
 import argparse
 
 from post_frontmatter import generate
 
-parser = argparse.ArgumentParser(description='Create TIL post.')
-parser.add_argument('path', type=str, help='the path to the file to create')
+parser = argparse.ArgumentParser(description="Create TIL post.")
+parser.add_argument("path", type=str, help="the path to the file to create")
 args = parser.parse_args()
 
-path = args.path.replace('.md', '')
+path = args.path.replace(".md", "")
 # Make the file name human readable with sensible capitalization
-path_parts = path.split('/')
-formatted_title = ' '.join([part.capitalize().replace('-', ' ') for part in path_parts[-1].split('-')])
+path_parts = path.split("/")
+formatted_title = " ".join(
+    [part.capitalize().replace("-", " ") for part in path_parts[-1].split("-")]
+)
 file_path = f"content/til/{path}.md"
 directory = os.path.dirname(file_path)
 os.makedirs(directory, exist_ok=True)
