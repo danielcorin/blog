@@ -27,3 +27,8 @@ sync:
 .PHONY: post
 post:
 	@hugo new "posts/$(shell date +%Y)/$(p).md"
+
+.PHONY: db
+db:
+	@python scripts/build_database.py
+
