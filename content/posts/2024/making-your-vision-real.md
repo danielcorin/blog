@@ -25,7 +25,7 @@ The model has implicitly filled in several gaps in the prompt:
 - should anything else be in the image?
 
 The model outputs what looks like a picture of a tiger, but there are all sorts of aspects of it that aren't true to how you might have envisioned that picture in your head.
-If your vision ends at producing an image of _some tiger_, then models might not be very useful, but models really excel at giving out the output you want if you have something more specific in mind.
+If your vision ends at producing an image of _some tiger_, then models might not be very useful, but models really excel at giving you the output you want if you have something more specific in mind.
 
 I use the example of image generation because I personally am not a particularly skilled artist.
 However, if I can imagine a scene in my head, I can describe what I want to see in words, and continuously refine that image by tweaking my prompt and running model inference until the image in my head comes to life from my description (or something pretty close to it).
