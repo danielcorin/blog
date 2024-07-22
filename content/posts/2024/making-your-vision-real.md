@@ -1,9 +1,9 @@
 ---
-title: "Making Your Vision Real"
+title: "Making Your Vision Real with Models"
 date: 2024-07-21T12:31:12-04:00
 draft: false
 tags:
-- language_models
+- image_models
 - vision
 ---
 
