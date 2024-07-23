@@ -1,7 +1,1 @@
-<div class="edit-link">
-    {{ $fileEditPath := .File.Path }}
-    {{ $editUrl := printf "https://github.com/danielcorin/blog/edit/main/content/%s" $fileEditPath }}
-    <a href="{{ $editUrl }}" target="_blank" rel="noopener noreferrer">
-        <span class="edit-icon">✎</span> Edit
-    </a>
-</div>
+{{ partial "post/edit-link.html" . }}
