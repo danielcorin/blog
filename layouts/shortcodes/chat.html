@@ -13,7 +13,7 @@
             <div class="chat-content">
                 {{ range .content }}
                 {{ if eq .type "text" }}
-                <p>{{ .text | markdownify }}</p>
+                <div>{{ .text | markdownify }}</div>
                 {{ end }}
                 {{ end }}
             </div>
