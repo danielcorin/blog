@@ -1,5 +1,6 @@
 {{ $model := .Get "model" }}
 {{ $link := .Get "link" }}
+{{ $user := .Get "user" | default "user" }}
 {{ $json := .Inner | unmarshal }}
 
 <div class="chat-container">
@@ -9,12 +10,16 @@
     <div class="chat-messages">
         {{ range $json }}
         <div class="chat-message {{ .role }}">
-            <div class="chat-role">{{ .role }}</div>
+            <div class="chat-role">{{ if eq .role "user" }}{{ $user }}{{ else }}{{ .role }}{{ end }}</div>
             <div class="chat-content">
+                {{ if reflect.IsSlice .content }}
                 {{ range .content }}
                 {{ if eq .type "text" }}
                 <div>{{ .text | markdownify }}</div>
                 {{ end }}
+                {{ end }}
+                {{ else }}
+                <div>{{ .content | markdownify }}</div>
                 {{ end }}
             </div>
         </div>

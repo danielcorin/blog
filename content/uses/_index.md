@@ -53,5 +53,5 @@ title: "Uses"
 
 ## ✨🤖 Language Models
 
-- [claude-3](https://www.anthropic.com/claude)
-- [gpt-4/gpt-4-turbo](https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4)
+- [claude-3.5-sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)
+- [gpt-4o](https://openai.com/index/hello-gpt-4o/)
