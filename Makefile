@@ -32,3 +32,6 @@ post:
 db:
 	@python scripts/build_database.py
 
+.PHONY: tags
+tags:
+	python -m scripts.list_tags

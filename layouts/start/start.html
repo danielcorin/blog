@@ -3,17 +3,21 @@
 {{ partial "light_dark.html" . }}
 {{ end }}
 <div class="post">
-    {{ with .Site.GetPage "/uses" }}
-    {{ if .Pages }}
-    {{ range .Pages }}
+    {{ with .Site.GetPage "/start" }}
     <h1 class="post-title">{{ .Title }}</h1>
     {{ .Content }}
     {{ end }}
-    {{ else }}
-    <h1 class="post-title">{{ .Title }}</h1>
-    {{ .Content }}
-    {{ end }}
-    {{ end }}
+
+    <ul>
+        {{ range sort .Site.RegularPages.ByDate.Reverse }}
+        {{ if .Params.selected_work }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+
     {{ if (.Site.Params.listmonk) }}
     {{ partial "post/listmonk_email_newsletters.html" . }}
     {{ end }}

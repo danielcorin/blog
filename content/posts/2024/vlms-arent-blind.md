@@ -7,6 +7,7 @@ tags:
 - claude-3.5-sonnet
 toc: true
 github_url: https://github.com/danielcorin/toys/tree/main/vision-models-arent-blind
+selected_work: true
 ---
 
 I attempted to reproduce the results for one task from the [VLMs are Blind paper](https://vlmsareblind.github.io/).

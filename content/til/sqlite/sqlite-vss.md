@@ -8,6 +8,7 @@ tags:
 - embeddings
 - language_models
 - datasette
+selected_work: true
 ---
 
 I spent yesterday and today working through the excellent [guide](https://observablehq.com/@asg017/introducing-sqlite-vss) by Alex on using [`sqlite-vss`](https://github.com/asg017/sqlite-vss) to do vector similarity search in a SQLite database.

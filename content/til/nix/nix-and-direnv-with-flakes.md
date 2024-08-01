@@ -8,6 +8,7 @@ tags:
 - flakes
 - hugo
 - python
+selected_work: true
 ---
 
 Last year I wrote about [nix and direnv]({{< ref "/posts/2023/nix-and-direnv.md" >}}) as I explored the potential convenience of an isolated, project-specific environment.

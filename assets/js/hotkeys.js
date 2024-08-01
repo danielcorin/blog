@@ -1,6 +1,6 @@
-// Add hotkey listeners if we're on the homepage
-if (window.location.pathname === '/') {
-    document.addEventListener('keydown', function (event) {
+// Add hotkey listeners
+document.addEventListener('keydown', function (event) {
+    if (window.location.pathname === '/') {
         switch (event.key.toLowerCase()) {
             case 'a':
                 window.location.href = '/about/';
@@ -27,5 +27,7 @@ if (window.location.pathname === '/') {
                 window.location.href = '/uses/';
                 break;
         }
-    });
-}
+    } else if (window.location.pathname !== '/search/' && event.key.toLowerCase() === 'h') {
+        window.location.href = '/';
+    }
+});
