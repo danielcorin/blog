@@ -12,7 +12,7 @@ One of my favorite things to do with language models is to use them to write cod
 I've been wanting to build a variation on tic-tac-toe involving a bit of game theory.
 I called it "Tactic".
 I wasn't even really sure if the game would be any more interesting than tic-tac-toe itself, which reliably ends in draws for any players who understand the basics of the game.
-Rather than explain too much, I'll show the prompt I wrote for `claude-3.5-opus` using [Workbench](https://console.anthropic.com/workbench).
+Rather than explain too much, I'll show the prompt I wrote for `claude-3.5-sonnet` using [Workbench](https://console.anthropic.com/workbench).
 Try it yourself!
 You will probably receive a response quite similar to what I got.
 Related: I need to start saving my model conversations in a consistent format.
