@@ -18,7 +18,9 @@
                 <div>{{ .text | markdownify }}</div>
                 {{ else if eq .type "image_url" }}
                 <div>
-                    <img src="{{ .image_url.url }}" alt="Image" style="max-width: 75%; height: auto;" />
+                    <a href="{{ .image_url.url }}" target="_blank">
+                        <img src="{{ .image_url.url }}" alt="Image" style="max-width: 75%; height: auto;" />
+                    </a>
                 </div>
                 {{ end }}
                 {{ end }}
