@@ -1,4 +1,4 @@
 <span class="sidenote-wrapper">
     <span class="sidenote-anchor">{{ .Get 0 | safeHTML }}</span>
-    <span class="sidenote">{{ .Inner }}</span>
+    <span class="sidenote">{{ .Inner | markdownify }}</span>
 </span>
