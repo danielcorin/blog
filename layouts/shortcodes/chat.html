@@ -1,34 +1,59 @@
 {{ $model := .Get "model" }}
 {{ $link := .Get "link" }}
 {{ $user := .Get "user" | default "user" }}
+{{ $summary := .Get "summary" | default "Chat" }}
 {{ $json := .Inner | unmarshal }}
+{{ $open := .Get "open" | default true }}
+{{ $id := .Get "id" | default (now.UnixNano) }}
 
-<div class="chat-container">
+<div class="chat-container" id="chatContainer{{ $id }}">
     <div class="chat-header">
         <span class="chat-model">{{ $model }}</span>
+        <button id="chatCopyButton{{ $id }}" class="chat-copy-button"
+            onclick="copyToClipboard('{{ .Inner }}', '{{ $id }}')"></button>
     </div>
-    <div class="chat-messages">
-        {{ range $json }}
-        <div class="chat-message {{ .role }}">
-            <div class="chat-role">{{ if eq .role "user" }}{{ $user }}{{ else }}{{ .role }}{{ end }}</div>
-            <div class="chat-content">
-                {{ if reflect.IsSlice .content }}
-                {{ range .content }}
-                {{ if eq .type "text" }}
-                <div>{{ .text | markdownify }}</div>
-                {{ else if eq .type "image_url" }}
-                <div>
-                    <a href="{{ .image_url.url }}" target="_blank">
-                        <img src="{{ .image_url.url }}" alt="Image" style="max-width: 75%; height: auto;" />
-                    </a>
+    <details {{ if $open }}open{{ end }}>
+        <summary class="chat-summary">{{ $summary }}</summary>
+        <div class="chat-messages">
+            {{ range $json }}
+            <div class="chat-message {{ .role }}">
+                <div class="chat-role">{{ if eq .role "user" }}{{ $user }}{{ else }}{{ .role }}{{ end }}</div>
+                <div class="chat-content">
+                    {{ if reflect.IsSlice .content }}
+                    {{ range .content }}
+                    {{ if eq .type "text" }}
+                    <div>{{ .text | markdownify }}</div>
+                    {{ else if eq .type "image_url" }}
+                    <div>
+                        <a href="{{ .image_url.url }}" target="_blank">
+                            <img src="{{ .image_url.url }}" alt="Image"
+                                style="max-width: 100%; height: auto; border-radius: 5px;" />
+                        </a>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                    {{ else }}
+                    <div>{{ .content | markdownify }}</div>
+                    {{ end }}
                 </div>
-                {{ end }}
-                {{ end }}
-                {{ else }}
-                <div>{{ .content | markdownify }}</div>
-                {{ end }}
             </div>
+            {{ end }}
         </div>
-        {{ end }}
-    </div>
+    </details>
 </div>
+
+<script>
+    function copyToClipboard(text, id) {
+        navigator.clipboard.writeText(text).then(function () {
+            var button = document.getElementById('chatCopyButton' + id);
+            button.classList.remove('chat-copy-button');
+            button.classList.add('chat-copy-success');
+            setTimeout(function () {
+                button.classList.remove('chat-copy-success');
+                button.classList.add('chat-copy-button');
+            }, 2000);
+        }, function (err) {
+            console.error('Failed to copy text: ', err);
+        });
+    }
+</script>

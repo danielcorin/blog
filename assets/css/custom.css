@@ -355,6 +355,33 @@ div.search-result-date {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-copy-button {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("/icons/copy_content.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.chat-copy-success {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("/icons/copy_success.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .chat-model {
@@ -367,6 +394,16 @@ div.search-result-date {
   vertical-align: middle;
   fill: var(--body-bg);
   height: 0.9em;
+}
+
+.chat-summary {
+  font-weight: normal;
+  font-size: 0.9em;
+  padding: 0.2rem;
+  background-color: transparent;
+  color: var(--sidebar-p-color);
+  border: none;
+  cursor: pointer;
 }
 
 .chat-messages {
