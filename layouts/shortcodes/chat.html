@@ -27,7 +27,7 @@
                     <div>
                         <a href="{{ .image_url.url }}" target="_blank">
                             <img src="{{ .image_url.url }}" alt="Image"
-                                style="max-width: 100%; height: auto; border-radius: 5px;" />
+                                style="max-width: 75%; height: auto; border-radius: 5px;" />
                         </a>
                     </div>
                     {{ end }}
@@ -44,14 +44,14 @@
 
 <script>
     function copyToClipboard(text, id) {
-        navigator.clipboard.writeText(text).then(function () {
+        navigator.clipboard.writeText(text.trim()).then(function () {
             var button = document.getElementById('chatCopyButton' + id);
             button.classList.remove('chat-copy-button');
             button.classList.add('chat-copy-success');
             setTimeout(function () {
                 button.classList.remove('chat-copy-success');
                 button.classList.add('chat-copy-button');
-            }, 2000);
+            }, 1000);
         }, function (err) {
             console.error('Failed to copy text: ', err);
         });
