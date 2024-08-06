@@ -1,2 +1,4 @@
 use flake .
+. .venv/bin/activate
+
 export RAINDROP_TOKEN=
