@@ -44,6 +44,9 @@ def prepare_entry(entry):
     for field in simple_fields:
         entry[field] = frontmatter.get(field)
 
+    # Include the post content
+    entry["content"] = frontmatter.content
+
     tags = [
         {"entry_path": entry_path, "tag": tag}
         for tag in (frontmatter.get("tags") or [])
