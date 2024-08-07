@@ -9,6 +9,8 @@ tags:
 - protobuf
 ---
 
+In light of OpenAI releasing [structured output in the model API](https://openai.com/index/introducing-structured-outputs-in-the-api/), let's move output structuring another level up the stack to the microservice/RPC level.
+
 ## A light intro to Protobufs
 
 Many services use [Protocol Buffers](https://protobuf.dev/) (protobufs) to establish contracts for what data an RPC requires and what it will return.
