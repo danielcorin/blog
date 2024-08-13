@@ -1,6 +1,6 @@
 ---
 date: "2024-08-12T21:15:27Z"
-title: "Structured Output, Functions And Prompting"
+title: "Structured Output, Functions and Prompting"
 draft: false
 tags:
 - openai
