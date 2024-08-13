@@ -27,3 +27,5 @@ draft: false
 - https://www.simplermachines.com
 - https://victoria.dev
 - https://www.henrikkarlsson.xyz/
+- https://udara.io/
+- https://jeremy.fast.ai/

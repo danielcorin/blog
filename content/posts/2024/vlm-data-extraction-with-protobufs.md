@@ -13,7 +13,7 @@ In light of OpenAI releasing [structured output in the model API](https://openai
 
 ## A light intro to Protobufs
 
-Many services use [Protocol Buffers](https://protobuf.dev/) (protobufs) to establish contracts for what data an RPC requires and what it will return.
+Many services (mostly in microservice land) use [Protocol Buffers](https://protobuf.dev/) (protobufs) to establish contracts for what data an RPC requires and what it will return.
 If you're completely unfamiliar with protobufs, you can read up on them [here](https://protobuf.dev/).
 
 Here is an example of a `message` that a protobuf `service` might return.
