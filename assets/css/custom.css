@@ -355,9 +355,25 @@ div.search-result-date {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.chat-model-info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.chat-model,
+.chat-temperature {
+  font-weight: bold;
+  color: var(--sidebar-h1-color);
+  font-size: 0.85em;
+}
+
+.chat-temperature {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  margin-left: 0.5em;
 }
 
 .chat-copy-button {
@@ -382,12 +398,6 @@ div.search-result-date {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.chat-model {
-  font-weight: bold;
-  color: var(--sidebar-h1-color);
-  font-size: 0.85em;
 }
 
 .chat-link svg {

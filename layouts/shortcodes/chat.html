@@ -5,10 +5,16 @@
 {{ $json := .Inner | unmarshal }}
 {{ $open := .Get "open" | default true }}
 {{ $id := .Get "id" | default (now.UnixNano) }}
+{{ $temperature := .Get "temperature" }}
 
-<div class="chat-container" id="chatContainer{{ $id }}">
+<div class="chat-container" id="chat-container-{{ $id }}">
     <div class="chat-header">
-        <span class="chat-model">{{ $model }}</span>
+        <div class="chat-model-info">
+            <span class="chat-model">{{ $model }}</span>
+            {{ if $temperature }}
+            <span class="chat-temperature">temp: {{ $temperature }}</span>
+            {{ end }}
+        </div>
         <button id="chatCopyButton{{ $id }}" class="chat-copy-button"
             onclick="copyToClipboard('{{ .Inner }}', '{{ $id }}')"></button>
     </div>
