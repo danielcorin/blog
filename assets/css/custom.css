@@ -453,6 +453,16 @@ div.search-result-date {
   font-size: 0.85em;
 }
 
+table {
+  font-size: 0.75em;
+}
+
+table th,
+table td {
+  padding: 0.3rem;
+}
+
+
 
 @media (max-width: 600px) {
   .chat-container {
