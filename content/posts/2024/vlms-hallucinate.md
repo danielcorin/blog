@@ -160,7 +160,7 @@ I ran three more rounds of testing for this document specifically.
 | claude-3-5-sonnet-20240620 | [receipt_item_comments.proto](https://github.com/danielcorin/toys/blob/main/vlms-hallucinate/protos/receipt_item_comments.proto) | [receipt-no-tax-or-totals.pdf](https://github.com/danielcorin/toys/blob/main/vlms-hallucinate/docs/receipt-no-tax-or-totals.pdf) | 0/3 |
 | claude-3-5-sonnet-20240620 | [receipt_optionals.proto](https://github.com/danielcorin/toys/blob/main/vlms-hallucinate/protos/receipt_optionals.proto)     | [receipt-no-tax-or-totals.pdf](https://github.com/danielcorin/toys/blob/main/vlms-hallucinate/docs/receipt-no-tax-or-totals.pdf) | 2/3 |
 
-In all but one test, we see hallucinations at least 1/3 times and the only approach for which we don't (`claude-3-5-sonnet-20240620`/`[receipt_item_comments.proto](https://github.com/danielcorin/toys/blob/main/vlms-hallucinate/protos/receipt_item_comments.proto)`) is pretty kludgy.
+In all but one test, we see hallucinations at least 1/3 times and the only approach for which we don't (`claude-3-5-sonnet-20240620`/[receipt_item_comments.proto](https://github.com/danielcorin/toys/blob/main/vlms-hallucinate/protos/receipt_item_comments.proto)) is pretty kludgy.
 
 ```proto
 syntax = "proto3";
