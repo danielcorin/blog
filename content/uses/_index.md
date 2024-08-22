@@ -7,7 +7,6 @@ title: "Uses"
 
 ## 💻 macOS apps
 
-- [Alacritty](https://github.com/alacritty/alacritty): my secondary terminal emulator -- I primarily use iTerm2
 - [Alfred](https://www.alfredapp.com/): app launcher, multi-clipboard
 - [Cursor](https://cursor.sh/): an editor with great LLM-completion tooling
 - [Dozer](https://github.com/Mortennn/Dozer): hides menu bar items
@@ -17,6 +16,7 @@ title: "Uses"
 - [Karabiner](https://karabiner-elements.pqrs.org/): to turn caps lock into a hyper key
 - [Obsidian](https://obsidian.md/): notes as plaintext files (markdown)
 - [Paku](https://paku.app/): monitors air quality
+- [Notion](https://www.notion.so): flexible document creation tool
 
 ## 🧰 CLI
 
@@ -37,8 +37,9 @@ title: "Uses"
 
 ### Experimenting
 
-- [open-interpreter](https://github.com/OpenInterpreter/open-interpreter)
-- [sketchybar](https://github.com/FelixKratz/SketchyBar)
+- [Zed](https://zed.dev/): a fast text editor with interesting AI features
+- [Pile](https://udara.io/pile/): an AI-native journaling app with offline model support
+- [WezTerm](https://wezfurlong.org/wezterm/index.html): a fast terminal with flexible Lua configuration
 
 ## 📱 iOS apps
 
