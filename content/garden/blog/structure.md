@@ -5,6 +5,10 @@ draft: false
 
 My blog has the following sections:
 
+## [Search](/)
+
+Search functionality across all the content on this site.
+
 ## [Posts](/posts)
 
 I view these as complete or polished pieces. They are of varied quality, but
