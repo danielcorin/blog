@@ -136,3 +136,5 @@ To clean things up (if you so choose), run
 ```sh
 ollama rm phi-3-mini-4k-instruct:latest
 ```
+
+Huge thanks to [Vinny](https://ynniv.com) for his help getting this working!
