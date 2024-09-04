@@ -55,4 +55,3 @@ title: "Uses"
 ## ✨🤖 Language Models
 
 - [claude-3.5-sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)
-- [gpt-4o](https://openai.com/index/hello-gpt-4o/)
