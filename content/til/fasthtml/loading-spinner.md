@@ -74,7 +74,8 @@ def home():
                 Button(
                     Span("Submit", _class="button-content"),
                     Span(
-                        Img(src="https://htmx.org/img/bars.svg"),
+                        "Loading...",
+                        aria_busy="true",
                         _class="indicator",
                     ),
                     type="submit",
