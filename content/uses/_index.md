@@ -22,7 +22,7 @@ title: "Uses"
 
 - [bat](https://github.com/sharkdp/bat)
 - [brew](https://brew.sh/) (nix managed)
-- [difftastic](https://github.com/Wilfred/difftastic)
+- [delta](https://github.com/dandavison/delta)
 - [eza](https://github.com/eza-community/eza)
 - [fzf](https://github.com/junegunn/fzf)
 - [goku](https://github.com/yqrashawn/GokuRakuJoudo)
