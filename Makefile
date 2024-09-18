@@ -35,3 +35,7 @@ db:
 .PHONY: tags
 tags:
 	python -m scripts.list_tags
+
+.PHONY: images
+images:
+	find _static/img -type f -name "*.png" -exec pngquant --quality=65-80 --ext=.png --force {} \;
