@@ -39,3 +39,5 @@ tags:
 .PHONY: images
 images:
 	find _static/img -type f -name "*.png" -exec pngquant --quality=65-80 --ext=.png --force {} \;
+	find _static/img -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim --max=80 --strip-all {} \;
+	find _static/img -type f -name "*.gif" -exec gifsicle -O3 --colors 256 -o {} {} \;
