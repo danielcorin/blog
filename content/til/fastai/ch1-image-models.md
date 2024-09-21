@@ -5,6 +5,7 @@ draft: false
 series: "Fast.ai Course"
 tags:
 - course.fast.ai
+github_url: https://github.com/danielcorin/fastbook_projects/tree/main/img_model_voice_classifier
 ---
 
 I set out to do a project using my learnings from the first chapter of the [fast.ai course](https://course.fast.ai).
