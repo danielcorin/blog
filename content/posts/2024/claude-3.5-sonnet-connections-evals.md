@@ -26,7 +26,6 @@ Here is an example conversation between the model and the scorer, as the model a
 
 A few notes:
 - The chat can be collapsed if you'd rather not read it or once you get the general idea
-For more recent puzzles, it's less likely thehttps://github.com/danielcorin/llm_connections model was trained on material with the verbatim solutions (I don't know how often these models are being retrained without explicit versioned releases, if at all).
 - XML-like tags like `<scratchpad>` are being hidden because they are being invisibly rendered by the DOM (I am working on a way around this, but you can look at the [code](https://github.com/danielcorin/llm_connections/blob/main/prompts/208fbecbef6da08c1c9a0e07aba1411669bdb497562d5012c101d55afac018bb.txt) for the exact prompt used)
 
 {{< chat model="claude-3-5-sonnet-20240620" raw=true >}}
@@ -188,7 +187,7 @@ An example model reply when prompted to reproduce on of the puzzles: "Yes, I'm f
 There are many websites that contain Connections puzzle answers.
 If a model was trained on these webpages, it may be drawing on these known solutions rather than guessing them through "reasoning".
 This theory is supported by the fact that the model performance worsened over time, meaning it was more likely to solve puzzles for which its training data contained the solution.
-For more recent puzzles, it's less likely thehttps://github.com/danielcorin/llm_connections model was trained on material with the verbatim solutions (I don't know how often these models are being retrained without explicit versioned releases, if at all).
+For more recent puzzles, it's less likely the model was trained on material with the verbatim solutions (I don't know how often these models are being retrained without explicit versioned releases, if at all).
 
 #### The puzzles could be getting more challenging
 
