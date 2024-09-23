@@ -201,3 +201,8 @@ In the past, I tried fine tuning the model on just the words and the correct gro
 Based on this experience, a multi-turn conversation seems to perform much better, but it's not entirely clear to me what a multi-turn, fine tuning dataset would look like.
 This dataset would probably need to have meaningful analysis of each category through the conversation, eventually reaching the correct solution.
 Starting with the known correct categories, I could probably synthetically generate a dataset like that.
+
+## Final thoughts
+
+If the solutions to Connections puzzles have entered the training data of LLMs, the game may no longer be an interesting test of model reasoning capabilities since they would be memorizing answers rather than generalizing reasoning techniques.
+We would probably need a "clean" set of puzzles that the model wasn't trained on to test its true "ability" to play the game.
