@@ -6,6 +6,7 @@
 {{ $open := .Get "open" | default true }}
 {{ $id := .Get "id" | default (now.UnixNano) }}
 {{ $temperature := .Get "temperature" }}
+{{ $raw := .Get "raw" | default false }}
 
 <div class="chat-container" id="chat-container-{{ $id }}">
     <div class="chat-header">
@@ -28,7 +29,13 @@
                     {{ if reflect.IsSlice .content }}
                     {{ range .content }}
                     {{ if eq .type "text" }}
-                    <div>{{ .text | markdownify }}</div>
+                    <div>
+                        {{ if $raw }}
+                        {{ replace .text "\n" "<br>" | safeHTML }}
+                        {{ else }}
+                        {{ .text | markdownify }}
+                        {{ end }}
+                    </div>
                     {{ else if eq .type "image_url" }}
                     <div>
                         <a href="{{ .image_url.url }}" target="_blank">
@@ -39,7 +46,13 @@
                     {{ end }}
                     {{ end }}
                     {{ else }}
-                    <div>{{ .content | markdownify }}</div>
+                    <div>
+                        {{ if $raw }}
+                        {{ replace .content "\n" "<br>" | safeHTML }}
+                        {{ else }}
+                        {{ .content | markdownify }}
+                        {{ end }}
+                    </div>
                     {{ end }}
                 </div>
             </div>

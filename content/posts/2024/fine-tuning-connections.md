@@ -9,6 +9,7 @@ draft: false
 toc: true
 hn_url: https://news.ycombinator.com/item?id=39003066
 selected_work: true
+series: "LLM Connections"
 ---
 
 I started playing the NYTimes word game "[Connections](https://www.nytimes.com/games/connections)" recently, by the recommendation of a few friends.

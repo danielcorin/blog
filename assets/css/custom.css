@@ -3,6 +3,11 @@ html {
   font-weight: 400;
 }
 
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .sidebar-about h1 {
   color: var(--sidebar-h1-color);
   margin-top: 0;
