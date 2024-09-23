@@ -4,6 +4,9 @@ date: 2024-09-21T08:53:47-04:00
 draft: false
 series: "LLM Connections"
 github_url: https://github.com/danielcorin/llm_connections
+tags:
+- connections
+- evals
 ---
 
 I've continued experimenting with techniques to prompt a language model to solve [Connections](https://www.nytimes.com/games/connections).
