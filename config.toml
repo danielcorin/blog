@@ -4,7 +4,7 @@ theme = "poison"
 pluralizelisttitles = false
 title = "Way Enough"
 enableRobotsTXT = true
-staticDir = ['static', '_static']
+staticDir = ["static", "_static", "content"]
 
 [params.author]
 name = "Dan Corin"
@@ -50,8 +50,6 @@ stackoverflow_url = "https://stackoverflow.com/users/2631732/daniel-corin"
 series = "series"
 tags = "tags"
 
-[markup]
-[markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
 
