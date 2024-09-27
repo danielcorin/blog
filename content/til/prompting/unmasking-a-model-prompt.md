@@ -7,6 +7,7 @@ tags:
 - chatgpt
 - claude
 - command-r
+- prompt-eng
 ---
 
 The following prompt seems to be quite effective at leaking any pre-prompting done to a language model

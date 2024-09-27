@@ -1,0 +1,25 @@
+{{ define "main" -}}
+<div class="post">
+  {{ partial "post/info.html" . }}
+  <div class="content">
+    {{ .Content | replaceRE "(<h[2-6] id=\"([^\"]+)\">)(.+)(</h[2-6]>)" `${1}${3}<a href="#${2}"
+      class="heading-link">#</a>${4}` | safeHTML }}
+    {{ partial "post/post-post.html" . }}
+  </div>
+  {{ if .Params.hn_url }}
+  <a href="{{ .Params.hn_url }}" target="_blank" rel="noopener noreferrer">Discussion on Hacker News</a>
+  {{ end }}
+  {{ if (.Site.Params.listmonk) }}
+  {{ partial "post/listmonk_email_newsletters.html" . }}
+  {{ end }}
+  {{ partial "post/navigation.html" . }}
+  {{ if or (.Site.Params.remark42) (.Site.Config.Services.Disqus.Shortname) }}
+  {{ partial "post/comments.html" . }}
+  {{ end }}
+</div>
+{{- end }}
+{{ define "sidebar" }}
+{{ if and (not .Params.hideToc) (not .Site.Params.hideToc) }}
+{{ partial "table_of_contents.html" . }}
+{{ end }}
+{{ end }}

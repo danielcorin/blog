@@ -6,7 +6,7 @@
 <div class="posts">
     {{ range where .Site.RegularPages "Section" "eq" "projects" }}
         <div class="project">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a class="project-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
             <p>
                 {{ if .Params.featuredImage }}
                     <img src="{{ .Params.featuredImage }}"><br>

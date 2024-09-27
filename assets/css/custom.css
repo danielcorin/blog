@@ -215,6 +215,15 @@ input[type="checkbox"] {
   }
 }
 
+.project {
+  padding-bottom: 0.5em;
+}
+
+.project-title {
+    font-size: 1.2em;
+}
+
+
 .project-link {
   margin-right: 0.125em;
   text-decoration: none !important;
@@ -285,24 +294,30 @@ input[type="checkbox"] {
   margin-bottom: 1em;
 }
 
-.edit-link {
+.post-post {
+  display: flex;
+  align-items: center;
   margin-top: 0.5em;
 }
 
-.edit-link a {
+.edit-link, .raw-link {
+  margin-right: 1em;
+}
+
+.edit-link a, .raw-link a {
   display: inline-flex;
   align-items: center;
   color: var(--link-color);
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .edit-icon {
   margin-right: 0.3em;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
-.edit-link a:hover {
+.edit-link a:hover, .raw-link a:hover {
   text-decoration: underline;
 }
 
