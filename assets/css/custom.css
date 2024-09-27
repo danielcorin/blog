@@ -4,8 +4,15 @@ html {
 }
 
 ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  border: 1px solid var(--date-color);
+  border-radius: 4px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .sidebar-about h1 {
@@ -485,8 +492,6 @@ table th,
 table td {
   padding: 0.3rem;
 }
-
-
 
 @media (max-width: 600px) {
   .chat-container {
