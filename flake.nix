@@ -14,6 +14,8 @@
         };
         pythonEnv = pkgs.python3.withPackages (ps: with ps; [
           arrow
+          jupyter
+          nbconvert
           python-frontmatter
           pytz
           sqlite-utils
