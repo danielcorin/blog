@@ -17,13 +17,18 @@ def convert_notebook(notebook_path):
     subprocess.run(command, check=True)
     print(f"Successfully converted {notebook_path} to Markdown.")
 
+    # Rename source folder to "images"
+    images_folder = notebook_path.parent / "images"
+    if images_folder.exists():
+        shutil.rmtree(images_folder)
+        print(f"Removed existing {images_folder}")
+    if source_folder.exists():
+        source_folder.rename(images_folder)
+        print(f"Renamed {source_folder} to {images_folder}")
+
     markdown_file = notebook_path.with_suffix(".md")
     if markdown_file.exists():
         content = markdown_file.read_text()
-
-        # Get the relative path of the notebook
-        relative_path = notebook_path.relative_to(Path("content"))
-        prefix = str(relative_path.parent)
 
         # Replace image references
         lines = content.split("\n")
@@ -32,12 +37,17 @@ def convert_notebook(notebook_path):
                 parts = line.split("(")
                 if len(parts) > 1:
                     image_path = parts[1].split(")")[0]
-                    new_path = f"/{prefix}/{image_path}"
+                    new_path = f"images/{Path(image_path).name}"
                     lines[i] = f"{parts[0]}({new_path})"
 
-        # Write the updated content back to the file
-        markdown_file.write_text("\n".join(lines))
-        print(f"Updated image references in {markdown_file}")
+        # Write the updated content to index.md
+        index_file = notebook_path.with_name("index.md")
+        index_file.write_text("\n".join(lines))
+        print(f"Updated image references and wrote to {index_file}")
+
+        # Remove the original markdown file
+        markdown_file.unlink()
+        print(f"Removed original markdown file {markdown_file}")
 
 
 if __name__ == "__main__":

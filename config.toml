@@ -4,7 +4,7 @@ theme = "poison"
 pluralizelisttitles = false
 title = "Way Enough"
 enableRobotsTXT = true
-staticDir = ["static", "_static", "content"]
+staticDir = ["static", "_static"]
 
 [params.author]
 name = "Dan Corin"

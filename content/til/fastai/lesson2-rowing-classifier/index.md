@@ -324,7 +324,7 @@ interp.plot_confusion_matrix()
 
 
     
-![png](/til/fastai/lesson2-rowing-classifier_files/lesson2-rowing-classifier_18_4.png)
+![png](images/lesson2-rowing-classifier_18_4.png)
     
 
 
@@ -561,7 +561,7 @@ interp.plot_confusion_matrix()
 
 
     
-![png](/til/fastai/lesson2-rowing-classifier_files/lesson2-rowing-classifier_27_4.png)
+![png](images/lesson2-rowing-classifier_27_4.png)
     
 
 
