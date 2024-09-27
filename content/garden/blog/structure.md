@@ -5,7 +5,7 @@ draft: false
 
 My blog has the following sections:
 
-## [Search](/)
+## [Search](/search)
 
 Search functionality across all the content on this site.
 
