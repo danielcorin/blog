@@ -7,7 +7,7 @@ tags:
 - python
 - make
 - vercel
-project_url: https://blog.danielcorin.com
+project_url: /
 github_url: https://github.com/danielcorin/blog/
 ---
 
