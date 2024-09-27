@@ -1,0 +1,6 @@
+You're working on a Hugo blog with Python scripts
+
+Python
+- Always prefer `pathlib` where relevant
+- Don't add comments unless instructed
+- Don't add any print statements unless instructed
