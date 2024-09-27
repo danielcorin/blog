@@ -222,3 +222,5 @@ pyrightconfig.json
 .vscode
 .direnv
 .envrc
+
+/.quarto/
