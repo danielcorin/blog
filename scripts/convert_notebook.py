@@ -17,7 +17,6 @@ def convert_notebook(notebook_path):
     subprocess.run(command, check=True)
     print(f"Successfully converted {notebook_path} to Markdown.")
 
-    # Rename source folder to "images"
     images_folder = notebook_path.parent / "images"
     if images_folder.exists():
         shutil.rmtree(images_folder)
@@ -30,7 +29,6 @@ def convert_notebook(notebook_path):
     if markdown_file.exists():
         content = markdown_file.read_text()
 
-        # Replace image references
         lines = content.split("\n")
         for i, line in enumerate(lines):
             if "![png](" in line:
@@ -40,12 +38,10 @@ def convert_notebook(notebook_path):
                     new_path = f"images/{Path(image_path).name}"
                     lines[i] = f"{parts[0]}({new_path})"
 
-        # Write the updated content to index.md
         index_file = notebook_path.with_name("index.md")
         index_file.write_text("\n".join(lines))
         print(f"Updated image references and wrote to {index_file}")
 
-        # Remove the original markdown file
         markdown_file.unlink()
         print(f"Removed original markdown file {markdown_file}")
 
