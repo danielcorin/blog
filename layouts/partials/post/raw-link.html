@@ -1,5 +1,6 @@
 <div class="raw-link">
-    {{ $rawUrl := printf "/%s" .File.Path }}
+    {{ $rawUrl := printf "/%s/index.md" (strings.TrimSuffix ".md" .File.Path) }}
+    {{ $rawUrl = replace $rawUrl "/index/index.md" "/index.md" }}
     <a href="{{ $rawUrl }}" target="_blank" rel="noopener noreferrer">
         Raw
     </a>

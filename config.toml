@@ -55,7 +55,21 @@ unsafe = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+page = ["HTML", "Markdown"]
+
 
 [services]
 [services.rss]
 limit = 50
+
+[mediaTypes]
+[mediaTypes."text/markdown"]
+suffixes = ["md"]
+
+[outputFormats]
+[outputFormats.Markdown]
+mediaType = "text/markdown"
+isPlainText = true
+isHTML = false
+baseName = "index"
+rel = "alternate"
