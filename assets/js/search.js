@@ -100,29 +100,36 @@ const query = params.get('query')
 if (query) {
   // Retain the search input in the form when displaying results
   document.getElementById('search-input').setAttribute('value', query)
-  const idx = lunr(function () {
-    this.ref('id')
-    this.field('title', {
-      boost: 15
-    })
-    this.field('tags')
-    this.field('content', {
-      boost: 10
-    })
 
-    for (const key in window.store) {
-      this.add({
-        id: key,
-        title: window.store[key].title,
-        tags: window.store[key].tags,
-        content: window.store[key].content,
-        date: window.store[key].date,
+  // Fetch the search index
+  fetch('/search.json')
+    .then(response => response.json())
+    .then(store => {
+      const idx = lunr(function () {
+        this.ref('id')
+        this.field('title', {
+          boost: 15
+        })
+        this.field('tags')
+        this.field('content', {
+          boost: 10
+        })
+
+        for (const key in store) {
+          this.add({
+            id: key,
+            title: store[key].title,
+            tags: store[key].tags,
+            content: store[key].content,
+            date: store[key].date,
+          })
+        }
       })
-    }
-  })
 
-  // Perform the search
-  const results = idx.search(query)
-  // Update the list with results
-  displayResults(results, window.store)
+      // Perform the search
+      const results = idx.search(query)
+      // Update the list with results
+      displayResults(results, store)
+    })
+    .catch(error => console.error('Error fetching search index:', error))
 }
