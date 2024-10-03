@@ -1,0 +1,16 @@
+{{ $pageCount := 0 }}
+{{ $contentTypes := slice "posts" "til" "garden" "logs" "projects" }}
+{{ $pages := where .Site.Pages "Type" "in" $contentTypes }}
+{{ $lastIndex := sub (len $pages) 1 }}
+{
+    {{ range $index, $page := $pages }}
+        {{ $pageCount = add $pageCount 1 }}
+        "{{ $page.Permalink }}": {
+            "title": "[{{ $page.Type }}] {{ $page.Title }}",
+            "tags": {{ $page.Params.Tags | jsonify }},
+            {{ if $page.Date }}"date": "{{ $page.Date.Format "2006-01-02" }}",{{ end }}
+            "content": {{ $page.Content | plainify | jsonify }},
+            "url": "{{ $page.Permalink }}"
+        }{{ if ne $index $lastIndex }},{{ end }}
+    {{ end }}
+}
