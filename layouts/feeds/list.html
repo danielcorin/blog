@@ -1,0 +1,28 @@
+{{ define "main" -}}
+<div class="posts">
+    {{ range where .Paginator.Pages "Section" "eq" "feeds" }}
+        {{ if not .Draft}}
+            <article class="post">
+                <div class="info">
+                    <h1>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h1>
+
+                    {{ if .Params.featuredImage }}
+                    <p>
+                        <img src="{{ .Params.featuredImage }}"><br>
+                    </p>
+                    {{ end }}
+                </div>
+                {{ .Summary }}
+                {{ if .Truncated }}
+                <div class="read-more-link">
+                    <a href="{{ .RelPermalink }}">Read More…</a>
+                </div>
+                {{ end }}
+            </article>
+        {{ end }}
+    {{- end }}
+</div>
+{{ partial "pagination.html" . }}
+{{- end }}
