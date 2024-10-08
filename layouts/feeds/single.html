@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('xml-feed-container');
   const feedUrl = '{{ .Params.feed_url }}';
 
-  fetch(feedUrl)
+  const cacheBuster = new Date().getTime();
+  const urlWithCacheBuster = `${feedUrl}${feedUrl.includes('?') ? '&' : '?'}_=${cacheBuster}`;
+
+  fetch(urlWithCacheBuster)
     .then(response => response.text())
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
     .then(data => {
@@ -31,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <footer class="footnote">
-  <p>Feed provided by <a href="https://raindrop.io/">Raindrop.io</a></p>
-  <p>View this feed in your <a href="{{ .Params.browser_url }}">browser</a> or access the <a href="{{ .Params.feed_url }}">raw XML</a></p>
+  <p>Feed provided by <a href="https://raindrop.io/" target="_blank" rel="noopener noreferrer">Raindrop.io</a></p>
+  <p>View this feed in your <a href="{{ .Params.browser_url }}" target="_blank" rel="noopener noreferrer">browser</a> or access the <a href="{{ .Params.feed_url }}" target="_blank" rel="noopener noreferrer">raw XML</a></p>
 </footer>
 
 {{ end }}
