@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const pubDate = item.querySelector('pubDate').textContent;
         container.innerHTML += `
           <article>
-            <h4><a href="${link}" target="_blank" rel="noopener noreferrer">${title}</a></h4>
+            <h3><a href="${link}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
             <time>${new Date(pubDate).toISOString().split('T')[0]}</time>
           </article>
         `;

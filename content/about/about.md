@@ -16,3 +16,5 @@ This site is a sprawl of my work, thoughts, readings and learnings.
 - Software (and other things) I [use](/uses).
 - [Resume](/files/resume.pdf)
 - Feel free to [reach out](mailto:dcorin6@gmail.com)!
+
+I curate a reading list [here](/feeds/curated-reads/)
