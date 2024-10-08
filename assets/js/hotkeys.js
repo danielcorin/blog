@@ -5,6 +5,9 @@ document.addEventListener('keydown', function (event) {
             case 'a':
                 window.location.href = '/about/';
                 break;
+            case 'f':
+                window.location.href = '/feeds/';
+                break;
             case 'g':
                 window.location.href = '/garden/';
                 break;
