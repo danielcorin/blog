@@ -5,6 +5,7 @@ draft: false
 tags:
 - hugo
 - markdown
+- meta
 ---
 
 I added some configuration to this Hugo site allow access to the raw Markdown versions of posts.
