@@ -1,8 +1,10 @@
 ---
 date: "2024-10-07T18:22:14Z"
-title: "Fixing Nix When Upgrading To MacOS Sequoia"
+title: "Fixing Nix When Upgrading To macOS Sequoia"
 draft: false
 tags:
+- macos
+- nix
 ---
 
 I upgraded to macOS Sequoia a few weeks ago.
