@@ -8,7 +8,7 @@ tags:
 - dev_tools
 ---
 
-I downloaded [warp](https://www.warp.dev/) today.
+I downloaded [Warp](https://www.warp.dev/) today.
 I've been using [iTerm2](https://iterm2.com/) for years.
 It's worked well for me but Warp came recommended and so I figured I should be willing to give something different a chance.
 Warp looks like a pretty standard terminal except you need to sign-in, as with most things SaaS these days.
@@ -63,4 +63,4 @@ I'd expect it to jump to the pane in the same row.
 
 Those are my first impressions.
 It doesn't quite feel like "home" -- I may need to look into theme customization.
-I'm planning to keep it around and experience a bit.
+I'm planning to keep it around and experiment a bit.
