@@ -337,7 +337,8 @@ with torch.no_grad():
     print(f"Accuracy: {acc:.2%}")
 ```
 
-    Test Accuracy: 0.8804
+    Correct predictions: 368 out of 418
+    Accuracy: 88.04%
 
 
 Now, let's build what I think is a similar model with `fastai` primitives.
