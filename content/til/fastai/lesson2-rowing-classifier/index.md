@@ -6,6 +6,7 @@ tags:
 draft: false
 series: "Fast.ai Course"
 toc: true
+github_url: https://github.com/danielcorin/fastbook_projects/tree/main/rowing_classifier
 ---
 
 

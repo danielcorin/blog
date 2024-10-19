@@ -6,6 +6,7 @@ tags:
 draft: false
 series: "Fast.ai Course"
 toc: true
+github_url: https://github.com/danielcorin/fastbook_projects/tree/main/sgd_titanic
 ---
 
 In this notebook, we train two similar neural nets on the classic [Titanic dataset](https://www.kaggle.com/competitions/titanic/data) using techniques from `fastbook` [chapter 1](https://github.com/fastai/fastbook/blob/master/01_intro.ipynb) and [chapter 4](https://github.com/fastai/fastbook/blob/master/04_mnist_basics.ipynb).
