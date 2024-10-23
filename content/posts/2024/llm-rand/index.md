@@ -238,7 +238,7 @@ plt.show()
 
 
 That's a lot of data.
-My takeaways.
+My takeaways:
 
 - Models with simple prompts, at long temperatures, generally output the same couple of numbers, even though we ask for a "random" number
 - `llama3.2` outputs a pretty stable distribution of numbers across temperatures
