@@ -388,6 +388,7 @@ div.search-result-date {
 .chat-container {
   border-bottom: 1px solid var(--link-color);
   border-radius: 6px;
+  margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   overflow: hidden;
   background-color: var(--bkg-color);
