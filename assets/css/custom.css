@@ -576,4 +576,45 @@ table td {
   cursor: pointer;
 }
 
+.feed-item {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--border-color);
+}
 
+.feed-item:last-child {
+  border-bottom: none;
+}
+
+.feed-item-title {
+  margin-bottom: 0.5em;
+}
+
+.feed-item-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.feed-item-meta {
+  font-size: 0.85em;
+  color: var(--date-color);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.feed-item-source {
+  color: var(--date-color);
+  font-size: 0.9em;
+}
+
+.feed-footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9em;
+  color: var(--date-color);
+}

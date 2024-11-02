@@ -1,6 +1,6 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<p>{{ .Content }}</p>
+<h1 class="feed-title">{{ .Title }}</h1>
+<p class="feed-description">{{ .Content }}</p>
 <div id="xml-feed-container"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -20,20 +20,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const link = item.querySelector('link').textContent;
         const pubDate = item.querySelector('pubDate').textContent;
         container.innerHTML += `
-          <article>
-            <h3><a href="${link}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
-            <time>${new Date(pubDate).toISOString().split('T')[0]}</time>
+          <article class="feed-item">
+            <h3 class="feed-item-title"><a href="${link}" target="_blank" rel="noopener noreferrer" class="feed-item-link">${title}</a></h3>
+            <div class="feed-item-meta">
+              <time class="feed-item-date">${new Date(pubDate).toISOString().split('T')[0]}</time>
+              <span class="feed-item-source">${new URL(link).hostname}</span>
+            </div>
           </article>
         `;
       });
     })
     .catch(error => {
       console.error('Error fetching feed:', error);
-      container.innerHTML = '<p>Error loading feed. Please try again later.</p>';
+      container.innerHTML = '<p class="feed-error">Error loading feed. Please try again later.</p>';
     });
 });
 </script>
-<footer class="footnote">
+<footer class="feed-footer">
   <p>Feed provided by <a href="https://raindrop.io/" target="_blank" rel="noopener noreferrer">Raindrop.io</a></p>
   <p>View this feed in your <a href="{{ .Params.browser_url }}" target="_blank" rel="noopener noreferrer">browser</a> or access the <a href="{{ .Params.feed_url }}" target="_blank" rel="noopener noreferrer">raw XML</a></p>
 </footer>
