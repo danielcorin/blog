@@ -11,6 +11,11 @@
 <div class="chat-container" id="chat-container-{{ $id }}">
     <div class="chat-header">
         <div class="chat-model-info">
+            <button class="chat-toggle" onclick="toggleChat('{{ $id }}')">
+                <svg class="chevron" viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+            </button>
             <span class="chat-model">{{ $model }}</span>
             {{ if $temperature }}
             <span class="chat-temperature">temp: {{ $temperature }}</span>
@@ -19,8 +24,7 @@
         <button id="chatCopyButton{{ $id }}" class="chat-copy-button"
             onclick="copyToClipboard('{{ .Inner }}', '{{ $id }}')"></button>
     </div>
-    <details {{ if $open }}open{{ end }}>
-        <summary class="chat-summary">{{ $summary }}</summary>
+    <div id="chat-content-{{ $id }}" class="chat-content-wrapper" {{ if not $open }}style="display: none;"{{ end }}>
         <div class="chat-messages">
             {{ range $json }}
             <div class="chat-message {{ .role }}">
@@ -58,8 +62,34 @@
             </div>
             {{ end }}
         </div>
-    </details>
+    </div>
 </div>
+
+<style>
+.chat-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.chat-toggle .chevron {
+    fill: var(--sidebar-h1-color);
+    transition: transform 0.3s ease;
+}
+
+.chat-toggle.collapsed .chevron {
+    transform: rotate(-90deg);
+}
+
+.chat-content-wrapper {
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+</style>
 
 <script>
     function copyToClipboard(text, id) {
@@ -74,5 +104,17 @@
         }, function (err) {
             console.error('Failed to copy text: ', err);
         });
+    }
+
+    function toggleChat(id) {
+        const content = document.getElementById('chat-content-' + id);
+        const button = document.querySelector('#chat-container-' + id + ' .chat-toggle');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            button.classList.remove('collapsed');
+        } else {
+            content.style.display = 'none';
+            button.classList.add('collapsed');
+        }
     }
 </script>

@@ -379,12 +379,10 @@ div.search-result-date {
   background-color: var(--search-highlight-color);
   border-radius: 3px;
 }
-
 .chat-container {
   border: 3px solid var(--sidebar-bg-color);
   border-radius: 12px;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin: 0.75rem 0;
   overflow: hidden;
   background-color: var(--bkg-color);
 }
@@ -416,28 +414,25 @@ div.search-result-date {
   margin-left: 0.5em;
 }
 
-.chat-copy-button {
-  background: none;
-  border: none;
-  width: 24px;
-  height: 24px;
-  background-image: url("/icons/copy_content.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
+.chat-copy-button,
 .chat-copy-success {
   background: none;
   border: none;
   width: 24px;
   height: 24px;
-  background-image: url("/icons/copy_success.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+}
+
+.chat-copy-button {
+  background-image: url("/icons/copy_content.svg");
+  transition: opacity 0.3s ease;
+}
+
+.chat-copy-success {
+  background-image: url("/icons/copy_success.svg");
 }
 
 .chat-link svg {
@@ -471,14 +466,12 @@ div.search-result-date {
 .chat-message.user {
   background-color: var(--link-color);
   margin-left: auto;
-  border-left: none;
   border-bottom-right-radius: 4px;
 }
 
 .chat-message.assistant {
   background-color: var(--sidebar-bg-color);
   margin-right: auto;
-  border-left: none;
   border-bottom-left-radius: 4px;
 }
 
@@ -496,13 +489,34 @@ div.search-result-date {
   opacity: 0.8;
 }
 
-.chat-content {
-  line-height: 1.4;
-  font-size: 0.85em;
-}
-
+.chat-content,
 .chat-content .code-container {
   font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.chat-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.chat-toggle .chevron {
+  fill: var(--sidebar-h1-color);
+  transition: transform 0.3s ease;
+}
+
+.chat-toggle.collapsed .chevron {
+  transform: rotate(-90deg);
+}
+
+.chat-content-wrapper {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
 }
 
 table {
