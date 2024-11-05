@@ -41,7 +41,7 @@ images: ## Optimize images in the _static/img directory
 
 .PHONY: nbs
 nbs: ## Convert Jupyter notebooks to posts
-	@find content -name "*.ipynb" -exec python -m scripts.convert_notebook {} \;
+	@find content -name "*.ipynb" -print0 | xargs -0 -P 4 -I {} python -m scripts.convert_notebook {}
 
 .PHONY: help
 help: ## Display this help message
