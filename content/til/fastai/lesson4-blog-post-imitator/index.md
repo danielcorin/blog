@@ -3,15 +3,15 @@ title: "Practical Deep Learning, Lesson 4, Language Model Blog Post Imitator"
 date: 2024-11-04T13:57:00-04:00
 draft: false
 tags:
-- fastai
 - language_models
+- course.fast.ai
 series: "Fast.ai Course"
 github_url: https://github.com/danielcorin/fastbook_projects/tree/main/blog_post_imitator
 toc: true
 ---
 
 In this notebook/post, we're going to be using the markdown content from my [blog](https://github.com/danielcorin/blog) to try a language model.
-From this, we'll attempt to prompt the model to generate a post about a topic I might write.
+From this, we'll attempt to prompt the model to generate a post for a topic I might write about.
 
 Let's import `fastai` and disable warnings since these pollute the notebook a lot when I'm trying to convert these notebooks into posts (I am writing this as a notebook and converting it to a markdown file with [this script](https://github.com/danielcorin/blog/blob/8181116943a7e4a8583edcf9d64c2b08b41cbf34/scripts/convert_notebook.py)).
 
@@ -41,7 +41,7 @@ They look something like
 <the rest of the post with code, links, images, shortcodes, etc.>
 ```
 
-To get started, I modeled my approach after the one used in [chapter 10](https://github.com/fastai/fastbook/blob/master/10_nlp.ipynb) which looks something like
+To get started, I modeled my approach after the one used in [chapter 10](https://github.com/fastai/fastbook/blob/master/10_nlp.ipynb), which looks something like
 
 ```python
 get_imdb = partial(get_text_files, folders=['train', 'test', 'unsup'])
@@ -105,9 +105,9 @@ TypeError: 'NoneType' object is not iterable
 ```
 
 To workaround this challenge, I changed all the file extensions to `.txt`.
-This allowed the model to load an tokenize the dataset.
+This allowed the model to load and tokenize the dataset.
 
-Next, I had an issue with the encoding
+Next, I had an issue with encoding
 
 ```
     return f.read()
@@ -270,7 +270,7 @@ dls_lm.show_batch(max_n=2)
 
 
 That looks good, so we create a learner then run the same approach as is done in Chapter 10, checkpointing as we go.
-We don't _have_ to do it this way -- we could just call `fit_one_cycle` the number of times we want, but it was helpful for me to validate the process end-to-end once more.
+We don't _have_ to do it this way -- we could just call `fit_one_cycle` the number of times we want -- but it was helpful for me to validate the process end-to-end once more.
 
 
 ```python
@@ -534,15 +534,15 @@ print(pred)
      the most recent model to use this PYTHON code
 
 
-The output is a little wild but it kinda sort of makes sense and isn't too bad for a model I trained in a couple minutes on my MacBook.
+The output is a little wild but it _kinda sorta_ makes sense and isn't too bad for a model I trained in a couple minutes on my MacBook.
 
-I tweaked several parts of the approach in an effort to improve the output quality of the model.
+I tweaked several parts of the approach in effort to improve the model's output quality.
 Jumping back to the `clean_content` function, I found that removing the markdown frontmatter and replacing triple backticks with single tokens seemed to make the output make a bit more sense.
-When this fine-tune tries to generate code, it makes little sense and does strange things like emit tokens with triple words like `importimportimport`.
+When this fine-tuned model tries to generate code, it makes little sense and does strange things like emit tokens with triple words like `importimportimport`.
 I have a feeling this deficiency may be because the base model wasn't trained on much source code.
 
 So there we have it.
 A simple language model fine-tuned on my blog posts.
 This was a helpful experience for getting a feel for some feature engineering.
 
-If you liked this post, be sure to check out some of my other notebooks I've built while working through the [FastAI Course](https://course.fast.ai/).
+If you liked this post, be sure to check out some of my other notebooks I've built while working through the FastAI Course linked below.
