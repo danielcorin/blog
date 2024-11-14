@@ -362,7 +362,7 @@ viz_model.view(
 
 
     
-![svg](notebook_files/notebook_34_0.svg)
+<img src="images/notebook_34_0.svg" alt="Decision tree visualization">
     
 
 

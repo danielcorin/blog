@@ -31,6 +31,14 @@ def convert_notebook(notebook_path):
 
         lines = content.split("\n")
         for i, line in enumerate(lines):
+            if "![svg](" in line:
+                parts = line.split("![svg](")
+                if len(parts) > 1:
+                    image_path = parts[1].split(")")[0]
+                    new_path = f"images/{Path(image_path).name}"
+                    lines[i] = (
+                        f'<img src="{new_path}" alt="Decision tree visualization">'
+                    )
             if "![png](" in line:
                 parts = line.split("(")
                 if len(parts) > 1:
