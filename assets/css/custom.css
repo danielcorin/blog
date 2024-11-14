@@ -23,6 +23,17 @@ pre {
   font-family: "Abril Fatface", serif;
 }
 
+pre .code-container,
+.code-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: fit-content;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 /*
 * Spoilers
 * h/t: http://oostens.me/posts/hugo-inline-spoiler-shortcode/
