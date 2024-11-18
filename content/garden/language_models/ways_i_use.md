@@ -3,7 +3,6 @@ title: Ways I Use
 draft: false
 ---
 
-
 ## Code generation
 
 I use language models to generate code following specific instructions.
