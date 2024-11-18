@@ -34,10 +34,10 @@ tags: ## List all tags used in the blog
 	python -m scripts.list_tags
 
 .PHONY: images
-images: ## Optimize images in the _static/img directory
-	find _static/img -type f -name "*.png" -exec pngquant --quality=65-80 --ext=.png --force {} \;
-	find _static/img -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim --max=80 --strip-all {} \;
-	find _static/img -type f -name "*.gif" -exec gifsicle -O3 --colors 256 -o {} {} \;
+images: ## Optimize images in the specified directory (usage: make images d=path/to/dir)
+	find $(d) -type f -name "*.png" -exec pngquant --quality=65-80 --ext=.png --force {} \;
+	find $(d) -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim --max=80 --strip-all {} \;
+	find $(d) -type f -name "*.gif" -exec gifsicle -O3 --colors 256 -o {} {} \;
 
 .PHONY: nbs
 nbs: ## Convert Jupyter notebooks to posts
