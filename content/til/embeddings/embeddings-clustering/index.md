@@ -7,8 +7,8 @@ tags:
 - embeddings
 ---
 
-I explored how embeddings cluster by visualizing LLM-generated words across different categories. The visualizations helped build intuition about how these embeddings relate to each other in vector space. Most of the code was generated using Sonnet.
-
+I explored how embeddings cluster by visualizing LLM-generated words across different categories.
+The visualizations helped build intuition about how these embeddings relate to each other in vector space. Most of the code was generated using Sonnets.
 
 ```python
 !pip install --upgrade pip
@@ -119,7 +119,7 @@ print("\n...")
     ...
 
 
-From here, we can visualized a 3D scatter plot of the embeddings from multiple angle.
+From here, we can visualize a 3D scatter plot of the embeddings from multiple angles.
 
 
 ```python
@@ -165,12 +165,11 @@ plt.show()
 
 
 
-We can definitely see some clustering, but it's a bit a mess.
+We can definitely see some clustering, but it's a bit of a mess.
 The next cell uses `plotly` to create an interactive visualization, where the visibility of the categories can be toggled.
 Mouse over shows the word and category.
 The visualization also supports rotation and panning.
-I've included a screenshot because I haven't found a good way to included the interactive visualization my site yet.
-
+I've included a screenshot because I haven't found a good way to include the interactive visualization on my site yet.
 
 ```python
 import plotly.express as px
@@ -223,6 +222,5 @@ fig.update_layout(
 
 fig.show()
 ```
-
 
 ![Interactive 3D scatter plot showing word embeddings clustered by category. Each point represents a word, colored by its category. The plot uses PCA to reduce the high-dimensional embeddings to 3 dimensions.](images/interactive_scatter.png)
