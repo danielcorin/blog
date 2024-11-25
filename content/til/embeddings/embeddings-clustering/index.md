@@ -8,7 +8,7 @@ tags:
 ---
 
 I explored how embeddings cluster by visualizing LLM-generated words across different categories.
-The visualizations helped build intuition about how these embeddings relate to each other in vector space. Most of the code was generated using Sonnets.
+The visualizations helped build intuition about how these embeddings relate to each other in vector space. Most of the code was generated using Sonnet.
 
 ```python
 !pip install --upgrade pip
