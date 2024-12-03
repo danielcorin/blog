@@ -3,7 +3,7 @@ title: "Practical Deep Learning, Lesson 5, Pricing Iowa Houses with Random Fores
 date: 2024-11-14T08:27:45-05:00
 draft: false
 tags:
-- fastai
+- course.fast.ai
 - language_models
 series: "Fast.ai Course"
 toc: true
