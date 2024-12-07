@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2024-11-20
+date: 2024-12-07
 ---
 
 _What is a [now page](https://nownownow.com/about)?_
