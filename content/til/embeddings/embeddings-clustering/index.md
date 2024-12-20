@@ -5,6 +5,7 @@ draft: false
 tags:
 - language_models
 - embeddings
+image: images/interactive_scatter.png
 ---
 
 I explored how embeddings cluster by visualizing LLM-generated words across different categories.
