@@ -1,11 +1,5 @@
 {{ .Scratch.Set "title" .Site.Title }}
 
-{{ if .IsPage }}
-  {{ printf "<!-- DEBUG: Page Params -->" | safeHTML }}
-  {{ printf "Image: %s" .Params.image | safeHTML }}
-{{ end }}
-
-
 {{ .Scratch.Set "publisherIcon" .Site.Params.favicon }}
 {{ if .Site.Params.publisherIcon }}
     {{ .Scratch.Set "publisherIcon" .Site.Params.publisher_icon }}
