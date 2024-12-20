@@ -4,6 +4,7 @@ date: "2024-10-22"
 draft: false
 tags:
 - language_models
+image: images/llm_rand_18_0.png
 ---
 
 I had the idea to try and use a language model as a random number generator.
@@ -232,9 +233,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](images/llm_rand_14_0.png)
-    
+
 
 
 That's a lot of data.
@@ -293,9 +294,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](images/llm_rand_18_0.png)
-    
+
 
 
 As we'd expect, we start to have problems between temperatures 1 and 3.

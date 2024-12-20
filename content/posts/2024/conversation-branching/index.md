@@ -5,6 +5,7 @@ draft: false
 tags:
 - language_models
 - conversation_branching
+image: images/multiple_models.png
 ---
 
 Language models are more than chatbots - they're tools for thought.
