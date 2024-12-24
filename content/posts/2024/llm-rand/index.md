@@ -233,9 +233,9 @@ plt.show()
 ```
 
 
-
+    
 ![png](images/llm_rand_14_0.png)
-
+    
 
 
 That's a lot of data.
@@ -294,9 +294,9 @@ plt.show()
 ```
 
 
-
+    
 ![png](images/llm_rand_18_0.png)
-
+    
 
 
 As we'd expect, we start to have problems between temperatures 1 and 3.
