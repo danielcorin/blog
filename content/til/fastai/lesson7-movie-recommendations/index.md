@@ -3,7 +3,7 @@ title: "Practical Deep Learning, Lesson 7, Movie Recommendations"
 date: 2024-12-24T13:33:43-05:00
 draft: false
 tags:
-- course.fastai
+- course.fast.ai
 - collaborative_filtering
 series: "Fast.ai Course"
 toc: true
