@@ -6,7 +6,7 @@ tags:
 - openai
 - language_models
 - function_calling
-- structured_output
+- structured_data
 ---
 
 I've been prompting models to output JSON for about as long as I've been using models.
