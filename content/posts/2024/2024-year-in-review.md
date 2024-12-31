@@ -1,6 +1,6 @@
 ---
 title: "Year in Review: 2024"
-date: 2024-12-26T15:50:04-05:00
+date: 2024-12-31T10:50:04-05:00
 draft: false
 tags:
 - year_review
@@ -40,21 +40,24 @@ My goals for the year were the following
 
 | Category | Posts | Words |
 |----------|-------|-------|
-| [📖 Posts](/posts) | 20 | 24609 |
+| [🏗️ Projects](/projects) | 4 | 791 |
+| [📍 Now](/now) | 1 | 63 |
+| [📖 Posts](/posts) | 21 | 25415 |
 | [🌱 Garden](/garden) | 4 | 4827 |
-| [🏗️ Projects](/projects) | 3 | 602 |
 | [✏️ Logs](/logs) | 140 | 22687 |
-| [📝 Today I Learned](/til) | 46 | 34436 |
-| [📍 Now](/now) | 1 | 62 |
-| **Total** | **214** | **87223** |
+| [📝 Today I Learned](/til) | 47 | 35214 |
+| **Total** | **217** | **88997** |
 
-The "log" section of this site has become a helpful scratchpad for ideas and capture of what I am up to for myself to go back and reference.
+
+The "logs" section of this site has become a helpful scratchpad for ideas and capture of what I am up to for myself to go back and reference.
 I don't actively surface these entries anywhere on the site, but you can find them [here](/logs).
 Lately, a lot of longer posts and projects have started out as ideation in the logs.
 For a while I was also putting links of interesting work by others in my logs but I've moved that over to [feeds](/feeds).
 
 Not all content in the garden is timestamped.
 I'll probably aim to at least maintain an `updated_at` in the future.
+
+I'll also probably aim to restructure the `now` page(s) so that it preserves history explicitly rather than requiring inspection of the git history.
 
 ## Things I didn't do
 
