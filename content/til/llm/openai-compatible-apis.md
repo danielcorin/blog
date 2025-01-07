@@ -7,7 +7,7 @@ tags:
 - deepseek
 ---
 
-Deepseek V3 was recently released, a [cheap](https://api-docs.deepseek.com/quick_start/pricing/), reliable, supposedly GPT-4 class model.
+Deepseek V3 was recently released: a [cheap](https://api-docs.deepseek.com/quick_start/pricing/), reliable, supposedly GPT-4 class model.
 
 Quick note upfront, according to the [docs](https://api-docs.deepseek.com/quick_start/pricing/), there will be non-trivial price increases in February 2025:
 

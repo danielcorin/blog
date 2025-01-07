@@ -31,7 +31,7 @@ My goals for the year were the following
 - Built a [word game]({{< ref "projects/cogno.md" >}}) using embeddings
 - Built an [Electron app]({{< ref "projects/delta.md" >}}) for LLM conversation branching
 - Created a [blogroll]({{< ref "garden/inspiration/people.md" >}})
-- Created a [personal curated content feed](http://localhost:57373/feeds/curated-content/)
+- Created a [personal curated content feed](/feeds/curated-content/)
 - Created a [process](https://github.com/danielcorin/blog/blob/main/scripts/convert_notebook.py) to convert notebooks to posts on this blog, which might be my preferred code+writing approach right now (for Python at least)
 
 ## Content by the numbers
