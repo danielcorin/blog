@@ -9,7 +9,7 @@ ul, ol, dl {
 }
 
 pre {
-  border: 3px solid var(--sidebar-bg-color);
+  border: 3px solid var(--pre-border-color);
   border-radius: 12px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;

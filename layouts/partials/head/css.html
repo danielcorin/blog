@@ -20,6 +20,7 @@
       --moon-sun-color: {{ with .Site.Params.moon_sun_color }}{{ . }}{{ else }}#FFF{{ end }};
       --moon-sun-background-color: {{ with .Site.Params.moon_sun_background_color }}{{ . }}{{ else }}#515151{{ end }};
       --search-highlight-color: #FFFFD0;
+      --pre-border-color: #E0E0E0;
   }
   body.dark-theme {
       --text-color: {{ with .Site.Params.text_color_dark }}{{ . }}{{ else }}#eee{{ end }};
@@ -34,6 +35,7 @@
       --code-color: {{ with .Site.Params.code_color_dark }}{{ . }}{{ else }}#ff7f7f{{ end }};
       --code-background-color: {{ with .Site.Params.code_background_color_dark }}{{ . }}{{ else }}#393D47{{ end }};
       --search-highlight-color: #45450A;
+      --pre-border-color: #202020;
   }
   body {
       background-color: var(--bkg-color);
