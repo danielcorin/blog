@@ -13,7 +13,7 @@ At the time, the results weren't so great.
 
 ## An experiment
 
-With a slight modification to the script from that post, I tested out [`llama2-vision` 11B](https://ollama.com/library/llama2-vision) (~8GB in size between the model and the projector).
+With a slight modification to the script from that post, I tested out [`llama3.2-vision` 11B](https://ollama.com/library/llama3.2-vision) (~8GB in size between the model and the projector).
 Using [`uv`](https://github.com/astral-sh/uv) and [inline script dependencies](https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies), the full script looks like this
 
 ```python
