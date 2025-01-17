@@ -12,8 +12,8 @@ I recently became more active on [Bluesky](https://bsky.app/profile/danielcorin.
 
 I am currently exploring, focusing on and learning about:
 
-- course.fast.ai: lesson 8
 - local models
 - embeddings
+- [Astro](https://astro.build/)
 
 I am also working on [Delta](https://gist.github.com/danielcorin/fa87f57345d761ab276cbc82c8601171), a conversation branching tool for interacting with LLMs
