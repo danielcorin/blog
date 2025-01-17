@@ -2,8 +2,10 @@
 date: "2024-06-24T21:27:52Z"
 title: "Multi-Modal Models with ollama"
 draft: false
+series: Local VLMs
 tags:
 - ollama
+- vlms
 ---
 
 I spent some time experimenting with multi-modal model (also called vision models on the [ollama site](https://ollama.com/library)) to see how they perform.
