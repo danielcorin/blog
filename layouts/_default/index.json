@@ -1,7 +1,7 @@
 {{/* h/t
 https://github.com/brycewray/hugo-site/blob/24d8ff52bad303cf65c7550de620374c942d3579/layouts/_default/index.json */}}
 
-{{- $posts := where (where .Site.Pages "Section" "in" (slice "posts" "til")) "Kind" "page" -}}
+{{- $posts := where (where .Site.Pages "Section" "in" (slice "posts" "til" "external")) "Kind" "page" -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $posts = $posts | first $limit -}}

@@ -13,12 +13,12 @@ url = "https://danielcorin.com/about"
 avatar = "https://danielcorin.com/img/me.jpeg"
 
 [params]
-brand = "Way Enough"                  # appears in the sidebar
+brand = "Way Enough"                              # appears in the sidebar
 description = "Mostly software stuff"
 dark_mode = true
 rss_icon = true
 paginate = 10
-front_page_content = ["posts", "til"]
+front_page_content = ["posts", "til", "external"]
 
 # MENU PLACEHOLDER
 # Menu dict keys:
