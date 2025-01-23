@@ -31,3 +31,4 @@ draft: false
 - https://jeremy.fast.ai/
 - https://wattenberger.com/
 - https://sonnet.io
+- https://david-peter.de/
