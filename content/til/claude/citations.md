@@ -14,6 +14,7 @@ In the release, Anthropic disclosed the following customer case study:
 > "With Anthropic's Citations, we reduced source hallucinations and formatting issues from 10% to 0% and saw a 20% increase in references per response. This removed the need for elaborate prompt engineering around references and improved our accuracy when conducting complex, multi-stage financial research,” said Tarun Amasa, CEO, Endex.
 
 I decided to kick the tires on this feature as I thought it could slot in very nicely with a project I am actively working on.
+Also, I couldn't quickly find Python code I could copy and run so I conjured some.
 
 Note: the following document in this example is 100% model generated and chosen by the model and is meant to illustrate how the API can be used in Python.
 
