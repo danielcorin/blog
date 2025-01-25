@@ -6,10 +6,10 @@ tags:
 - vercel
 - astro
 - react
-project_url: https://thought-eddies.vercel.app
+project_url: https://www.thoughteddies.com
 ---
 
-[Thought Eddies](https://thought-eddies.vercel.app) is an interactive digital garden built with Astro and deployed (currently) on Vercel.
+[Thought Eddies](https://www.thoughteddies.com) is an interactive digital garden built with Astro and deployed (currently) on Vercel.
 My aim with this project is to "show" as much as "tell" with regard to using language models to build software systems and exploring new interaction models and UI/UX.
 
 Tech: React, [Astro](https://astro.build/), Vercel
