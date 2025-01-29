@@ -31,8 +31,7 @@ python -m venv .venv
 pip install -e .
 ```
 
-Now, modeling off the [script]([https://github.com/deepseek-ai/Janus/
-tree/main?tab=readme-ov-file#text-to-image-generation](https://github.com/deepseek-ai/Janus/tree/main?tab=readme-ov-file#janus-pro)) provided in the repo, let's generate an image from text.
+Now, modeling off the [script](https://github.com/deepseek-ai/Janus/tree/main?tab=readme-ov-file#janus-pro) provided in the repo, let's generate an image from text.
 Note: you need to expand the "Janus-Pro" section to see the code.
 
 ## The code
