@@ -1,0 +1,32 @@
+<div class="recommended-posts">
+<h3>Recommended Posts</h3>
+{{ $currentPage := . }}
+{{ $relatedPages := where (where .Site.RegularPages "Type" "in" (slice "posts" "til")) "Permalink" "!=" .Permalink }}
+
+{{ $recommendations := slice }}
+
+{{ range $relatedPages }}
+    {{ $matchingTags := 0 }}
+    {{ range .Params.tags }}
+    {{ if in $currentPage.Params.tags . }}
+        {{ $matchingTags = add $matchingTags 1 }}
+    {{ end }}
+    {{ end }}
+
+    {{ if gt $matchingTags 0 }}
+    {{ $recommendations = $recommendations | append (dict "page" . "score" $matchingTags) }}
+    {{ end }}
+{{ end }}
+
+{{ $sortedRecommendations := sort $recommendations "score" "desc" }}
+
+{{ if $sortedRecommendations }}
+<ul>
+{{ range first 3 $sortedRecommendations }}
+    <li>
+    <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
+</div>

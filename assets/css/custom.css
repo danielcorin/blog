@@ -400,7 +400,7 @@ div.search-result-date {
 }
 
 .chat-header {
-  background-color: var(--link-color);
+  background-color: var(--sidebar-bg-color);
   padding: 0.3rem 0.75rem;
   display: flex;
   justify-content: space-between;
@@ -649,4 +649,30 @@ table td {
   border-top: 1px solid var(--border-color);
   font-size: 0.9em;
   color: var(--date-color);
+}
+
+.recommended-posts {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recommended-posts h3 {
+  margin-top: 0;
+}
+
+.recommended-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommended-posts li {
+  margin-bottom: 0.5rem;
+}
+
+.recommended-posts .post-type {
+  font-size: 0.8em;
+  color: var(--text-light);
+  margin-left: 0.5rem;
 }
