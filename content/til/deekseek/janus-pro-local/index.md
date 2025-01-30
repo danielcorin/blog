@@ -217,3 +217,7 @@ I've done a few other runs in the ~2 minute range.
 Here is the resulting image
 
 ![Generated image of a small brown dog that appears to be a mix of Shih Tzu, poodle and Chihuahua](images/dog.jpg)
+
+## Cleanup
+
+If you want back the 15GB of disk space, you can find the model weights and other files in `~/.cache/huggingface/hub`.
