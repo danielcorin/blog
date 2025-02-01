@@ -5,6 +5,7 @@ draft: false
 tags:
 - deepseek
 - janus
+coffee: true
 ---
 
 Deepseek is getting a lot of attention with the releases of V3 and recently R1.

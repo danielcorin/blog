@@ -676,3 +676,46 @@ table td {
   color: var(--text-light);
   margin-left: 0.5rem;
 }
+
+.coffee-link {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.coffee-link a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.coffee-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .recommended-posts {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+
+  .recommended-posts h3 {
+    font-size: 1em;
+  }
+
+  .recommended-posts li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9em;
+  }
+
+  .recommended-posts .post-type {
+    font-size: 0.7em;
+  }
+
+  .coffee-link {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 0.9em;
+  }
+}
