@@ -1,6 +1,6 @@
 ---
 date: "2025-02-06T08:43:51Z"
-title: "Astro Code Component"
+title: "Astro Code Toggle Component"
 draft: false
 tags:
 - astro
