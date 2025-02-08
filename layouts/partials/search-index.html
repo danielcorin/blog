@@ -9,7 +9,7 @@
                 {{ if .Date }}"date": "{{ .Date.Format "2006-01-02" }}",{{ end }}
                 "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
                 "content": {{ .Content | plainify }},
-                "url": "{{ .Permalink }}"
+                "url": "{{ .Permalink }}?utm_source=search&utm_medium=index&utm_campaign=blog"
             },
         {{ end }}
         "_debug": {

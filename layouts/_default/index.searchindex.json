@@ -10,7 +10,7 @@
             "tags": {{ $page.Params.Tags | jsonify }},
             {{ if $page.Date }}"date": "{{ $page.Date.Format "2006-01-02" }}",{{ end }}
             "content": {{ $page.Content | plainify | jsonify }},
-            "url": "{{ $page.Permalink }}"
+            "url": "{{ $page.Permalink }}?utm_source=search&utm_medium=index&utm_campaign=blog"
         }{{ if ne $index $lastIndex }},{{ end }}
     {{ end }}
 }

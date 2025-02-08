@@ -29,7 +29,7 @@
     {{ if not .Draft}}
     <item>
       <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
+      <link>{{ .Permalink | htmlEscape }}?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=blog</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <author>{{ with $.Site.Params.Author }}{{.email}} ({{.name}}){{end}}</author>
       <guid>{{ .Permalink }}</guid>

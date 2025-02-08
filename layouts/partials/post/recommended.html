@@ -24,7 +24,7 @@
 <ul>
 {{ range first 3 $sortedRecommendations }}
     <li>
-    <a href="{{ .page.RelPermalink }}?ref=recommended">{{ .page.Title }}</a>
+    <a href="{{ .page.RelPermalink }}?utm_source=blog&utm_medium=recommended&utm_campaign=post">{{ .page.Title }}</a>
     </li>
     {{ end }}
 </ul>
