@@ -22,7 +22,7 @@
 <div class="recommended-posts">
 <h3>Recommended Posts</h3>
 <ul>
-{{ range first 3 $sortedRecommendations }}
+{{ range first 5 $sortedRecommendations }}
     <li>
     <a href="{{ .page.RelPermalink }}?utm_source=blog&utm_medium=recommended&utm_campaign=post">{{ .page.Title }}</a>
     </li>
