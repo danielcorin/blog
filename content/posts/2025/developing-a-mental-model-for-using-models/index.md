@@ -46,9 +46,9 @@ It helps you:
 - Develop intuition for how to use these tools effectively
 - Know when a tool might be able to give you the right answer compared to when it lacks the context to do so (e.g. Claude doesn't know which team won the Super Bowl in 2025, Perplexity does)
 
-![Screenshot of Claude 3.5 Sonnet's response about its knowledge cutoff date, showing transparency about what it does and doesn't know](developing-a-mental-model-for-using-model/images/claude.png)
+![Screenshot of Claude 3.5 Sonnet's response about its knowledge cutoff date, showing transparency about what it does and doesn't know](images/claude.png)
 
-![Screenshot of Perplexity's search results, showing the additional context gathered from internet search](developing-a-mental-model-for-using-model/images/perplexity.png)
+![Screenshot of Perplexity's search results, showing the additional context gathered from internet search](images/perplexity.png)
 
 This intuition is a soft skill and the ground is constantly shifting as these products are augmenting their capabilities.
 Scaling this learning curve is what matters right now when it comes to augmenting your skills with AI.
