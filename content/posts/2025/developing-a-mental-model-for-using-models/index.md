@@ -8,7 +8,6 @@ tags:
 - voice_notes
 ---
 
-
 I had an interesting realization today while doing a demo building a web app with Cursor.
 I was debugging an issue with an MCP server, trying to connect it to Cursor's MCP integration.
 The code I was using was buggy, and I'd never tried this before (attempting it live was probably a fool's errand to begin with).
@@ -80,4 +79,3 @@ When experimenting with a new tool or product, kick the tires.
 Ask the model about things that happened recently.
 Ask the model about itself.
 Sometimes models will make things up, but once you start poking around, you begin the process of developing this critical intuition for getting the most of these tools - developing your mental model for using models.
-
