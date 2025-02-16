@@ -1,4 +1,5 @@
 {{ define "main" -}}
+<h1 class="title">{{ .Title }}</h1>
 <div class="posts">
     {{ range where .Paginator.Pages "Section" "eq" "feeds" }}
         {{ if not .Draft}}
