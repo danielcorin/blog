@@ -3,7 +3,8 @@ date: "2024-09-03T20:41:07Z"
 title: "Prefill And Stop Sequences"
 draft: false
 tags:
-- prompt-eng
+- prompt_eng
+- stop_sequence
 ---
 
 I revisited Eugene's excellent work, "[Prompting Fundamentals and How to Apply Them Effectively](https://eugeneyan.com/writing/prompting/)".

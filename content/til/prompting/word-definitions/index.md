@@ -3,10 +3,7 @@ date: "2024-09-29T20:20:00Z"
 title: "Prompt Template for Word Definitions"
 draft: false
 tags:
-- prompt-eng
-outputs:
-  - HTML
-  - Markdown
+- prompt_eng
 ---
 
 I was listening to [episode 34 of AI & I](https://podcasts.apple.com/us/podcast/how-to-use-ai-to-become-a-learning-machine-ep-34/id1719789201?i=1000669162604) of Dan Shipper interviewing Simon Eskiidsen.
