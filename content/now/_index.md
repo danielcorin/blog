@@ -1,19 +1,16 @@
 ---
 title: "Now"
-date: 2024-12-26
+date: 2025-02-15
 ---
 
 _What is a [now page](https://nownownow.com/about)?_
 
-I moved to New York City at the beginning of 2023.
-I go to meetups periodically around the area.
-
-I recently became more active on [Bluesky](https://bsky.app/profile/danielcorin.com).
-
 I am currently exploring, focusing on and learning about:
 
-- local models
-- embeddings
-- [Astro](https://astro.build/)
+- non-chat UXs for interacting with language models
+- the limits of vibe coding
+- an experimental approach to knowledge synthesis
 
-I am also working on [Delta](https://gist.github.com/danielcorin/fa87f57345d761ab276cbc82c8601171), a conversation branching tool for interacting with LLMs
+I recently open sourced [Delta](https://github.com/danielcorin/delta), a tool for branching conversations with LLMs.
+
+I also write interactive articles on [Thought Eddies](https://www.thoughteddies.com/).
