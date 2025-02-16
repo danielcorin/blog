@@ -35,6 +35,9 @@ tags: ## List all tags used in the blog
 
 .PHONY: images
 images: ## Optimize images in the specified directory (usage: make images d=path/to/dir)
+ifndef d
+	$(error Directory path not set. Usage: make images d=path/to/dir)
+endif
 	find $(d) -type f -name "*.png" -exec pngquant --quality=65-80 --ext=.png --force {} \;
 	find $(d) -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim --max=80 --strip-all {} \;
 	find $(d) -type f -name "*.gif" -exec gifsicle -O3 --colors 256 -o {} {} \;
