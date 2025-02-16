@@ -1,9 +1,24 @@
 {{ define "main" }}
 <h1 class="feed-title">{{ .Title }}</h1>
 <p class="feed-description">{{ .Content }}</p>
-<div id="xml-feed-container"></div>
+<div id="xml-feed-container">
+  {{ if eq .Params.feed_url "/index.xml" }}
+    {{ range first 50 .Site.RegularPages }}
+      <article class="feed-item">
+        <h3 class="feed-item-title"><a href="{{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="feed-item-link">{{ .Title }}</a></h3>
+        <div class="feed-item-meta">
+          <time class="feed-item-date">{{ .Date.Format "2006-01-02" }}</time>
+          <span class="feed-item-source">{{ .Site.BaseURL | replaceRE "^https?://([^/]+).*" "$1" }}</span>
+        </div>
+      </article>
+    {{ end }}
+  {{ else }}
+    <!-- External feed handling -->
+  {{ end }}
+</div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  {{ if ne .Params.feed_url "/index.xml" }}
   const container = document.getElementById('xml-feed-container');
   const feedUrl = '{{ .Params.feed_url }}';
 
@@ -34,11 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Error fetching feed:', error);
       container.innerHTML = '<p class="feed-error">Error loading feed. Please try again later.</p>';
     });
+  {{ end }}
 });
 </script>
 <footer class="feed-footer">
   <p>View this feed in your <a href="{{ .Params.browser_url }}" target="_blank" rel="noopener noreferrer">browser</a> or access the <a href="{{ .Params.feed_url }}" target="_blank" rel="noopener noreferrer">raw XML</a></p>
-  <p>Feed provided by <a href="https://raindrop.io/" target="_blank" rel="noopener noreferrer">Raindrop.io</a></p>
+  {{ if ne .Params.feed_url "/index.xml" }}
+    <p>Feed provided by <a href="https://raindrop.io/" target="_blank" rel="noopener noreferrer">Raindrop.io</a></p>
+  {{ end }}
 </footer>
 
 {{ end }}
