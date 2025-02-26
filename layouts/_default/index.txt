@@ -1,6 +1,8 @@
 # {{ .Site.Title }}
 
 > {{ .Site.Params.description }}
+> Author: {{ .Site.Params.author.name }}
+
 
 ## Content
 {{ range $type := .Site.Params.front_page_content }}
