@@ -34,8 +34,8 @@ then ran it with
 claude
 ```
 
-After start, I ran `/init`.
-This seemed to analyze my project and create a `CLAUDE.md` file with the technologies I use, how to set the project up, how to run tests and other help context for Claude.
+After setup, I ran `/init`.
+This seemed to analyze my project and create a `CLAUDE.md` file with the technologies the project uses, how to set it up, how to run tests and other helpful context for Claude.
 This approach aligns with the most effective approach I am aware of for coding with LLMs, involving the creation of supplementary rules or markdown files and compressing an understanding of a codebase into fewer tokens.
 This approach also makes it much easier to reference metadata about the codebase in the future.
 
