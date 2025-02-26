@@ -55,7 +55,7 @@ tags = "tags"
 unsafe = true
 
 [outputs]
-home = ["HTML", "RSS", "JSON", "SearchIndex"]
+home = ["HTML", "RSS", "JSON", "SearchIndex", "TXT"]
 page = ["HTML", "Markdown"]
 section = ["HTML", "RSS"]
 
@@ -78,3 +78,7 @@ rel = "alternate"
 [outputFormats.SearchIndex]
 mediaType = "application/json"
 baseName = "search"
+[outputFormats.TXT]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
