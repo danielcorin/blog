@@ -22,7 +22,19 @@ I am just going to dive in and see how it goes.
 
 ## Let's go
 
-On setup, I ran `/init`.
+First, I installed the Claude code with
+
+```sh
+npm install -g @anthropic-ai/claude-code
+```
+
+then ran it with
+
+```sh
+claude
+```
+
+After start, I ran `/init`.
 This seemed to analyze my project and create a `CLAUDE.md` file with the technologies I use, how to set the project up, how to run tests and other help context for Claude.
 This approach aligns with the most effective approach I am aware of for coding with LLMs, involving the creation of supplementary rules or markdown files and compressing an understanding of a codebase into fewer tokens.
 This approach also makes it much easier to reference metadata about the codebase in the future.
