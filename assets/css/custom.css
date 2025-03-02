@@ -11,8 +11,10 @@ ul, ol, dl {
 pre {
   border: 3px solid var(--pre-border-color);
   border-radius: 12px;
-  margin-top: 0.5em;
+  margin-top: 0;
   margin-bottom: 0.5em;
+  position: relative;
+  overflow-x: auto;
 }
 
 .sidebar-about h1 {
@@ -718,4 +720,69 @@ table td {
     padding: 0.5rem;
     font-size: 0.9em;
   }
+}
+
+/* Wrapper for code blocks with titles */
+.highlight-wrapper {
+  position: relative;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Title tab for code blocks */
+.highlight-wrapper .highlight-title {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 0.8em;
+  font-family: monospace;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-h1-color);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 3px solid var(--pre-border-color);
+  border-bottom: none;
+  position: relative;
+  z-index: 3;
+}
+
+/* Adjust the code block border radius when a title is present */
+.highlight-wrapper .highlight pre {
+  border-top-left-radius: 0;
+  margin-top: -3px;
+  border-top: none;
+  position: relative;
+  z-index: 2;
+  border-color: var(--pre-border-color);
+  border-width: 3px;
+  border-style: solid;
+}
+
+/* Style for highlight blocks with titles */
+.highlight-wrapper .highlight {
+  margin-top: 0;
+}
+
+/* Adjust the pre element to ensure proper alignment */
+pre {
+  margin-top: 0;
+  position: relative;
+  overflow-x: auto;
+  z-index: 1;
+}
+
+/* Ensure the code container is properly styled */
+.code-container {
+  position: relative;
+}
+
+/* Define a custom property for pre border color if it doesn't exist */
+:root {
+  --pre-border-color: var(--code-block-background-color, #272822);
 }
