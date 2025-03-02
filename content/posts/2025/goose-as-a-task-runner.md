@@ -4,7 +4,7 @@ date: 2025-02-28T21:41:27-05:00
 draft: false
 tags:
 - goose
-- language_modals
+- language_models
 ---
 
 [Goose](https://github.com/block/goose) is a CLI language model-based agent.
