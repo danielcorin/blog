@@ -777,6 +777,29 @@ pre {
   z-index: 1;
 }
 
+/* Consistent scrollbar styling across browsers */
+pre::-webkit-scrollbar,
+.code-container::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+pre::-webkit-scrollbar-track,
+.code-container::-webkit-scrollbar-track {
+  background: var(--bkg-color);
+}
+
+pre::-webkit-scrollbar-thumb,
+.code-container::-webkit-scrollbar-thumb {
+  background: var(--table-border-color);
+  border-radius: 4px;
+}
+
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: var(--table-border-color) var(--bkg-color);
+}
+
 /* Ensure the code container is properly styled */
 .code-container {
   position: relative;
@@ -786,3 +809,4 @@ pre {
 :root {
   --pre-border-color: var(--code-block-background-color, #272822);
 }
+
