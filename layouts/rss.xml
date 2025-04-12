@@ -3,7 +3,7 @@
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
 {{- $allPages := $pctx.RegularPages -}}
-{{- $pages = where $allPages "Section" "in" (slice "posts" "til" "external") -}} {{/* This line is added to filter pages from "posts" folder only */}}
+{{- $pages = where $allPages "Section" "in" (slice "posts" "til" "external" "rss") -}} {{/* This line is added to filter pages from "posts" folder only */}}
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
@@ -13,7 +13,7 @@
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
+  <channel>f
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Site.BaseURL }}</link>
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>

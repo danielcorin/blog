@@ -18,4 +18,4 @@ This site is a sprawl of my work, thoughts, readings and learnings.
 - [Resume](/files/resume.pdf)
 - Feel free to [reach out](mailto:dcorin6@gmail.com)!
 
-I curate a content list [here](/feeds/curated-content/)
+I curate a content list [here](/feeds/curated/)
