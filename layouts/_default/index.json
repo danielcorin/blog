@@ -33,8 +33,7 @@ https://github.com/brycewray/hugo-site/blob/24d8ff52bad303cf65c7550de620374c942d
 }
 ],
 {{ end -}}
-{{- /* https://www.brycewray.com/?utm_campaign=JSON&utm_source=JSON&utm_medium=JSON */ -}}
-{{- $JSONutm := "?utm_campaign=JSON&utm_source=JSON&utm_medium=JSON" -}}
+{{- $JSONutm := "?ref=json_feed" -}}
 {{- $PermaWithJSONutm := "" -}}
 "items": [
 {{ range $index, $element := $posts -}}
