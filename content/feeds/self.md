@@ -4,4 +4,4 @@ feed_url: "/index.xml"
 browser_url: "https://danielcorin.com"
 ---
 
-My blog posts and other content from Way Enough.
+Posts and other content from my blog.

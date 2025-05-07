@@ -1,6 +1,12 @@
 {{ define "main" }}
 <h1 class="feed-title">{{ .Title }}</h1>
 <p class="feed-description">{{ .Content }}</p>
+<header class="feed-header">
+  <p>View this feed in your <a href="{{ .Params.browser_url }}" target="_blank" rel="noopener noreferrer">browser</a> or access the <a href="{{ .Params.feed_url }}" target="_blank" rel="noopener noreferrer">raw XML</a></p>
+  {{ if in .Params.feed_url "raindrop.io" }}
+    <p>Feed provided by <a href="https://raindrop.io/" target="_blank" rel="noopener noreferrer">Raindrop.io</a></p>
+  {{ end }}
+</header>
 <div id="xml-feed-container">
   {{ if eq .Params.feed_url "/index.xml" }}
     {{ range first 50 .Site.RegularPages }}
@@ -52,11 +58,5 @@ document.addEventListener('DOMContentLoaded', function() {
   {{ end }}
 });
 </script>
-<footer class="feed-footer">
-  <p>View this feed in your <a href="{{ .Params.browser_url }}" target="_blank" rel="noopener noreferrer">browser</a> or access the <a href="{{ .Params.feed_url }}" target="_blank" rel="noopener noreferrer">raw XML</a></p>
-  {{ if ne .Params.feed_url "/index.xml" }}
-    <p>Feed provided by <a href="https://raindrop.io/" target="_blank" rel="noopener noreferrer">Raindrop.io</a></p>
-  {{ end }}
-</footer>
 
 {{ end }}

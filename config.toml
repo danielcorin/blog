@@ -36,6 +36,7 @@ menu = [
     { Name = "🌱 Garden", URL = "/garden/", HasChildren = false },
     { Name = "💻 Uses", URL = "/uses/", HasChildren = false },
     { Name = "📍 Now", URL = "/now/", HasChildren = false },
+    { Name = "📰 Feeds", URL = "/feeds/", HasChildren = false },
 ]
 
 # Links to your socials.
