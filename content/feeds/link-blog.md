@@ -8,4 +8,4 @@ aliases:
 ---
 
 This is a feed of things around the web I've enjoyed (in chronological order).
-Most of these are things to read with the occasional video.
+Most of these are things to read with the occasional video or podcast.
