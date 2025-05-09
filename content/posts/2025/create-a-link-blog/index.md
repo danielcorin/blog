@@ -19,7 +19,7 @@ I use [Raindrop](https://raindrop.io/) which makes it easy to save and share art
 
 Raindrop creates a [browser friendly page](https://raindrop.io/danielcorin/way-enough-48340159) and an [XML feed](https://bg.raindrop.io/rss/public/48340159).
 
-I also wrote up a little page to display some of the more recently added links to the feed on [my site](/feeds/link-blog/).
+I also wrote up a [little page](https://github.com/danielcorin/blog/blob/main/layouts/feeds/single.html) to display some of the more recently added links to the feed on [my site](/feeds/link-blog/).
 
 If you write a link blog, share it!
 I'll probably add it to my feed reader.
