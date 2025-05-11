@@ -1,15 +1,15 @@
 ---
 title: "Now"
-date: 2025-02-15
+date: 2025-05-11
 ---
 
 _What is a [now page](https://nownownow.com/about)?_
 
-I am currently exploring, focusing on and learning about:
+I am currently building, exploring, and learning about:
 
+- a macOS native, ambient LLM chat app called Kurai
 - non-chat UXs for interacting with language models
-- the limits of vibe coding
-- an experimental approach to knowledge synthesis
+- running multiple agents at once on the same repo with Git worktrees
 
 I recently open sourced [Delta](https://github.com/danielcorin/delta), a tool for branching conversations with LLMs.
 
