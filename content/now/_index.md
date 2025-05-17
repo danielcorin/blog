@@ -7,7 +7,7 @@ _What is a [now page](https://nownownow.com/about)?_
 
 I am currently building, exploring, and learning about:
 
-- a macOS native, ambient LLM chat app called Kurai
+- a macOS native, ambient LLM chat app called Tomo
 - non-chat UXs for interacting with language models
 - running multiple agents at once on the same repo with Git worktrees
 
