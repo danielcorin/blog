@@ -2,7 +2,7 @@
 title: "Uses"
 ---
 
-![neofetch output for my system](/img/uses/neofetch.png)
+![neofetch output for my system](images/2025-06-18.png)
 
 
 ## 💻 macOS apps
@@ -16,7 +16,7 @@ title: "Uses"
 - [Karabiner](https://karabiner-elements.pqrs.org/): to turn caps lock into a hyper key
 - [Obsidian](https://obsidian.md/): notes as plaintext files (markdown)
 - [Paku](https://paku.app/): monitors air quality
-- [Notion](https://www.notion.so): flexible document creation tool
+- [Tomo](https://www.wvlen.llc/apps/tomo): an unobtrusive, ambient LLM chat app
 
 ## 🧰 CLI
 
@@ -40,6 +40,7 @@ title: "Uses"
 - [Zed](https://zed.dev/): a fast text editor with interesting AI features
 - [Pile](https://udara.io/pile/): an AI-native journaling app with offline model support
 - [WezTerm](https://wezfurlong.org/wezterm/index.html): a fast terminal with flexible Lua configuration
+- [Raycast](https://www.raycast.com/): an extensible launcher, similar to Alfred
 
 ## 📱 iOS apps
 
@@ -54,4 +55,4 @@ title: "Uses"
 
 ## ✨🤖 Language Models
 
-- [claude-3.5-sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)
+- [claude-sonnet-4](https://docs.anthropic.com/en/docs/about-claude/models/overview)
