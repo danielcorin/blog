@@ -1,5 +1,5 @@
 ---
-title: "Landing Pad (2025)"
+title: "Pad Lander (2025)"
 date: 2025-03-27
 draft: false
 tags:
@@ -9,7 +9,7 @@ tags:
 - games
 ---
 
-"Landing Pad" is a game I started working on when I saw some people posting about building games with LLM coding assistants.
+"Pad Lander" is a game I started working on when I saw some people posting about building games with LLM coding assistants.
 It seemed like something that would be fun to try and I fully embraced a vibe code and verification approach to the project.
 This approach was fun, but quickly became a lot less fun when I hit a point of no return, where neither I nor the LLM could dig us out of the hole we created.
 
