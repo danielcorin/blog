@@ -22,6 +22,7 @@ title: "Uses"
 
 - [bat](https://github.com/sharkdp/bat)
 - [brew](https://brew.sh/) (nix managed)
+- [claude-code](https://github.com/anthropics/claude-code): my preferred CLI coding agent
 - [delta](https://github.com/dandavison/delta)
 - [eza](https://github.com/eza-community/eza)
 - [fzf](https://github.com/junegunn/fzf)
