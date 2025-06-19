@@ -1,6 +1,10 @@
 baseURL = "https://danielcorin.com/"
 languageCode = "en-us"
-theme = "poison"
+
+[module]
+[[module.imports]]
+path = "poison"
+
 pluralizelisttitles = false
 title = "Way Enough"
 enableRobotsTXT = true

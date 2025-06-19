@@ -173,7 +173,7 @@ and earn enough to live and continue to run your business.
 After writing this, I saw Karri's tweet and felt like he expressed a lot of
 similar sentiments in his comments:
 
-{{< tweet user="karrisaarinen" id="1783976321854717985" >}}
+{{< x user="karrisaarinen" id="1783976321854717985" >}}
 
 [^1]: A distributed database that can distribute and query data across more than
 one machine and scale beyond the constraints imposed by a single machine that

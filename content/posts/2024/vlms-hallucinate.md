@@ -195,7 +195,7 @@ They will make things up, often in a way that seems to make sense, but may not b
 
 After running these experiments, I read a post from Anton about the quality of Gemini as a VLM.
 
-{{< tweet id="1824273926609940813" user="abacaj">}}
+{{< x id="1824273926609940813" user="abacaj">}}
 
 Following [Google's docs](https://ai.google.dev/gemini-api/vision?lang=python), I ran the same experiments above for Gemini (`gemini-1.5-flash-latest`).
 I will reiterate my appreciation for the simplicity of the process of getting an API key to use Gemini.
