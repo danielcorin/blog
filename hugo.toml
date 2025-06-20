@@ -3,6 +3,8 @@ languageCode = "en-us"
 
 [module]
 [[module.imports]]
+path = "github.com/KKKZOZ/hugo-admonitions"
+[[module.imports]]
 path = "poison"
 
 pluralizelisttitles = false
