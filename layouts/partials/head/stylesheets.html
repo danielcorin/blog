@@ -1,3 +1,4 @@
+{{ $admonitions_scss := resources.Get "sass/vendors/_admonitions.scss" | css.Sass }}
 {{ $css_bundle := slice
     (resources.Get "css/poole.css")
     (resources.Get "css/codeblock.css")
@@ -7,6 +8,7 @@
     (resources.Get "css/lib/katex.css")
     (resources.Get "css/tabs.css")
     (resources.Get "css/custom.css")
+    $admonitions_scss
   | resources.Concat "css/bundle.css" | minify | fingerprint }}
 
 <link type="text/css" rel="stylesheet" href="{{ $css_bundle.RelPermalink }}">
