@@ -9,7 +9,7 @@ tags:
 ---
 
 > [!NOTE]
-> _Feel free to skip directly to the [strategies](#write-a-spec-first) if you don't need to be convinced using agents to write code is worth your time._
+> _Feel free to skip directly to the [strategies]({{< ref "posts/2025/agent-coding-strategies.md#write-a-spec-first" >}}) if you don't need to be convinced using agents to write code is worth your time._
 
 If you've read any of my writing in the past year, you're probably aware I've heavily adopted agents to build much of the software I write now.
 What I've done less of is write about the strategies I've used to do this.
