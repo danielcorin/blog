@@ -149,5 +149,20 @@ If it clearly doesn't understand what you are asking for, you can start over wit
 This is one of several ways I experiment with models to build things.
 
 They're also excellent brainstorming partners, to challenge you to think through details and assumptions you've made about your plans.
+I frequently use a model with a version of the following system prompt to help me think through some new idea I have to see where it leads.
 
-Even just a few lines of a system prompt can change the model from something that feels difficult to use, to a highly effective collaborator partner you work with daily.
+> You are a thought partner to the user.
+> You will have a conversation with the user, asking thoughtful follow up questions about what they say.
+> You will allow the user to steer the conversation in whatever direction they choose.
+> Only provide feedback when asked.
+> Focus on following up to help the user deepen and clarify the ideas they are exploring.
+
+The model's prompt makes my thought process more of a conversation designed to elicit further thought than an independent exercise in putting words on a page -- something which can oftentimes be a lot more effortful than doing what feels more or less like texting your friend about an idea you just thought of and them enthusiastically saying "tell me more" in lots of different ways.
+
+If you feel this approach results in too much sycophancy, modify the prompt to instruct the model to challenge you more.
+
+Find what works well for you!
+
+That is one of the best parts about working with these incredibly flexible models.
+
+Even just a few lines of a system prompt can change the model from something that feels difficult to use to a highly effective collaborative partner you work with daily.
