@@ -1,0 +1,60 @@
+{{ if .Paginator }}
+{{ $pag := .Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<hr>
+<div class="footer">
+<nav id="page-nav">
+    {{ if $pag.HasPrev }}
+    <a href="{{ $pag.Prev.URL }}" rel="prev" class="extend prev">&laquo; Previous</a>
+    {{ end }}
+
+    {{ $showPages := 5 }}
+    {{ $currentPage := $pag.PageNumber }}
+    {{ $totalPages := $pag.TotalPages }}
+
+    {{ if le $totalPages $showPages }}
+        {{ range $pag.Pagers }}
+        {{ if eq . $pag }}
+        <span class="page-number current">{{ .PageNumber }}</span>
+        {{ else }}
+        <a href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ if gt $currentPage 3 }}
+        <a href="{{ (index $pag.Pagers 0).URL }}">1</a>
+        {{ if gt $currentPage 4 }}
+        <span class="page-ellipsis">…</span>
+        {{ end }}
+        {{ end }}
+
+        {{ $start := sub $currentPage 2 }}
+        {{ $end := add $currentPage 2 }}
+        {{ if lt $start 1 }}{{ $start = 1 }}{{ end }}
+        {{ if gt $end $totalPages }}{{ $end = $totalPages }}{{ end }}
+
+        {{ range $pag.Pagers }}
+        {{ if and (ge .PageNumber $start) (le .PageNumber $end) }}
+        {{ if eq . $pag }}
+        <span class="page-number current">{{ .PageNumber }}</span>
+        {{ else }}
+        <a href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+
+        {{ if lt $currentPage (sub $totalPages 2) }}
+        {{ if lt $currentPage (sub $totalPages 3) }}
+        <span class="page-ellipsis">…</span>
+        {{ end }}
+        <a href="{{ (index $pag.Pagers (sub $totalPages 1)).URL }}">{{ $totalPages }}</a>
+        {{ end }}
+    {{ end }}
+
+    {{ if $pag.HasNext }}
+    <a href="{{ $pag.Next.URL }}" rel="next" class="extend next">Next &raquo;</a>
+    {{ end }}
+</nav>
+</div>
+{{ end }}
+{{ end }}
