@@ -800,5 +800,14 @@ pre {
 /* Define a custom property for pre border color if it doesn't exist */
 :root {
   --pre-border-color: var(--code-block-background-color, #272822);
+  --bg-color: var(--bg-color);
+  --text-color: var(--text-color);
+  --sidebar-color: var(--sidebar-color);
+}
+
+.page-ellipsis {
+  margin: 0 0.2em;
+  color: var(--text-color);
+  opacity: 0.6;
 }
 
