@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const closeBtn = modal.querySelector('.close');
         closeBtn.addEventListener('click', closeModal);
         modal.addEventListener('click', function (e) {
-            if (e.target === modal) closeModal();
+            if (e.target === modal || e.target.classList.contains('modal-content')) {
+                closeModal();
+            }
         });
     }
 
