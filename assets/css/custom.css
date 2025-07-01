@@ -278,7 +278,8 @@ input[type="checkbox"] {
 }
 
 .sidenote-wrapper:hover .sidenote,
-.sidenote-wrapper:focus-within .sidenote {
+.sidenote-wrapper:focus-within .sidenote,
+.sidenote-wrapper[data-clicked="true"] .sidenote {
   display: block;
 }
 

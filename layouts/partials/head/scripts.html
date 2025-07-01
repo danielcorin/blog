@@ -32,6 +32,9 @@
 {{/* Image modal */}}
 {{ $js = $js | append (resources.Get "js/image-click.js") }}
 
+{{/* Sidenote toggle functionality */}}
+{{ $js = $js | append (resources.Get "js/sidenote.js") }}
+
 {{ $js_bundle := $js | resources.Concat "js/bundle.js" }}
 {{/* Don't minify in dev for easier debugging */}}
 {{ if hugo.IsProduction }}
