@@ -3,6 +3,8 @@ date: "2025-07-05T18:23:38Z"
 title: "Gemini Uses Think By Default"
 draft: false
 tags:
+- gemini
+- language_models
 ---
 
 It started because I was using the OpenAI completion API to try several different models while building [Tomo](https://wvlen.llc/apps/tomo).
