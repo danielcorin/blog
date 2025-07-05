@@ -1,6 +1,6 @@
 ---
 date: "2025-07-05T18:23:38Z"
-title: "Gemini Uses Think By Default"
+title: "Gemini Uses Thinking By Default"
 draft: false
 tags:
 - gemini
