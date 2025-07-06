@@ -184,4 +184,4 @@ It's curious that Google would make thinking opt-out behavior.
 This seems like a trade off that would improve model performance on benchmarks, increase latency, and increase token usage.
 
 I haven't seen this new default behavior discussed anywhere.
-It is documented, but it's just surprising to me that it was made the default behavior, leading to my surprise described above.
+It is documented, but it's just surprising to me that it was made the default behavior.
