@@ -3,6 +3,7 @@ date: "2025-07-06T10:14:04Z"
 title: "With MCP, Dates are a Footgun"
 draft: false
 tags:
+- mcp
 ---
 
 [Model Context Protocol](https://modelcontextprotocol.com/) servers have become a popular way to expose software services for LLMs.
